@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\QuanLyHocSinh"
+    "\\QuanLyHocSinh",
+    "\\QuanLyHocSinh\\Forms"
   ],
-  "SelectedNode": "\\QuanLyHocSinh\\QuanLyHocSinh.csproj",
+  "SelectedNode": "\\QuanLyHocSinh\\Forms\\FormLogin.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
