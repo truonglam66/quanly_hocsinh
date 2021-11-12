@@ -8,3 +8,16 @@ C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.G
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.AssemblyReference.cache
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.dangKiThi.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.dsDangKiThi.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.DSHS.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.FormLogin.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb

@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\CHocSinh.cs" />
+    <Compile Include="Class\dkThi.cs" />
     <Compile Include="Forms\dangKiThi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +66,6 @@
     <Compile Include="Forms\DSHS.Designer.cs">
       <DependentUpon>DSHS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\dangKiThi.resx">
@@ -80,9 +76,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DSHS.resx">
       <DependentUpon>DSHS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,8 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
