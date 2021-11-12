@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyHocSinh.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace QuanLyHocSinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            //Application.Run(new FormLogin());
+            Application.Run(new fAdmin());
         }
     }
 }

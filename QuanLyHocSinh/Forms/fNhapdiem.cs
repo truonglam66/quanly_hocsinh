@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyHocSinh
+namespace QuanLyHocSinh.Forms
 {
-    public partial class FormLogin : Form
+    public partial class fNhapdiem : Form
     {
-        public FormLogin()
+        public fNhapdiem()
         {
             InitializeComponent();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
