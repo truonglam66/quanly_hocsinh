@@ -51,6 +51,7 @@
     <Compile Include="Classes\GiaoVien.cs" />
     <Compile Include="Classes\HoatDong.cs" />
     <Compile Include="Classes\HocSinh.cs" />
+    <Compile Include="Classes\Lop.cs" />
     <Compile Include="CustomControl\CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
