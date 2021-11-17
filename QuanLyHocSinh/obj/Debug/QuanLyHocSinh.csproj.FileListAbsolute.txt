@@ -12,3 +12,17 @@ C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Aspose.Words.dll
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Aspose.Words.Pdf2Word.dll
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Aspose.Words.xml
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CopyComplete
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Aspose.Words.dll
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Aspose.Words.Pdf2Word.dll
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Aspose.Words.xml
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.AssemblyReference.cache
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.FormManagerMenu.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CopyComplete
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb

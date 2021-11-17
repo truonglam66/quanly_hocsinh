@@ -58,6 +58,7 @@
     <Compile Include="Classes\CMonHoc.cs" />
     <Compile Include="Classes\CNhanVienQL.cs" />
     <Compile Include="Classes\CPhuHuynh.cs" />
+    <Compile Include="Classes\darkMode.cs" />
     <Compile Include="Forms\Manager\FormManagerMenu.cs">
       <SubType>Form</SubType>
     </Compile>

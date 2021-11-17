@@ -29,9 +29,7 @@ namespace QuanLyHocSinh.Forms
         public FormManagerMenu()
         {
             InitializeComponent();
-
-            lbl_welcome.Text = "Chao, truong";
-
+            //setColor();
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormManagerMenu_FormClosing);
 
             //ds hocsinh
@@ -568,5 +566,66 @@ namespace QuanLyHocSinh.Forms
                 e.Cancel = true;
             }
         }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn đăng xuất?", "Log off", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+                //FormLogin form = new FormLogin();
+                //form.Show();
+            }
+        }
+        private void setColor()
+        {
+            this.BackColor = darkMode.denlot;
+            tabPageDKNH.BackColor = darkMode.denlot;
+            tabPageHS.BackColor = darkMode.denlot;
+            tabPageGVCN.BackColor = darkMode.denlot;
+            tabPageChuyenTruong.BackColor = darkMode.denlot;
+            tabPageTotNghiep.BackColor = darkMode.denlot;
+            tabPageDKXL.BackColor = darkMode.denlot;
+
+            dataGridView_DSHS.BackgroundColor = darkMode.denlot;
+
+            tabPageGVCN.BackColor = darkMode.dendam;
+            menuStrip1.BackColor = darkMode.xanh;
+            đăngXuấtToolStripMenuItem.BackColor = darkMode.dendam;
+            chếĐộBanĐêmToolStripMenuItem.BackColor = darkMode.dendam;
+            thoátToolStripMenuItem.BackColor = darkMode.dendam;
+
+
+            lbl_header.ForeColor = darkMode.trang;
+            lbl_titleHS.ForeColor = darkMode.trang;
+            lbl_hotenHS.ForeColor = darkMode.trang;
+            lbl_DoB.ForeColor = darkMode.trang;
+            lbl_Diachi.ForeColor = darkMode.trang;
+            lbl_titlePH.ForeColor = darkMode.trang;
+            lbl_hotenPH.ForeColor = darkMode.trang;
+            lbl_sdt.ForeColor = darkMode.trang;
+            lbl_titleDSHS.ForeColor = darkMode.trang;
+            lbl_DSHS.ForeColor = darkMode.trang;
+            lbl_DSLop.ForeColor = darkMode.trang;
+            lbl_DSLop1.ForeColor = darkMode.trang;
+            lbl_DSGV.ForeColor = darkMode.trang;
+            lbl_title1.ForeColor = darkMode.trang;
+            lbl_title2.ForeColor = darkMode.trang;
+            đăngXuấtToolStripMenuItem.ForeColor = darkMode.trang;
+            chếĐộBanĐêmToolStripMenuItem.ForeColor = darkMode.trang;
+            thoátToolStripMenuItem.ForeColor = darkMode.trang;
+        }
+
+        private void chếĐộBanĐêmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            darkMode.TroCarMode();
+            setColor();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
+    
 }
