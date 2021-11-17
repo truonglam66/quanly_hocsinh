@@ -41,3 +41,20 @@ C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone - Copy\QuanLyH
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone - Copy\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone - Copy\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.Admin.FormAdmin.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.AssemblyReference.cache
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.SuggestedBindingRedirects.cache
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.CustomControl.CustomTextBox.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.Admin.FormAdmin.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.DanhSachBangDiem.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.DanhSachHocSinh.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.DanhSachLop.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.FormLogin.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.HoatDongNgoaiGio.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb

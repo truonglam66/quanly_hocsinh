@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BangDiem.cs" />
     <Compile Include="Classes\GiaoVien.cs" />
     <Compile Include="Classes\HoatDong.cs" />
     <Compile Include="Classes\HocSinh.cs" />
@@ -131,6 +132,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\QuanLyHocSinh.Classes.BangDiem.datasource" />
     <None Include="Properties\DataSources\QuanLyHocSinh.Classes.HoatDong.datasource" />
     <None Include="Properties\DataSources\QuanLyHocSinh.Classes.HocSinh.datasource" />
     <None Include="Properties\Settings.settings">
