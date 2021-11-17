@@ -112,7 +112,7 @@ namespace QuanLyHocSinh.Forms
             int i = 0;
             foreach(DataGridViewRow row in dgvHocSinhChuaChon.Rows)
             {
-                if(row.Cells[0].Value.ToString() == txbMaHS.Texts)
+                if(row.Cells[0].Value.ToString() == txbMaHS.Text)
                 {
                     row.Selected = true;
                     hocSinhChuaChonBindingSource.Position = row.Index;
@@ -125,6 +125,33 @@ namespace QuanLyHocSinh.Forms
                 dgvHocSinhChuaChon.ClearSelection();
                 hocSinhChuaChonBindingSource.Position = -1;
             }
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            foreach (DataGridViewRow row in dgvHocSinhChuaChon.Rows)
+            {
+                if (row.Cells[0].Value.ToString() == txbMaHS.Text)
+                {
+                    row.Selected = true;
+                    hocSinhChuaChonBindingSource.Position = row.Index;
+                    break;
+                }
+                i++;
+            }
+            if (i == hocSinhChuaChonBindingSource.Count)
+            {
+                dgvHocSinhChuaChon.ClearSelection();
+                hocSinhChuaChonBindingSource.Position = -1;
+            }
+        }
+
+        private void btnXong_Click(object sender, EventArgs e)
+        {
+            HocSinhDaChon = (List<Classes.HocSinh>)hocSinhDaChonBindingSource.DataSource;
+            this.Close();
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

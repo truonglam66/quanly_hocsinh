@@ -167,5 +167,10 @@ namespace QuanLyHocSinh.Forms
                 rtxbError.Text = "Không tìm thấy mã hoạt động";
             }
         }
+
+        private void txbMaHoatDong__TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

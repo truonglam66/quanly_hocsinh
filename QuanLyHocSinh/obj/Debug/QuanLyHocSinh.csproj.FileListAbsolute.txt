@@ -40,3 +40,4 @@ C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone - Copy\QuanLyH
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone - Copy\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone - Copy\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone - Copy\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb
+C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\Clone\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.Admin.FormAdmin.resources
