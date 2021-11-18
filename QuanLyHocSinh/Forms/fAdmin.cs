@@ -71,13 +71,7 @@ namespace QuanLyHocSinh.Forms
             }
             return true;
         }
-        /*public void GetHeaderText()
-        {
-            dgvTaikhoan.Columns[0].HeaderText = "Mã tài khoản";
-            dgvTaikhoan.Columns[1].HeaderText = "Tên đăng nhập";
-            dgvTaikhoan.Columns[2].HeaderText = "Tên hiển thị";
-            dgvTaikhoan.Columns[3].HeaderText = "M";
-        }*/
+
 
         private void btnThem_Click(object sender, EventArgs e)
         {

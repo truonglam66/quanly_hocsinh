@@ -13,7 +13,6 @@ D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Quan
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.AssemblyReference.cache
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fAdmin.resources
-D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.FormLogin.resources
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
@@ -21,3 +20,5 @@ D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\Quan
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fGiaovien.resources
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fNhapdiem.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fTaotkb.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fPDF.resources
