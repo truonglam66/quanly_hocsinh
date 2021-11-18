@@ -39,6 +39,7 @@ namespace QuanLyHocSinh.Forms
             this.dgvTKB = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.cbGV = new System.Windows.Forms.ComboBox();
             this.cbCapthi = new System.Windows.Forms.ComboBox();
             this.btnThemCT = new System.Windows.Forms.Button();
             this.txbNamthi = new System.Windows.Forms.TextBox();
@@ -119,7 +120,6 @@ namespace QuanLyHocSinh.Forms
             this.label17 = new System.Windows.Forms.Label();
             this.dgvDiemCK = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.cbGV = new System.Windows.Forms.ComboBox();
             this.tabPage4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -260,6 +260,19 @@ namespace QuanLyHocSinh.Forms
             this.groupBox6.TabIndex = 3;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Thông tin";
+            // 
+            // cbGV
+            // 
+            this.cbGV.FormattingEnabled = true;
+            this.cbGV.Items.AddRange(new object[] {
+            "Cấp trường",
+            "Cấp huyện",
+            "Cấp tỉnh",
+            "Cấp quốc gia"});
+            this.cbGV.Location = new System.Drawing.Point(176, 104);
+            this.cbGV.Name = "cbGV";
+            this.cbGV.Size = new System.Drawing.Size(149, 28);
+            this.cbGV.TabIndex = 26;
             // 
             // cbCapthi
             // 
@@ -1005,19 +1018,6 @@ namespace QuanLyHocSinh.Forms
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(966, 628);
             this.tabControl1.TabIndex = 0;
-            // 
-            // cbGV
-            // 
-            this.cbGV.FormattingEnabled = true;
-            this.cbGV.Items.AddRange(new object[] {
-            "Cấp trường",
-            "Cấp huyện",
-            "Cấp tỉnh",
-            "Cấp quốc gia"});
-            this.cbGV.Location = new System.Drawing.Point(176, 104);
-            this.cbGV.Name = "cbGV";
-            this.cbGV.Size = new System.Drawing.Size(149, 28);
-            this.cbGV.TabIndex = 26;
             // 
             // fGiaovien
             // 

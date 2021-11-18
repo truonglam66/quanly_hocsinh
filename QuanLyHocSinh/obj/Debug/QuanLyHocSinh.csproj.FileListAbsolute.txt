@@ -21,4 +21,5 @@ D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\Quan
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fGiaovien.resources
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fNhapdiem.resources
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fTaotkb.resources
-D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fPDF.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.FormsGVmoi.fTaoTKB.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.FormsGVmoi.fGiaoVienMoi.resources

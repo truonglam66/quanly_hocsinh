@@ -1,4 +1,5 @@
 ﻿using QuanLyHocSinh.Forms;
+using QuanLyHocSinh.FormsGVmoi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace QuanLyHocSinh
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormLogin());
-            Application.Run(new fGiaovien());
+            Application.Run(new fGiaoVienMoi());
         }
     }
 }
