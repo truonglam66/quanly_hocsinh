@@ -200,5 +200,15 @@ namespace QuanLyHocSinh.Forms.Admin
                 }
             }
         }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dgvBangDiem_BDCK_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
