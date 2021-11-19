@@ -14,6 +14,8 @@ namespace QuanLyHocSinh.Forms.Admin
     {
         List<Classes.BangDiem> BangDiems;
         List<Classes.HocSinh> HocSinhs;
+        List<Classes.ThoiKhoaBieu> TKBs;
+        Label[,] lbTKBs;
         public FormAdmin()
         {
             InitializeComponent();
@@ -46,6 +48,11 @@ namespace QuanLyHocSinh.Forms.Admin
             HocSinhs.Add(new Classes.HocSinh() { MaHS = "009", MaLop = "003", TenHS = "Thằng thứ chín" });
             HocSinhs.Add(new Classes.HocSinh() { MaHS = "010", MaLop = "003", TenHS = "Thằng thứ mười" });
 
+            TKBs = new List<Classes.ThoiKhoaBieu>();
+            TKBs.Add(new Classes.ThoiKhoaBieu() { MaLop = "001", MaTKB = "001", NamHoc = 2021, HocKy = 1, MonHoc = new string[,] { { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" } } });
+            TKBs.Add(new Classes.ThoiKhoaBieu() { MaLop = "002", MaTKB = "001", NamHoc = 2021, HocKy = 1, MonHoc = new string[,] { { "Tiếng Việt", "Tiếng Việt", "Tiếng Việt", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" } } });
+
+            lbTKBs = new Label[,] { { lbMonHoc2_1, lbMonhoc2_2, lbMonhoc2_3, lbMonhoc2_4, lbMonhoc2_5, lbMonhoc2_6, lbMonhoc2_7 } , { lbMonhoc3_1, lbMonhoc3_2, lbMonhoc3_3, lbMonhoc3_4, lbMonhoc3_5, lbMonhoc3_6, lbMonhoc3_7 },{ lbMonhoc4_1, lbMonhoc4_2, lbMonhoc4_3, lbMonhoc4_4, lbMonhoc4_5, lbMonhoc4_6, lbMonhoc4_7 },{ lbMonhoc5_1, lbMonhoc5_2, lbMonhoc5_3, lbMonhoc5_4, lbMonhoc5_5, lbMonhoc5_6, lbMonhoc5_7 },{ lbMonhoc6_1, lbMonhoc6_2, lbMonhoc6_3, lbMonhoc6_4, lbMonhoc6_5, lbMonhoc6_6, lbMonhoc6_7 },{ lbMonhoc7_1, lbMonhoc7_2, lbMonhoc7_3, lbMonhoc7_4, lbMonhoc7_5, lbMonhoc7_6, lbMonhoc7_7 } };
 
         }
         //
@@ -151,6 +158,7 @@ namespace QuanLyHocSinh.Forms.Admin
                 txbDiaDiem_HDNG.Text = hoatdong.DiaDiem;
                 txbGiaoVien_HDNG.Text = hoatdong.MaGvPhuTrach;
                 txbMaHoatDong_HDNG.Text = hoatdong.MaHD;
+                dtp_HDNG.Value = hoatdong.ThoiGian;
                 if (hoatdong.HocSinhs != null)
                     lbSLHocSinh_HDNG.Text = hoatdong.HocSinhs.Count.ToString();
                 else lbSLHocSinh_HDNG.Text = "0";
@@ -201,14 +209,165 @@ namespace QuanLyHocSinh.Forms.Admin
             }
         }
 
+        //
+        //Menu strip
+        //
+
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void dgvBangDiem_BDCK_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //
+        //Danh sách cuộc thi
+        //
+
+        private void btnThem_DSCT_Click(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrWhiteSpace(txbDiaDiem_DSCT.Text) || string.IsNullOrWhiteSpace(txbGiaoVien_DSCT.Text) || string.IsNullOrWhiteSpace(txbMaCuocThi_DSCT.Text) || string.IsNullOrWhiteSpace(txbMonThi_DSCT.Text) || cbbQuyMo_DSCT.SelectedIndex == -1 ))
+            {
+                int i = 0;
+                foreach (DataGridViewRow row in dgvDsCuocThi_DSCT.Rows)
+                {
+                    if (row.Cells[0].Value.ToString() == txbMaCuocThi_DSCT.Text) break;
+                    i++;
+                }
+                if (i == cuocThiBindingSource.Count)
+                {
+                   
+                        cuocThiBindingSource.Add(new Classes.CuocThi() { MaCuocThi = txbMaCuocThi_DSCT.Text, MaGvPhuTrach = txbGiaoVien_DSCT.Text, DiaDiem = txbDiaDiem_DSCT.Text, NamHoc = dtp_DSCT.Value.Year, MonThi = txbMonThi_DSCT.Text, ThoiGian = dtp_DSCT.Value, QuyMo = cbbQuyMo_DSCT.SelectedItem.ToString() });
+                    
+                    
+                    lbSLHocSinh_DSCT.Text = "0";
+                    cuocThiBindingSource.Position = cuocThiBindingSource.Count - 1;
+                    rtxbLoi_DSCT.Text = "";
+                }
+                else rtxbLoi_DSCT.Text = "Mã hoạt động không được trùng";
+            }
+            else rtxbLoi_DSCT.Text = "Không được để trống";
+        }
+
+        private void btnSua_DSCT_Click(object sender, EventArgs e)
+        {
+            Classes.CuocThi cuocthi = cuocThiBindingSource.Current as Classes.CuocThi;
+            if (cuocThiBindingSource != null)
+            {
+                if (!(string.IsNullOrWhiteSpace(txbDiaDiem_DSCT.Text) || string.IsNullOrWhiteSpace(txbGiaoVien_DSCT.Text) || string.IsNullOrWhiteSpace(txbMaCuocThi_DSCT.Text) || string.IsNullOrWhiteSpace(txbMonThi_DSCT.Text) || cbbQuyMo_DSCT.SelectedIndex == -1))
+                {
+                    int i = 0;
+                    foreach (DataGridViewRow row in dgvDsCuocThi_DSCT.Rows)
+                    {
+                        if (txbMaCuocThi_DSCT.Text != cuocthi.MaCuocThi)
+                            if (row.Cells[0].Value.ToString() == txbMaCuocThi_DSCT.Text) break;
+                        i++;
+                    }
+
+                    
+                    if (i == cuocThiBindingSource.Count)
+                    {
+                        cuocThiBindingSource[dgvDsCuocThi_DSCT.SelectedRows[0].Index] = new Classes.CuocThi() { MaCuocThi = txbMaCuocThi_DSCT.Text, MaGvPhuTrach = txbGiaoVien_DSCT.Text, DiaDiem = txbDiaDiem_DSCT.Text, NamHoc = dtp_DSCT.Value.Year, MonThi = txbMonThi_DSCT.Text, ThoiGian = dtp_DSCT.Value, QuyMo = cbbQuyMo_DSCT.SelectedItem.ToString(), HocSinhs = cuocthi.HocSinhs };
+                        rtxbLoi_DSCT.Text = "";
+                    }
+                    else rtxbLoi_DSCT.Text = "Mã hoạt động không được trùng";
+                }
+                else rtxbLoi_DSCT.Text = "Không được để trống";
+
+
+            }
+            else rtxbLoi_DSCT.Text = "Chọn hoạt động muốn sửa";
+        }
+
+        private void btnXoa_DSCT_Click(object sender, EventArgs e)
+        {
+            if(dgvDsCuocThi_DSCT.SelectedRows.Count > 0)
+            {
+                cuocThiBindingSource.RemoveAt(dgvDsCuocThi_DSCT.SelectedRows[0].Index);
+                dgvDsCuocThi_DSCT.ClearSelection();
+                cuocThiBindingSource.Position = -1;
+                lbSLHocSinh_DSCT.Text = "";
+
+            }
+            else rtxbLoi_DSCT.Text = "Chọn hoạt động muốn xóa";
+        }
+
+        private void btnHuy_DSCT_Click(object sender, EventArgs e)
+        {
+            txbDiaDiem_DSCT.Text = txbGiaoVien_DSCT.Text = txbMaCuocThi_DSCT.Text = "";
+            dgvDsCuocThi_DSCT.ClearSelection();
+            lbSLHocSinh_DSCT.Text = "";
+            rtxbLoi_DSCT.Text = "";
+            cuocThiBindingSource.Position = -1;
+        }
+
+        private void btnDsHocSinh_DSCT_Click(object sender, EventArgs e)
+        {
+            if (dgvDsCuocThi_DSCT.SelectedRows.Count > 0)
+            {
+                Classes.CuocThi cuocthi = cuocThiBindingSource.Current as Classes.CuocThi;
+                using (DanhSachHocSinh danhSachHocSinh = new DanhSachHocSinh(cuocthi.HocSinhs))
+                {
+                    danhSachHocSinh.HocSinhDaChon = cuocthi.HocSinhs;
+                    if (danhSachHocSinh.ShowDialog() == DialogResult.OK)
+                    {
+                        cuocthi.HocSinhs = danhSachHocSinh.HocSinhDaChon;
+                        if (cuocthi.HocSinhs != null) lbSLHocSinh_DSCT.Text = cuocthi.HocSinhs.Count.ToString();
+                        else lbSLHocSinh_DSCT.Text = "0";
+                    }
+                }
+            }
+            else rtxbLoi_DSCT.Text = "Chọn hoạt động muốn sửa danh sách học sinh";
+        }
+
+        private void dgvDsCuocThi_DSCT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                Classes.CuocThi cuocthi = cuocThiBindingSource.Current as Classes.CuocThi;
+                txbDiaDiem_DSCT.Text = cuocthi.DiaDiem;
+                txbGiaoVien_DSCT.Text = cuocthi.MaGvPhuTrach;
+                txbMaCuocThi_DSCT.Text = cuocthi.MaCuocThi;
+                cbbQuyMo_DSCT.Text = cuocthi.QuyMo;
+                txbMonThi_DSCT.Text = cuocthi.MonThi;
+                dtp_DSCT.Value = cuocthi.ThoiGian;
+
+                if (cuocthi.HocSinhs != null)
+                    lbSLHocSinh_DSCT.Text = cuocthi.HocSinhs.Count.ToString();
+                else lbSLHocSinh_DSCT.Text = "0";
+            }
+            else rtxbLoi_DSCT.Text = "";
+        }
+        //
+        //TKB
+        //
+        private void btnTim_TKB_Click(object sender, EventArgs e)
         {
 
+            if (!(string.IsNullOrWhiteSpace(txbMaLop_TKB.Text) || string.IsNullOrWhiteSpace(txbNamHoc_TKB.Text) || string.IsNullOrWhiteSpace(txbHocKy_TKB.Text)))
+            {
+                foreach(Classes.ThoiKhoaBieu tkb in TKBs)
+                {
+                    if (tkb.MaLop == txbMaLop_TKB.Text && tkb.NamHoc == Convert.ToInt32(txbNamHoc_TKB.Text) && tkb.HocKy == Convert.ToInt32(txbHocKy_TKB.Text))
+                    {
+                        string[,] hmm = tkb.MonHoc;
+                        for(int i = 0; i < 6; i++)
+                        {
+                            for(int j = 0; j < 7; j++)
+                            {
+                                lbTKBs[i,j].Text = hmm[i,j];
+                            }
+                        }
+                        break;
+                    }
+
+                }
+            }
+            
         }
+
+        
+        //
+        //Thời khóa biểu
+        //
+
     }
 }

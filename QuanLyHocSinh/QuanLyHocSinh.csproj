@@ -48,10 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BangDiem.cs" />
+    <Compile Include="Classes\CuocThi.cs" />
     <Compile Include="Classes\GiaoVien.cs" />
     <Compile Include="Classes\HoatDong.cs" />
     <Compile Include="Classes\HocSinh.cs" />
     <Compile Include="Classes\Lop.cs" />
+    <Compile Include="Classes\ThoiKhoaBieu.cs" />
     <Compile Include="CustomControl\CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -134,6 +136,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\QuanLyHocSinh.Classes.BangDiem.datasource" />
+    <None Include="Properties\DataSources\QuanLyHocSinh.Classes.CuocThi.datasource" />
     <None Include="Properties\DataSources\QuanLyHocSinh.Classes.HoatDong.datasource" />
     <None Include="Properties\DataSources\QuanLyHocSinh.Classes.HocSinh.datasource" />
     <None Include="Properties\Settings.settings">
