@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace QuanLyHocSinh
 {
     static class Program
@@ -18,6 +20,7 @@ namespace QuanLyHocSinh
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormLogin());
+            darkMode.TroCarMode();
             Application.Run(new fGiaovien());
         }
     }
