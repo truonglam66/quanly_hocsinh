@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Classes\BangDiem.cs" />
     <Compile Include="Classes\CuocThi.cs" />
+    <Compile Include="Classes\darkMode.cs" />
     <Compile Include="Classes\GiaoVien.cs" />
     <Compile Include="Classes\HoatDong.cs" />
     <Compile Include="Classes\HocSinh.cs" />
@@ -71,6 +72,18 @@
     </Compile>
     <Compile Include="Forms\Admin\FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\themHoatDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\themHoatDong.Designer.cs">
+      <DependentUpon>themHoatDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\thêmHsThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\thêmHsThi.Designer.cs">
+      <DependentUpon>thêmHsThi.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DanhSachBangDiem.cs">
       <SubType>Form</SubType>
@@ -109,6 +122,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\themHoatDong.resx">
+      <DependentUpon>themHoatDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\thêmHsThi.resx">
+      <DependentUpon>thêmHsThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DanhSachBangDiem.resx">
       <DependentUpon>DanhSachBangDiem.cs</DependentUpon>
