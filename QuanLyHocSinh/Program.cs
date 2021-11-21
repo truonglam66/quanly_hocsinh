@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyHocSinh.Classes
+using QuanLyHocSinh.Classes;
+using QuanLyHocSinh.Forms.Admin;
 namespace QuanLyHocSinh
 {
     static class Program
@@ -16,7 +17,7 @@ namespace QuanLyHocSinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.Admin.FormAdmin());
+            Application.Run(new FormAdmin()); 
             darkMode.TroCarMode();
         }
     }

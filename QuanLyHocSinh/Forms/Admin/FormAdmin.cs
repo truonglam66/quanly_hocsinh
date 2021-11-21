@@ -66,11 +66,15 @@ namespace QuanLyHocSinh.Forms.Admin
             tabPage4.BackColor = darkMode.denlot;
             tabPage5.BackColor = darkMode.denlot;
 
-            tabPage1.ForeColor = darkMode.xanh;
-            tabPage2.ForeColor = darkMode.xanh;
-            tabPage3.ForeColor = darkMode.xanh;
-            tabPage4.ForeColor = darkMode.xanh;
-            tabPage5.ForeColor = darkMode.xanh;
+            label1.ForeColor = darkMode.trang;
+            tabPage1.ForeColor = darkMode.trang;
+            tabPage2.ForeColor = darkMode.trang;
+            tabPage3.ForeColor = darkMode.trang;
+            tabPage4.ForeColor = darkMode.trang;
+            tabPage5.ForeColor = darkMode.trang;
+
+            chếĐộBanĐêmToolStripMenuItem.BackColor = darkMode.xanh;
+            thoátToolStripMenuItem.BackColor = darkMode.xanh;
 
         }
 
@@ -100,6 +104,11 @@ namespace QuanLyHocSinh.Forms.Admin
         {
             darkMode.TroCarMode();
             setColor();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
 

@@ -22,7 +22,7 @@ namespace QuanLyHocSinh.Classes
             }
             else
             {
-                trang = Color.Black;
+                trang = Color.Blue;
                 dendam = Color.FromArgb(191, 191, 191);
                 denlot = Color.FromArgb(242, 242, 242);
                 xanh = Color.Blue;

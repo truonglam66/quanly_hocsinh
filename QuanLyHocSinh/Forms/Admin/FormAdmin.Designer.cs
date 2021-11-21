@@ -68,9 +68,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maGVCNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -182,6 +179,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maGVCNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bangDiemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoatDongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cuocThiBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -191,7 +191,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -200,6 +199,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bangDiemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoatDongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuocThiBindingSource)).BeginInit();
@@ -253,6 +253,7 @@
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             this.thoátToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -651,22 +652,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1012, 600);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // maLopDataGridViewTextBoxColumn
-            // 
-            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
-            // 
-            // maGVCNDataGridViewTextBoxColumn
-            // 
-            this.maGVCNDataGridViewTextBoxColumn.DataPropertyName = "MaGVCN";
-            this.maGVCNDataGridViewTextBoxColumn.HeaderText = "MaGVCN";
-            this.maGVCNDataGridViewTextBoxColumn.Name = "maGVCNDataGridViewTextBoxColumn";
-            // 
-            // lopBindingSource
-            // 
-            this.lopBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.Lop);
             // 
             // tabPage3
             // 
@@ -1227,7 +1212,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1340, 491);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1340, 494);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // label21
@@ -1844,6 +1829,22 @@
             this.label20.TabIndex = 0;
             this.label20.Text = "Mã Lớp";
             // 
+            // maLopDataGridViewTextBoxColumn
+            // 
+            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
+            // 
+            // maGVCNDataGridViewTextBoxColumn
+            // 
+            this.maGVCNDataGridViewTextBoxColumn.DataPropertyName = "MaGVCN";
+            this.maGVCNDataGridViewTextBoxColumn.HeaderText = "MaGVCN";
+            this.maGVCNDataGridViewTextBoxColumn.Name = "maGVCNDataGridViewTextBoxColumn";
+            // 
+            // lopBindingSource
+            // 
+            this.lopBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.Lop);
+            // 
             // bangDiemBindingSource
             // 
             this.bangDiemBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.BangDiem);
@@ -1882,7 +1883,6 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
@@ -1894,6 +1894,7 @@
             this.panel9.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bangDiemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoatDongBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuocThiBindingSource)).EndInit();
