@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.càiĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chếĐộBanĐêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -179,6 +178,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maGVCNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -204,17 +204,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.hoatDongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuocThiBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1356, 52);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "From Admin";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // menuStrip1
             // 
@@ -242,7 +231,7 @@
             this.chếĐộBanĐêmToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
             this.chếĐộBanĐêmToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.chếĐộBanĐêmToolStripMenuItem.Name = "chếĐộBanĐêmToolStripMenuItem";
-            this.chếĐộBanĐêmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chếĐộBanĐêmToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.chếĐộBanĐêmToolStripMenuItem.Text = "Chế độ ban đêm";
             this.chếĐộBanĐêmToolStripMenuItem.Click += new System.EventHandler(this.chếĐộBanĐêmToolStripMenuItem_Click);
             // 
@@ -251,7 +240,7 @@
             this.thoátToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
             this.thoátToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -262,12 +251,11 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 76);
+            this.tabControl1.Location = new System.Drawing.Point(0, 63);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1356, 657);
+            this.tabControl1.Size = new System.Drawing.Size(1356, 670);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -291,7 +279,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1348, 628);
+            this.tabPage1.Size = new System.Drawing.Size(1348, 641);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Danh sách bảng điểm cuối kỳ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -457,7 +445,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1348, 628);
+            this.tabPage2.Size = new System.Drawing.Size(1348, 641);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Danh sách lớp";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -680,7 +668,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1348, 628);
+            this.tabPage3.Size = new System.Drawing.Size(1348, 641);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Danh sách hoạt động ngoài giờ";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -905,7 +893,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(1348, 628);
+            this.tabPage4.Size = new System.Drawing.Size(1348, 641);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Các danh sách học sinh tham dự cuộc thi";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1129,7 +1117,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage5.Size = new System.Drawing.Size(1348, 628);
+            this.tabPage5.Size = new System.Drawing.Size(1348, 641);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Danh sách thời khóa biểu";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1212,7 +1200,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1340, 494);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1340, 504);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // label21
@@ -1278,7 +1266,7 @@
             // label27
             // 
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(4, 62);
+            this.label27.Location = new System.Drawing.Point(4, 63);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(184, 60);
             this.label27.TabIndex = 4;
@@ -1288,7 +1276,7 @@
             // label28
             // 
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(4, 123);
+            this.label28.Location = new System.Drawing.Point(4, 125);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(184, 60);
             this.label28.TabIndex = 4;
@@ -1298,7 +1286,7 @@
             // label29
             // 
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(4, 184);
+            this.label29.Location = new System.Drawing.Point(4, 187);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(184, 60);
             this.label29.TabIndex = 4;
@@ -1308,7 +1296,7 @@
             // label30
             // 
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(4, 245);
+            this.label30.Location = new System.Drawing.Point(4, 249);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(184, 60);
             this.label30.TabIndex = 4;
@@ -1318,7 +1306,7 @@
             // label31
             // 
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(4, 306);
+            this.label31.Location = new System.Drawing.Point(4, 311);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(184, 60);
             this.label31.TabIndex = 4;
@@ -1328,7 +1316,7 @@
             // label32
             // 
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(4, 367);
+            this.label32.Location = new System.Drawing.Point(4, 373);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(184, 60);
             this.label32.TabIndex = 4;
@@ -1338,7 +1326,7 @@
             // label33
             // 
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(4, 428);
+            this.label33.Location = new System.Drawing.Point(4, 435);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(184, 61);
             this.label33.TabIndex = 4;
@@ -1348,7 +1336,7 @@
             // lbMonHoc2_1
             // 
             this.lbMonHoc2_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonHoc2_1.Location = new System.Drawing.Point(195, 62);
+            this.lbMonHoc2_1.Location = new System.Drawing.Point(195, 63);
             this.lbMonHoc2_1.Name = "lbMonHoc2_1";
             this.lbMonHoc2_1.Size = new System.Drawing.Size(184, 60);
             this.lbMonHoc2_1.TabIndex = 4;
@@ -1357,7 +1345,7 @@
             // lbMonhoc3_1
             // 
             this.lbMonhoc3_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc3_1.Location = new System.Drawing.Point(386, 62);
+            this.lbMonhoc3_1.Location = new System.Drawing.Point(386, 63);
             this.lbMonhoc3_1.Name = "lbMonhoc3_1";
             this.lbMonhoc3_1.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc3_1.TabIndex = 4;
@@ -1366,7 +1354,7 @@
             // lbMonhoc4_1
             // 
             this.lbMonhoc4_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc4_1.Location = new System.Drawing.Point(577, 62);
+            this.lbMonhoc4_1.Location = new System.Drawing.Point(577, 63);
             this.lbMonhoc4_1.Name = "lbMonhoc4_1";
             this.lbMonhoc4_1.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc4_1.TabIndex = 4;
@@ -1375,7 +1363,7 @@
             // lbMonhoc5_1
             // 
             this.lbMonhoc5_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc5_1.Location = new System.Drawing.Point(768, 62);
+            this.lbMonhoc5_1.Location = new System.Drawing.Point(768, 63);
             this.lbMonhoc5_1.Name = "lbMonhoc5_1";
             this.lbMonhoc5_1.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc5_1.TabIndex = 4;
@@ -1384,7 +1372,7 @@
             // lbMonhoc6_1
             // 
             this.lbMonhoc6_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc6_1.Location = new System.Drawing.Point(959, 62);
+            this.lbMonhoc6_1.Location = new System.Drawing.Point(959, 63);
             this.lbMonhoc6_1.Name = "lbMonhoc6_1";
             this.lbMonhoc6_1.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc6_1.TabIndex = 4;
@@ -1393,7 +1381,7 @@
             // lbMonhoc7_1
             // 
             this.lbMonhoc7_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc7_1.Location = new System.Drawing.Point(1150, 62);
+            this.lbMonhoc7_1.Location = new System.Drawing.Point(1150, 63);
             this.lbMonhoc7_1.Name = "lbMonhoc7_1";
             this.lbMonhoc7_1.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc7_1.TabIndex = 4;
@@ -1402,7 +1390,7 @@
             // lbMonhoc3_2
             // 
             this.lbMonhoc3_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc3_2.Location = new System.Drawing.Point(386, 123);
+            this.lbMonhoc3_2.Location = new System.Drawing.Point(386, 125);
             this.lbMonhoc3_2.Name = "lbMonhoc3_2";
             this.lbMonhoc3_2.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc3_2.TabIndex = 4;
@@ -1411,7 +1399,7 @@
             // lbMonhoc4_2
             // 
             this.lbMonhoc4_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc4_2.Location = new System.Drawing.Point(577, 123);
+            this.lbMonhoc4_2.Location = new System.Drawing.Point(577, 125);
             this.lbMonhoc4_2.Name = "lbMonhoc4_2";
             this.lbMonhoc4_2.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc4_2.TabIndex = 4;
@@ -1420,7 +1408,7 @@
             // lbMonhoc5_2
             // 
             this.lbMonhoc5_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc5_2.Location = new System.Drawing.Point(768, 123);
+            this.lbMonhoc5_2.Location = new System.Drawing.Point(768, 125);
             this.lbMonhoc5_2.Name = "lbMonhoc5_2";
             this.lbMonhoc5_2.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc5_2.TabIndex = 4;
@@ -1429,7 +1417,7 @@
             // lbMonhoc2_3
             // 
             this.lbMonhoc2_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc2_3.Location = new System.Drawing.Point(195, 184);
+            this.lbMonhoc2_3.Location = new System.Drawing.Point(195, 187);
             this.lbMonhoc2_3.Name = "lbMonhoc2_3";
             this.lbMonhoc2_3.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc2_3.TabIndex = 4;
@@ -1438,7 +1426,7 @@
             // lbMonhoc2_2
             // 
             this.lbMonhoc2_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc2_2.Location = new System.Drawing.Point(195, 123);
+            this.lbMonhoc2_2.Location = new System.Drawing.Point(195, 125);
             this.lbMonhoc2_2.Name = "lbMonhoc2_2";
             this.lbMonhoc2_2.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc2_2.TabIndex = 4;
@@ -1447,7 +1435,7 @@
             // lbMonhoc3_3
             // 
             this.lbMonhoc3_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc3_3.Location = new System.Drawing.Point(386, 184);
+            this.lbMonhoc3_3.Location = new System.Drawing.Point(386, 187);
             this.lbMonhoc3_3.Name = "lbMonhoc3_3";
             this.lbMonhoc3_3.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc3_3.TabIndex = 4;
@@ -1456,7 +1444,7 @@
             // lbMonhoc4_3
             // 
             this.lbMonhoc4_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc4_3.Location = new System.Drawing.Point(577, 184);
+            this.lbMonhoc4_3.Location = new System.Drawing.Point(577, 187);
             this.lbMonhoc4_3.Name = "lbMonhoc4_3";
             this.lbMonhoc4_3.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc4_3.TabIndex = 4;
@@ -1465,7 +1453,7 @@
             // lbMonhoc2_4
             // 
             this.lbMonhoc2_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc2_4.Location = new System.Drawing.Point(195, 245);
+            this.lbMonhoc2_4.Location = new System.Drawing.Point(195, 249);
             this.lbMonhoc2_4.Name = "lbMonhoc2_4";
             this.lbMonhoc2_4.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc2_4.TabIndex = 4;
@@ -1474,7 +1462,7 @@
             // lbMonhoc3_4
             // 
             this.lbMonhoc3_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc3_4.Location = new System.Drawing.Point(386, 245);
+            this.lbMonhoc3_4.Location = new System.Drawing.Point(386, 249);
             this.lbMonhoc3_4.Name = "lbMonhoc3_4";
             this.lbMonhoc3_4.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc3_4.TabIndex = 4;
@@ -1483,7 +1471,7 @@
             // lbMonhoc4_4
             // 
             this.lbMonhoc4_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc4_4.Location = new System.Drawing.Point(577, 245);
+            this.lbMonhoc4_4.Location = new System.Drawing.Point(577, 249);
             this.lbMonhoc4_4.Name = "lbMonhoc4_4";
             this.lbMonhoc4_4.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc4_4.TabIndex = 4;
@@ -1492,7 +1480,7 @@
             // lbMonhoc5_4
             // 
             this.lbMonhoc5_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc5_4.Location = new System.Drawing.Point(768, 245);
+            this.lbMonhoc5_4.Location = new System.Drawing.Point(768, 249);
             this.lbMonhoc5_4.Name = "lbMonhoc5_4";
             this.lbMonhoc5_4.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc5_4.TabIndex = 4;
@@ -1501,7 +1489,7 @@
             // lbMonhoc2_5
             // 
             this.lbMonhoc2_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc2_5.Location = new System.Drawing.Point(195, 306);
+            this.lbMonhoc2_5.Location = new System.Drawing.Point(195, 311);
             this.lbMonhoc2_5.Name = "lbMonhoc2_5";
             this.lbMonhoc2_5.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc2_5.TabIndex = 4;
@@ -1510,7 +1498,7 @@
             // lbMonhoc2_6
             // 
             this.lbMonhoc2_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc2_6.Location = new System.Drawing.Point(195, 367);
+            this.lbMonhoc2_6.Location = new System.Drawing.Point(195, 373);
             this.lbMonhoc2_6.Name = "lbMonhoc2_6";
             this.lbMonhoc2_6.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc2_6.TabIndex = 4;
@@ -1519,7 +1507,7 @@
             // lbMonhoc3_5
             // 
             this.lbMonhoc3_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc3_5.Location = new System.Drawing.Point(386, 306);
+            this.lbMonhoc3_5.Location = new System.Drawing.Point(386, 311);
             this.lbMonhoc3_5.Name = "lbMonhoc3_5";
             this.lbMonhoc3_5.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc3_5.TabIndex = 4;
@@ -1528,7 +1516,7 @@
             // lbMonhoc4_5
             // 
             this.lbMonhoc4_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc4_5.Location = new System.Drawing.Point(577, 306);
+            this.lbMonhoc4_5.Location = new System.Drawing.Point(577, 311);
             this.lbMonhoc4_5.Name = "lbMonhoc4_5";
             this.lbMonhoc4_5.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc4_5.TabIndex = 4;
@@ -1537,7 +1525,7 @@
             // lbMonhoc5_5
             // 
             this.lbMonhoc5_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc5_5.Location = new System.Drawing.Point(768, 306);
+            this.lbMonhoc5_5.Location = new System.Drawing.Point(768, 311);
             this.lbMonhoc5_5.Name = "lbMonhoc5_5";
             this.lbMonhoc5_5.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc5_5.TabIndex = 4;
@@ -1546,7 +1534,7 @@
             // lbMonhoc4_6
             // 
             this.lbMonhoc4_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc4_6.Location = new System.Drawing.Point(577, 367);
+            this.lbMonhoc4_6.Location = new System.Drawing.Point(577, 373);
             this.lbMonhoc4_6.Name = "lbMonhoc4_6";
             this.lbMonhoc4_6.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc4_6.TabIndex = 4;
@@ -1555,7 +1543,7 @@
             // lbMonhoc5_6
             // 
             this.lbMonhoc5_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc5_6.Location = new System.Drawing.Point(768, 367);
+            this.lbMonhoc5_6.Location = new System.Drawing.Point(768, 373);
             this.lbMonhoc5_6.Name = "lbMonhoc5_6";
             this.lbMonhoc5_6.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc5_6.TabIndex = 4;
@@ -1564,7 +1552,7 @@
             // lbMonhoc6_2
             // 
             this.lbMonhoc6_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc6_2.Location = new System.Drawing.Point(959, 123);
+            this.lbMonhoc6_2.Location = new System.Drawing.Point(959, 125);
             this.lbMonhoc6_2.Name = "lbMonhoc6_2";
             this.lbMonhoc6_2.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc6_2.TabIndex = 4;
@@ -1573,7 +1561,7 @@
             // lbMonhoc5_3
             // 
             this.lbMonhoc5_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc5_3.Location = new System.Drawing.Point(768, 184);
+            this.lbMonhoc5_3.Location = new System.Drawing.Point(768, 187);
             this.lbMonhoc5_3.Name = "lbMonhoc5_3";
             this.lbMonhoc5_3.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc5_3.TabIndex = 4;
@@ -1582,7 +1570,7 @@
             // lbMonhoc6_3
             // 
             this.lbMonhoc6_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc6_3.Location = new System.Drawing.Point(959, 184);
+            this.lbMonhoc6_3.Location = new System.Drawing.Point(959, 187);
             this.lbMonhoc6_3.Name = "lbMonhoc6_3";
             this.lbMonhoc6_3.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc6_3.TabIndex = 4;
@@ -1591,7 +1579,7 @@
             // lbMonhoc6_4
             // 
             this.lbMonhoc6_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc6_4.Location = new System.Drawing.Point(959, 245);
+            this.lbMonhoc6_4.Location = new System.Drawing.Point(959, 249);
             this.lbMonhoc6_4.Name = "lbMonhoc6_4";
             this.lbMonhoc6_4.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc6_4.TabIndex = 4;
@@ -1600,7 +1588,7 @@
             // lbMonhoc6_5
             // 
             this.lbMonhoc6_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc6_5.Location = new System.Drawing.Point(959, 306);
+            this.lbMonhoc6_5.Location = new System.Drawing.Point(959, 311);
             this.lbMonhoc6_5.Name = "lbMonhoc6_5";
             this.lbMonhoc6_5.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc6_5.TabIndex = 4;
@@ -1609,7 +1597,7 @@
             // lbMonhoc6_6
             // 
             this.lbMonhoc6_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc6_6.Location = new System.Drawing.Point(959, 367);
+            this.lbMonhoc6_6.Location = new System.Drawing.Point(959, 373);
             this.lbMonhoc6_6.Name = "lbMonhoc6_6";
             this.lbMonhoc6_6.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc6_6.TabIndex = 4;
@@ -1618,7 +1606,7 @@
             // lbMonhoc6_7
             // 
             this.lbMonhoc6_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc6_7.Location = new System.Drawing.Point(959, 428);
+            this.lbMonhoc6_7.Location = new System.Drawing.Point(959, 435);
             this.lbMonhoc6_7.Name = "lbMonhoc6_7";
             this.lbMonhoc6_7.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc6_7.TabIndex = 4;
@@ -1627,7 +1615,7 @@
             // lbMonhoc5_7
             // 
             this.lbMonhoc5_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc5_7.Location = new System.Drawing.Point(768, 428);
+            this.lbMonhoc5_7.Location = new System.Drawing.Point(768, 435);
             this.lbMonhoc5_7.Name = "lbMonhoc5_7";
             this.lbMonhoc5_7.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc5_7.TabIndex = 4;
@@ -1636,7 +1624,7 @@
             // lbMonhoc4_7
             // 
             this.lbMonhoc4_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc4_7.Location = new System.Drawing.Point(577, 428);
+            this.lbMonhoc4_7.Location = new System.Drawing.Point(577, 435);
             this.lbMonhoc4_7.Name = "lbMonhoc4_7";
             this.lbMonhoc4_7.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc4_7.TabIndex = 4;
@@ -1645,7 +1633,7 @@
             // lbMonhoc3_6
             // 
             this.lbMonhoc3_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc3_6.Location = new System.Drawing.Point(386, 367);
+            this.lbMonhoc3_6.Location = new System.Drawing.Point(386, 373);
             this.lbMonhoc3_6.Name = "lbMonhoc3_6";
             this.lbMonhoc3_6.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc3_6.TabIndex = 4;
@@ -1654,7 +1642,7 @@
             // lbMonhoc3_7
             // 
             this.lbMonhoc3_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc3_7.Location = new System.Drawing.Point(386, 428);
+            this.lbMonhoc3_7.Location = new System.Drawing.Point(386, 435);
             this.lbMonhoc3_7.Name = "lbMonhoc3_7";
             this.lbMonhoc3_7.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc3_7.TabIndex = 4;
@@ -1663,7 +1651,7 @@
             // lbMonhoc2_7
             // 
             this.lbMonhoc2_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc2_7.Location = new System.Drawing.Point(195, 428);
+            this.lbMonhoc2_7.Location = new System.Drawing.Point(195, 435);
             this.lbMonhoc2_7.Name = "lbMonhoc2_7";
             this.lbMonhoc2_7.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc2_7.TabIndex = 4;
@@ -1672,7 +1660,7 @@
             // lbMonhoc7_2
             // 
             this.lbMonhoc7_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc7_2.Location = new System.Drawing.Point(1150, 123);
+            this.lbMonhoc7_2.Location = new System.Drawing.Point(1150, 125);
             this.lbMonhoc7_2.Name = "lbMonhoc7_2";
             this.lbMonhoc7_2.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc7_2.TabIndex = 4;
@@ -1681,7 +1669,7 @@
             // lbMonhoc7_3
             // 
             this.lbMonhoc7_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc7_3.Location = new System.Drawing.Point(1150, 184);
+            this.lbMonhoc7_3.Location = new System.Drawing.Point(1150, 187);
             this.lbMonhoc7_3.Name = "lbMonhoc7_3";
             this.lbMonhoc7_3.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc7_3.TabIndex = 4;
@@ -1690,7 +1678,7 @@
             // lbMonhoc7_4
             // 
             this.lbMonhoc7_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc7_4.Location = new System.Drawing.Point(1150, 245);
+            this.lbMonhoc7_4.Location = new System.Drawing.Point(1150, 249);
             this.lbMonhoc7_4.Name = "lbMonhoc7_4";
             this.lbMonhoc7_4.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc7_4.TabIndex = 4;
@@ -1699,7 +1687,7 @@
             // lbMonhoc7_5
             // 
             this.lbMonhoc7_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc7_5.Location = new System.Drawing.Point(1150, 306);
+            this.lbMonhoc7_5.Location = new System.Drawing.Point(1150, 311);
             this.lbMonhoc7_5.Name = "lbMonhoc7_5";
             this.lbMonhoc7_5.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc7_5.TabIndex = 4;
@@ -1708,7 +1696,7 @@
             // lbMonhoc7_6
             // 
             this.lbMonhoc7_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc7_6.Location = new System.Drawing.Point(1150, 367);
+            this.lbMonhoc7_6.Location = new System.Drawing.Point(1150, 373);
             this.lbMonhoc7_6.Name = "lbMonhoc7_6";
             this.lbMonhoc7_6.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc7_6.TabIndex = 4;
@@ -1717,7 +1705,7 @@
             // lbMonhoc7_7
             // 
             this.lbMonhoc7_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonhoc7_7.Location = new System.Drawing.Point(1150, 428);
+            this.lbMonhoc7_7.Location = new System.Drawing.Point(1150, 435);
             this.lbMonhoc7_7.Name = "lbMonhoc7_7";
             this.lbMonhoc7_7.Size = new System.Drawing.Size(184, 60);
             this.lbMonhoc7_7.TabIndex = 4;
@@ -1829,6 +1817,17 @@
             this.label20.TabIndex = 0;
             this.label20.Text = "Mã Lớp";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(601, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 31);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Quản lí";
+            // 
             // maLopDataGridViewTextBoxColumn
             // 
             this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
@@ -1864,8 +1863,8 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1356, 733);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1907,7 +1906,6 @@
         private System.Windows.Forms.BindingSource hoatDongBindingSource;
         private System.Windows.Forms.BindingSource bangDiemBindingSource;
         private System.Windows.Forms.BindingSource lopBindingSource;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem càiĐặtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
@@ -2060,5 +2058,6 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -18,7 +18,6 @@ namespace QuanLyHocSinh
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormAdmin()); 
-            darkMode.TroCarMode();
         }
     }
 }

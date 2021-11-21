@@ -58,13 +58,14 @@ namespace QuanLyHocSinh.Forms.Admin
         }
         private void setColor()
         {
-            menuStrip1.BackColor = darkMode.dendam;
+            menuStrip1.BackColor = darkMode.xanh;
             this.BackColor = darkMode.denlot;
             tabPage1.BackColor = darkMode.denlot;
             tabPage2.BackColor = darkMode.denlot;
             tabPage3.BackColor = darkMode.denlot;
             tabPage4.BackColor = darkMode.denlot;
             tabPage5.BackColor = darkMode.denlot;
+            label1.BackColor = darkMode.denlot;
 
             label1.ForeColor = darkMode.trang;
             tabPage1.ForeColor = darkMode.trang;
@@ -96,7 +97,7 @@ namespace QuanLyHocSinh.Forms.Admin
             themHoatDong hoatDong = new themHoatDong();
             this.Hide();
             hoatDong.ShowDialog();
-            this.Close();
+            this.Show();
 
         }
 
@@ -109,6 +110,11 @@ namespace QuanLyHocSinh.Forms.Admin
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
 

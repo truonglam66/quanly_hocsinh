@@ -24,7 +24,7 @@ namespace QuanLyHocSinh.Classes
             {
                 trang = Color.Blue;
                 dendam = Color.FromArgb(191, 191, 191);
-                denlot = Color.FromArgb(242, 242, 242);
+                denlot = Color.White;
                 xanh = Color.Blue;
 
                 click = true;
