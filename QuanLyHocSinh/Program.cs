@@ -17,7 +17,7 @@ namespace QuanLyHocSinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDKNhapHoc());
+            Application.Run(new FormLogin());
         }
     }
 }
