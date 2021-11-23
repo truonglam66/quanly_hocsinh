@@ -117,6 +117,7 @@ namespace QuanLyHocSinh.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_header.AutoSize = true;
             this.lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_header.ForeColor = System.Drawing.Color.Blue;
             this.lbl_header.Location = new System.Drawing.Point(624, 24);
             this.lbl_header.Name = "lbl_header";
             this.lbl_header.Size = new System.Drawing.Size(159, 31);
@@ -159,6 +160,7 @@ namespace QuanLyHocSinh.Forms
             this.tabPageDKNH.Controls.Add(this.txt_SDT);
             this.tabPageDKNH.Controls.Add(this.txt_tenPH);
             this.tabPageDKNH.Controls.Add(this.txt_nameHS);
+            this.tabPageDKNH.ForeColor = System.Drawing.Color.Blue;
             this.tabPageDKNH.Location = new System.Drawing.Point(4, 25);
             this.tabPageDKNH.Margin = new System.Windows.Forms.Padding(0);
             this.tabPageDKNH.Name = "tabPageDKNH";
@@ -188,10 +190,11 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_Save
             // 
-            this.btn_Save.BackColor = System.Drawing.Color.White;
+            this.btn_Save.BackColor = System.Drawing.Color.Blue;
             this.btn_Save.FlatAppearance.BorderSize = 0;
             this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.ForeColor = System.Drawing.Color.White;
             this.btn_Save.Location = new System.Drawing.Point(154, 386);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(79, 25);
@@ -306,6 +309,7 @@ namespace QuanLyHocSinh.Forms
             this.tabPageDKXL.BackColor = System.Drawing.Color.White;
             this.tabPageDKXL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabPageDKXL.Controls.Add(this.tabControl_ClassRegister);
+            this.tabPageDKXL.ForeColor = System.Drawing.Color.Blue;
             this.tabPageDKXL.Location = new System.Drawing.Point(4, 25);
             this.tabPageDKXL.Margin = new System.Windows.Forms.Padding(0);
             this.tabPageDKXL.Name = "tabPageDKXL";
@@ -342,7 +346,7 @@ namespace QuanLyHocSinh.Forms
             this.tabPageHS.Controls.Add(this.txt_searchHS);
             this.tabPageHS.Controls.Add(this.lbl_DSLop);
             this.tabPageHS.Controls.Add(this.lbl_DSHS);
-            this.tabPageHS.ForeColor = System.Drawing.Color.Black;
+            this.tabPageHS.ForeColor = System.Drawing.Color.Blue;
             this.tabPageHS.Location = new System.Drawing.Point(4, 25);
             this.tabPageHS.Name = "tabPageHS";
             this.tabPageHS.Padding = new System.Windows.Forms.Padding(3);
@@ -352,9 +356,10 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_OK
             // 
-            this.btn_OK.BackColor = System.Drawing.Color.White;
+            this.btn_OK.BackColor = System.Drawing.Color.Blue;
             this.btn_OK.FlatAppearance.BorderSize = 3;
             this.btn_OK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_OK.ForeColor = System.Drawing.Color.White;
             this.btn_OK.Location = new System.Drawing.Point(640, 313);
             this.btn_OK.Name = "btn_OK";
             this.btn_OK.Size = new System.Drawing.Size(66, 39);
@@ -387,9 +392,10 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_searchLop
             // 
-            this.btn_searchLop.BackColor = System.Drawing.Color.White;
+            this.btn_searchLop.BackColor = System.Drawing.Color.Blue;
             this.btn_searchLop.FlatAppearance.BorderSize = 0;
             this.btn_searchLop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_searchLop.ForeColor = System.Drawing.Color.White;
             this.btn_searchLop.Location = new System.Drawing.Point(1253, 6);
             this.btn_searchLop.Name = "btn_searchLop";
             this.btn_searchLop.Size = new System.Drawing.Size(83, 24);
@@ -400,9 +406,10 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_searchHS
             // 
-            this.btn_searchHS.BackColor = System.Drawing.Color.White;
+            this.btn_searchHS.BackColor = System.Drawing.Color.Blue;
             this.btn_searchHS.FlatAppearance.BorderSize = 0;
             this.btn_searchHS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_searchHS.ForeColor = System.Drawing.Color.White;
             this.btn_searchHS.Location = new System.Drawing.Point(542, 5);
             this.btn_searchHS.Name = "btn_searchHS";
             this.btn_searchHS.Size = new System.Drawing.Size(83, 24);
@@ -468,8 +475,9 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_OK1
             // 
-            this.btn_OK1.BackColor = System.Drawing.Color.White;
+            this.btn_OK1.BackColor = System.Drawing.Color.Blue;
             this.btn_OK1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_OK1.ForeColor = System.Drawing.Color.White;
             this.btn_OK1.Location = new System.Drawing.Point(637, 318);
             this.btn_OK1.Name = "btn_OK1";
             this.btn_OK1.Size = new System.Drawing.Size(66, 39);
@@ -504,9 +512,10 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_Lop1
             // 
-            this.btn_Lop1.BackColor = System.Drawing.Color.White;
+            this.btn_Lop1.BackColor = System.Drawing.Color.Blue;
             this.btn_Lop1.FlatAppearance.BorderSize = 0;
             this.btn_Lop1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Lop1.ForeColor = System.Drawing.Color.White;
             this.btn_Lop1.Location = new System.Drawing.Point(1250, 9);
             this.btn_Lop1.Name = "btn_Lop1";
             this.btn_Lop1.Size = new System.Drawing.Size(83, 24);
@@ -517,9 +526,10 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_searchGV
             // 
-            this.btn_searchGV.BackColor = System.Drawing.Color.White;
+            this.btn_searchGV.BackColor = System.Drawing.Color.Blue;
             this.btn_searchGV.FlatAppearance.BorderSize = 0;
             this.btn_searchGV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_searchGV.ForeColor = System.Drawing.Color.White;
             this.btn_searchGV.Location = new System.Drawing.Point(547, 7);
             this.btn_searchGV.Name = "btn_searchGV";
             this.btn_searchGV.Size = new System.Drawing.Size(83, 24);
@@ -569,6 +579,7 @@ namespace QuanLyHocSinh.Forms
             this.tabPageChuyenTruong.Controls.Add(this.btn_Create);
             this.tabPageChuyenTruong.Controls.Add(this.dataGridView_HS1);
             this.tabPageChuyenTruong.Controls.Add(this.lbl_title1);
+            this.tabPageChuyenTruong.ForeColor = System.Drawing.Color.Blue;
             this.tabPageChuyenTruong.Location = new System.Drawing.Point(4, 25);
             this.tabPageChuyenTruong.Name = "tabPageChuyenTruong";
             this.tabPageChuyenTruong.Size = new System.Drawing.Size(1340, 634);
@@ -577,10 +588,11 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_Create
             // 
-            this.btn_Create.BackColor = System.Drawing.Color.White;
+            this.btn_Create.BackColor = System.Drawing.Color.Blue;
             this.btn_Create.FlatAppearance.BorderSize = 0;
             this.btn_Create.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Create.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Create.ForeColor = System.Drawing.Color.White;
             this.btn_Create.Location = new System.Drawing.Point(626, 583);
             this.btn_Create.Name = "btn_Create";
             this.btn_Create.Size = new System.Drawing.Size(149, 49);
@@ -617,6 +629,7 @@ namespace QuanLyHocSinh.Forms
             this.tabPageTotNghiep.Controls.Add(this.btn_Create2);
             this.tabPageTotNghiep.Controls.Add(this.lbl_title2);
             this.tabPageTotNghiep.Controls.Add(this.dataGridView_HS2);
+            this.tabPageTotNghiep.ForeColor = System.Drawing.Color.Blue;
             this.tabPageTotNghiep.Location = new System.Drawing.Point(4, 25);
             this.tabPageTotNghiep.Name = "tabPageTotNghiep";
             this.tabPageTotNghiep.Size = new System.Drawing.Size(1340, 634);
@@ -625,10 +638,11 @@ namespace QuanLyHocSinh.Forms
             // 
             // btn_Create2
             // 
-            this.btn_Create2.BackColor = System.Drawing.Color.White;
+            this.btn_Create2.BackColor = System.Drawing.Color.Blue;
             this.btn_Create2.FlatAppearance.BorderSize = 0;
             this.btn_Create2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Create2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Create2.ForeColor = System.Drawing.Color.White;
             this.btn_Create2.Location = new System.Drawing.Point(626, 581);
             this.btn_Create2.Name = "btn_Create2";
             this.btn_Create2.Size = new System.Drawing.Size(149, 53);
@@ -671,19 +685,20 @@ namespace QuanLyHocSinh.Forms
             // 
             // settingToolStripMenuItem
             // 
-            this.settingToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.settingToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.settingToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
             this.settingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.đăngXuấtToolStripMenuItem,
             this.chếĐộBanĐêmToolStripMenuItem,
             this.thoátToolStripMenuItem});
+            this.settingToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
             this.settingToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.settingToolStripMenuItem.Text = "Cài đặt";
             // 
             // đăngXuấtToolStripMenuItem
             // 
-            this.đăngXuấtToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.đăngXuấtToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
+            this.đăngXuấtToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
@@ -691,7 +706,8 @@ namespace QuanLyHocSinh.Forms
             // 
             // chếĐộBanĐêmToolStripMenuItem
             // 
-            this.chếĐộBanĐêmToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.chếĐộBanĐêmToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
+            this.chếĐộBanĐêmToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.chếĐộBanĐêmToolStripMenuItem.Name = "chếĐộBanĐêmToolStripMenuItem";
             this.chếĐộBanĐêmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.chếĐộBanĐêmToolStripMenuItem.Text = "Chế độ ban đêm";
@@ -699,7 +715,8 @@ namespace QuanLyHocSinh.Forms
             // 
             // thoátToolStripMenuItem
             // 
-            this.thoátToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.thoátToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
+            this.thoátToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             this.thoátToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
