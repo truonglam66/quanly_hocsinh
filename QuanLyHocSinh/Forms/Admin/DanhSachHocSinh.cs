@@ -153,5 +153,15 @@ namespace QuanLyHocSinh.Forms
             this.Close();
             this.DialogResult = DialogResult.OK;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

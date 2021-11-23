@@ -67,6 +67,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maGVCNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -179,9 +182,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maGVCNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bangDiemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoatDongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cuocThiBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -191,6 +191,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -199,7 +200,6 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bangDiemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoatDongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuocThiBindingSource)).BeginInit();
@@ -231,7 +231,7 @@
             this.chếĐộBanĐêmToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
             this.chếĐộBanĐêmToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.chếĐộBanĐêmToolStripMenuItem.Name = "chếĐộBanĐêmToolStripMenuItem";
-            this.chếĐộBanĐêmToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.chếĐộBanĐêmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.chếĐộBanĐêmToolStripMenuItem.Text = "Chế độ ban đêm";
             this.chếĐộBanĐêmToolStripMenuItem.Click += new System.EventHandler(this.chếĐộBanĐêmToolStripMenuItem_Click);
             // 
@@ -246,6 +246,9 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -581,6 +584,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Thêm";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txbMaGV_DSL
             // 
@@ -640,6 +644,22 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1012, 600);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // maLopDataGridViewTextBoxColumn
+            // 
+            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
+            // 
+            // maGVCNDataGridViewTextBoxColumn
+            // 
+            this.maGVCNDataGridViewTextBoxColumn.DataPropertyName = "MaGVCN";
+            this.maGVCNDataGridViewTextBoxColumn.HeaderText = "MaGVCN";
+            this.maGVCNDataGridViewTextBoxColumn.Name = "maGVCNDataGridViewTextBoxColumn";
+            // 
+            // lopBindingSource
+            // 
+            this.lopBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.Lop);
             // 
             // tabPage3
             // 
@@ -1819,6 +1839,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
@@ -1827,22 +1850,6 @@
             this.label1.Size = new System.Drawing.Size(106, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Quản lí";
-            // 
-            // maLopDataGridViewTextBoxColumn
-            // 
-            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
-            // 
-            // maGVCNDataGridViewTextBoxColumn
-            // 
-            this.maGVCNDataGridViewTextBoxColumn.DataPropertyName = "MaGVCN";
-            this.maGVCNDataGridViewTextBoxColumn.HeaderText = "MaGVCN";
-            this.maGVCNDataGridViewTextBoxColumn.Name = "maGVCNDataGridViewTextBoxColumn";
-            // 
-            // lopBindingSource
-            // 
-            this.lopBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.Lop);
             // 
             // bangDiemBindingSource
             // 
@@ -1882,6 +1889,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
@@ -1893,7 +1901,6 @@
             this.panel9.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bangDiemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoatDongBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuocThiBindingSource)).EndInit();

@@ -55,6 +55,9 @@ namespace QuanLyHocSinh.Forms.Admin
 
             lbTKBs = new Label[,] { { lbMonHoc2_1, lbMonhoc2_2, lbMonhoc2_3, lbMonhoc2_4, lbMonhoc2_5, lbMonhoc2_6, lbMonhoc2_7 } , { lbMonhoc3_1, lbMonhoc3_2, lbMonhoc3_3, lbMonhoc3_4, lbMonhoc3_5, lbMonhoc3_6, lbMonhoc3_7 },{ lbMonhoc4_1, lbMonhoc4_2, lbMonhoc4_3, lbMonhoc4_4, lbMonhoc4_5, lbMonhoc4_6, lbMonhoc4_7 },{ lbMonhoc5_1, lbMonhoc5_2, lbMonhoc5_3, lbMonhoc5_4, lbMonhoc5_5, lbMonhoc5_6, lbMonhoc5_7 },{ lbMonhoc6_1, lbMonhoc6_2, lbMonhoc6_3, lbMonhoc6_4, lbMonhoc6_5, lbMonhoc6_6, lbMonhoc6_7 },{ lbMonhoc7_1, lbMonhoc7_2, lbMonhoc7_3, lbMonhoc7_4, lbMonhoc7_5, lbMonhoc7_6, lbMonhoc7_7 } };
 
+
+            WindowState = FormWindowState.Maximized;
+
         }
         private void setColor()
         {
@@ -66,6 +69,27 @@ namespace QuanLyHocSinh.Forms.Admin
             tabPage4.BackColor = darkMode.denlot;
             tabPage5.BackColor = darkMode.denlot;
             label1.BackColor = darkMode.denlot;
+
+
+
+
+            btnTim_BDCK.BackColor = darkMode.xanh;
+            btnTatCa_BDCK.BackColor = darkMode.xanh;
+            button1.BackColor = darkMode.xanh;
+            button2.BackColor = darkMode.xanh;
+            button3.BackColor = darkMode.xanh;
+            button4.BackColor = darkMode.xanh;
+            button5.BackColor = darkMode.xanh;
+            button6.BackColor = darkMode.xanh;
+            button7.BackColor = darkMode.xanh;
+            button8.BackColor = darkMode.xanh;
+            button9.BackColor = darkMode.xanh;
+            button10.BackColor = darkMode.xanh;
+            button11.BackColor = darkMode.xanh;
+            button12.BackColor = darkMode.xanh;
+            button13.BackColor = darkMode.xanh;
+            button1.BackColor = darkMode.xanh;
+            btnTim_TKB.BackColor = darkMode.xanh;
 
             label1.ForeColor = darkMode.trang;
             tabPage1.ForeColor = darkMode.trang;
@@ -115,6 +139,14 @@ namespace QuanLyHocSinh.Forms.Admin
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DanhSachHocSinh ds = new DanhSachHocSinh();
+            this.Hide();
+            ds.ShowDialog();
+            this.Show();
         }
 
 
