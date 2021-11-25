@@ -1,10 +1,11 @@
 ﻿using QuanLyHocSinh.Forms;
-using QuanLyHocSinh.FormsGVmoi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+
 
 namespace QuanLyHocSinh
 {
@@ -19,7 +20,8 @@ namespace QuanLyHocSinh
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormLogin());
-            Application.Run(new fGiaoVienMoi());
+            darkMode.TroCarMode();
+            Application.Run(new fGiaovien());
         }
     }
 }
