@@ -10,5 +10,9 @@ namespace QuanLyHocSinh.Classes
     {
         public string MaLop { get; set; }
         public string MaGVCN { get; set; }
+
+        public int NamHoc { get; set; }
+
+        public List<Classes.HocSinh> HocSinhs { get; set; }
     }
 }

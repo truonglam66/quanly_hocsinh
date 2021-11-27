@@ -29,51 +29,77 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.hocSinhChuaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hocSinhDaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvHocSinhChuaChon = new System.Windows.Forms.DataGridView();
+            this.dgvHocSinhDaChon = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbMaHS = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.hocSinhChuaChonBindingSource)).BeginInit();
+            this.maHSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenHSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maLopDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hocSinhDaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.maHSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenHSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hocSinhChuaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinhChuaChon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinhDaChon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocSinhDaChonBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hocSinhChuaChonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // hocSinhChuaChonBindingSource
+            // dgvHocSinhChuaChon
             // 
-            this.hocSinhChuaChonBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.HocSinh);
+            this.dgvHocSinhChuaChon.AllowUserToAddRows = false;
+            this.dgvHocSinhChuaChon.AllowUserToDeleteRows = false;
+            this.dgvHocSinhChuaChon.AllowUserToResizeColumns = false;
+            this.dgvHocSinhChuaChon.AllowUserToResizeRows = false;
+            this.dgvHocSinhChuaChon.AutoGenerateColumns = false;
+            this.dgvHocSinhChuaChon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvHocSinhChuaChon.BackgroundColor = System.Drawing.Color.White;
+            this.dgvHocSinhChuaChon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHocSinhChuaChon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maHSDataGridViewTextBoxColumn,
+            this.tenHSDataGridViewTextBoxColumn,
+            this.maLopDataGridViewTextBoxColumn});
+            this.dgvHocSinhChuaChon.DataSource = this.hocSinhChuaChonBindingSource;
+            this.dgvHocSinhChuaChon.Location = new System.Drawing.Point(-15, 75);
+            this.dgvHocSinhChuaChon.Name = "dgvHocSinhChuaChon";
+            this.dgvHocSinhChuaChon.ReadOnly = true;
+            this.dgvHocSinhChuaChon.RowHeadersVisible = false;
+            this.dgvHocSinhChuaChon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvHocSinhChuaChon.Size = new System.Drawing.Size(589, 573);
+            this.dgvHocSinhChuaChon.TabIndex = 0;
             // 
-            // hocSinhDaChonBindingSource
+            // dgvHocSinhDaChon
             // 
-            this.hocSinhDaChonBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.HocSinh);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(589, 573);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(775, 75);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(594, 573);
-            this.dataGridView2.TabIndex = 1;
+            this.dgvHocSinhDaChon.AllowUserToAddRows = false;
+            this.dgvHocSinhDaChon.AllowUserToDeleteRows = false;
+            this.dgvHocSinhDaChon.AllowUserToResizeColumns = false;
+            this.dgvHocSinhDaChon.AllowUserToResizeRows = false;
+            this.dgvHocSinhDaChon.AutoGenerateColumns = false;
+            this.dgvHocSinhDaChon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvHocSinhDaChon.BackgroundColor = System.Drawing.Color.White;
+            this.dgvHocSinhDaChon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHocSinhDaChon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maHSDataGridViewTextBoxColumn1,
+            this.tenHSDataGridViewTextBoxColumn1,
+            this.maLopDataGridViewTextBoxColumn1});
+            this.dgvHocSinhDaChon.DataSource = this.hocSinhDaChonBindingSource;
+            this.dgvHocSinhDaChon.Location = new System.Drawing.Point(775, 75);
+            this.dgvHocSinhDaChon.Name = "dgvHocSinhDaChon";
+            this.dgvHocSinhDaChon.ReadOnly = true;
+            this.dgvHocSinhDaChon.RowHeadersVisible = false;
+            this.dgvHocSinhDaChon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvHocSinhDaChon.Size = new System.Drawing.Size(594, 573);
+            this.dgvHocSinhDaChon.TabIndex = 1;
             // 
             // panel1
             // 
@@ -129,12 +155,12 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Tìm kiếm";
             // 
-            // textBox1
+            // txbMaHS
             // 
-            this.textBox1.Location = new System.Drawing.Point(598, 152);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
-            this.textBox1.TabIndex = 7;
+            this.txbMaHS.Location = new System.Drawing.Point(598, 152);
+            this.txbMaHS.Name = "txbMaHS";
+            this.txbMaHS.Size = new System.Drawing.Size(171, 20);
+            this.txbMaHS.TabIndex = 7;
             // 
             // label4
             // 
@@ -146,17 +172,18 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Tên học sinh:";
             // 
-            // button2
+            // btnThem
             // 
-            this.button2.BackColor = System.Drawing.Color.Blue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(630, 323);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 35);
-            this.button2.TabIndex = 9;
-            this.button2.Text = ">>";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnThem.BackColor = System.Drawing.Color.Blue;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(630, 323);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(109, 35);
+            this.btnThem.TabIndex = 9;
+            this.btnThem.Text = ">>";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // button3
             // 
@@ -169,6 +196,7 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "<<";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // button4
             // 
@@ -179,9 +207,59 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 35);
             this.button4.TabIndex = 11;
-            this.button4.Text = "Thoát";
+            this.button4.Text = "Xong";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.btnXong_Click);
+            // 
+            // maHSDataGridViewTextBoxColumn1
+            // 
+            this.maHSDataGridViewTextBoxColumn1.DataPropertyName = "MaHS";
+            this.maHSDataGridViewTextBoxColumn1.HeaderText = "MaHS";
+            this.maHSDataGridViewTextBoxColumn1.Name = "maHSDataGridViewTextBoxColumn1";
+            this.maHSDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // tenHSDataGridViewTextBoxColumn1
+            // 
+            this.tenHSDataGridViewTextBoxColumn1.DataPropertyName = "TenHS";
+            this.tenHSDataGridViewTextBoxColumn1.HeaderText = "TenHS";
+            this.tenHSDataGridViewTextBoxColumn1.Name = "tenHSDataGridViewTextBoxColumn1";
+            this.tenHSDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // maLopDataGridViewTextBoxColumn1
+            // 
+            this.maLopDataGridViewTextBoxColumn1.DataPropertyName = "MaLop";
+            this.maLopDataGridViewTextBoxColumn1.HeaderText = "MaLop";
+            this.maLopDataGridViewTextBoxColumn1.Name = "maLopDataGridViewTextBoxColumn1";
+            this.maLopDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // hocSinhDaChonBindingSource
+            // 
+            this.hocSinhDaChonBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.HocSinh);
+            // 
+            // maHSDataGridViewTextBoxColumn
+            // 
+            this.maHSDataGridViewTextBoxColumn.DataPropertyName = "MaHS";
+            this.maHSDataGridViewTextBoxColumn.HeaderText = "MaHS";
+            this.maHSDataGridViewTextBoxColumn.Name = "maHSDataGridViewTextBoxColumn";
+            this.maHSDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenHSDataGridViewTextBoxColumn
+            // 
+            this.tenHSDataGridViewTextBoxColumn.DataPropertyName = "TenHS";
+            this.tenHSDataGridViewTextBoxColumn.HeaderText = "TenHS";
+            this.tenHSDataGridViewTextBoxColumn.Name = "tenHSDataGridViewTextBoxColumn";
+            this.tenHSDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // maLopDataGridViewTextBoxColumn
+            // 
+            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
+            this.maLopDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hocSinhChuaChonBindingSource
+            // 
+            this.hocSinhChuaChonBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.HocSinh);
             // 
             // DanhSachHocSinh
             // 
@@ -190,25 +268,25 @@
             this.ClientSize = new System.Drawing.Size(1369, 647);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbMaHS);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvHocSinhDaChon);
+            this.Controls.Add(this.dgvHocSinhChuaChon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DanhSachHocSinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanhSachHocSinh";
             this.Load += new System.EventHandler(this.DanhSachHocSinh_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.hocSinhChuaChonBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinhChuaChon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinhDaChon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocSinhDaChonBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hocSinhChuaChonBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,17 +295,23 @@
         #endregion
         private System.Windows.Forms.BindingSource hocSinhChuaChonBindingSource;
         private System.Windows.Forms.BindingSource hocSinhDaChonBindingSource;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvHocSinhChuaChon;
+        private System.Windows.Forms.DataGridView dgvHocSinhDaChon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbMaHS;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maHSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenHSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maLopDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maHSDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenHSDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maLopDataGridViewTextBoxColumn1;
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace QuanLyHocSinh.Classes
 {
-    internal class GiaoVien
+    public class GiaoVien
     {
-        int MaGv { get; set; }
-        string TenGv { get; set; }
+        public string MaGv { get; set; }
+        public string TenGv { get; set; }
         
     }
 }

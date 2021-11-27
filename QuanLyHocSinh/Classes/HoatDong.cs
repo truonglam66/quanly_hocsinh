@@ -9,6 +9,7 @@ namespace QuanLyHocSinh.Classes
     public class HoatDong
     {
         public string MaHD { get; set; }
+        public string TenHD { get; set; }
         public string MaGvPhuTrach { get; set; }
         public string DiaDiem { get; set; }
         public DateTime ThoiGian { get; set; }

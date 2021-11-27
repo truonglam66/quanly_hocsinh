@@ -72,17 +72,9 @@ namespace QuanLyHocSinh.Forms
             }
         }
 
-        private void customButton3_Click(object sender, EventArgs e)
-        {
-            
-            HocSinhDaChon = (List<Classes.HocSinh>)hocSinhDaChonBindingSource.DataSource;
-            this.Close();
-            this.DialogResult = DialogResult.OK;
-        }
-
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if(dgvHocSinhChuaChon.SelectedRows.Count > 0)
+            if (dgvHocSinhChuaChon.SelectedRows.Count > 0)
             {
                 Classes.HocSinh hsDangChon = hocSinhChuaChonBindingSource.Current as Classes.HocSinh;
                 this.hocSinhDaChonBindingSource.Add(hsDangChon);
@@ -90,13 +82,11 @@ namespace QuanLyHocSinh.Forms
                 dgvHocSinhChuaChon.ClearSelection();
                 dgvHocSinhDaChon.ClearSelection();
             }
-            
-            
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if(dgvHocSinhDaChon.SelectedRows.Count > 0)
+            if (dgvHocSinhDaChon.SelectedRows.Count > 0)
             {
                 Classes.HocSinh hsDangChon = hocSinhChuaChonBindingSource.Current as Classes.HocSinh;
                 this.hocSinhChuaChonBindingSource.Add(hsDangChon);
@@ -104,13 +94,13 @@ namespace QuanLyHocSinh.Forms
                 dgvHocSinhChuaChon.ClearSelection();
                 dgvHocSinhDaChon.ClearSelection();
             }
-            
+
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             int i = 0;
-            foreach(DataGridViewRow row in dgvHocSinhChuaChon.Rows)
+            foreach(DataGridViewRow row in dgvHocSinhDaChon.Rows)
             {
                 if(row.Cells[0].Value.ToString() == txbMaHS.Text)
                 {
@@ -122,7 +112,7 @@ namespace QuanLyHocSinh.Forms
             }
             if(i == hocSinhChuaChonBindingSource.Count)
             {
-                dgvHocSinhChuaChon.ClearSelection();
+                dgvHocSinhDaChon.ClearSelection();
                 hocSinhChuaChonBindingSource.Position = -1;
             }
         }
@@ -130,7 +120,7 @@ namespace QuanLyHocSinh.Forms
         private void btnTim_Click(object sender, EventArgs e)
         {
             int i = 0;
-            foreach (DataGridViewRow row in dgvHocSinhChuaChon.Rows)
+            foreach (DataGridViewRow row in dgvHocSinhDaChon.Rows)
             {
                 if (row.Cells[0].Value.ToString() == txbMaHS.Text)
                 {
@@ -142,7 +132,7 @@ namespace QuanLyHocSinh.Forms
             }
             if (i == hocSinhChuaChonBindingSource.Count)
             {
-                dgvHocSinhChuaChon.ClearSelection();
+                dgvHocSinhDaChon.ClearSelection();
                 hocSinhChuaChonBindingSource.Position = -1;
             }
         }
@@ -152,16 +142,6 @@ namespace QuanLyHocSinh.Forms
             HocSinhDaChon = (List<Classes.HocSinh>)hocSinhDaChonBindingSource.DataSource;
             this.Close();
             this.DialogResult = DialogResult.OK;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

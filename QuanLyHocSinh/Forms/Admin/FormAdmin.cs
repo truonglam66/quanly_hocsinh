@@ -16,6 +16,10 @@ namespace QuanLyHocSinh.Forms.Admin
         List<Classes.BangDiem> BangDiems;
         List<Classes.HocSinh> HocSinhs;
         List<Classes.ThoiKhoaBieu> TKBs;
+        List<Classes.Lop> Lops;
+        List<Classes.GiaoVien> GVs;
+        List<Classes.HoatDong> HDs;
+        List<Classes.CuocThi> CTs;
         Label[,] lbTKBs;
         public FormAdmin()
         {
@@ -25,6 +29,24 @@ namespace QuanLyHocSinh.Forms.Admin
         
         private void FormAdmin_Load(object sender, EventArgs e)
         {
+            GVs = new List<Classes.GiaoVien>();
+            GVs.Add(new Classes.GiaoVien() { MaGv = "001", TenGv = "Giáo viên thứ nhất" });
+            GVs.Add(new Classes.GiaoVien() { MaGv = "002", TenGv = "Giáo viên thứ hai" });
+            GVs.Add(new Classes.GiaoVien() { MaGv = "003", TenGv = "Giáo viên thứ ba" });
+            foreach (Classes.GiaoVien gv in GVs) giaoVienBindingSource.Add(gv);
+
+            HDs = new List<Classes.HoatDong>();
+            allHoatDongBS.DataSource = HDs;
+
+            Lops = new List<Classes.Lop>();
+            allLopBS.DataSource = Lops;
+            foreach(Classes.Lop lop in Lops) lopBindingSource.Add(lop);
+            Lops.Add(new Classes.Lop() { MaLop = "001", MaGVCN = "001", NamHoc = 2021 });
+            Lops.Add(new Classes.Lop() { MaLop = "002", MaGVCN = "002", NamHoc = 2021 });
+
+            CTs = new List<Classes.CuocThi>();
+
+
             BangDiems = new List<Classes.BangDiem>();
             BangDiems.Add(new Classes.BangDiem() { MaHocSinh = "001", MaBangDiem = "001", NamHoc = 2021, HocKy = 1, Toan = 10, TiengViet = 10, DaoDuc = 10, TuNhienXaHoi = 10, KhoaHoc = 10, LichSuDiaLy = 10, NgheThuat = 10, AmNhac = 10, KyThuat = 10, MyThuat = 10, TheDuc = 10 });
             BangDiems.Add(new Classes.BangDiem() { MaHocSinh = "002", MaBangDiem = "002", NamHoc = 2021, HocKy = 1, Toan = 10, TiengViet = 10, DaoDuc = 10, TuNhienXaHoi = 10, KhoaHoc = 10, LichSuDiaLy = 10, NgheThuat = 10, AmNhac = 10, KyThuat = 10, MyThuat = 10, TheDuc = 10 });
@@ -59,6 +81,7 @@ namespace QuanLyHocSinh.Forms.Admin
             WindowState = FormWindowState.Maximized;
 
         }
+        #region UI
         private void setColor()
         {
             menuStrip1.BackColor = darkMode.xanh;
@@ -69,26 +92,22 @@ namespace QuanLyHocSinh.Forms.Admin
             tabPage4.BackColor = darkMode.denlot;
             tabPage5.BackColor = darkMode.denlot;
             label1.BackColor = darkMode.denlot;
-
-
-
-
             btnTim_BDCK.BackColor = darkMode.xanh;
             btnTatCa_BDCK.BackColor = darkMode.xanh;
-            button1.BackColor = darkMode.xanh;
-            button2.BackColor = darkMode.xanh;
-            button3.BackColor = darkMode.xanh;
-            button4.BackColor = darkMode.xanh;
-            button5.BackColor = darkMode.xanh;
-            button6.BackColor = darkMode.xanh;
-            button7.BackColor = darkMode.xanh;
-            button8.BackColor = darkMode.xanh;
-            button9.BackColor = darkMode.xanh;
-            button10.BackColor = darkMode.xanh;
-            button11.BackColor = darkMode.xanh;
-            button12.BackColor = darkMode.xanh;
-            button13.BackColor = darkMode.xanh;
-            button1.BackColor = darkMode.xanh;
+            btnTim_CT.BackColor = darkMode.xanh;
+            btnThem_DSL.BackColor = darkMode.xanh;
+            btnSua_DSL.BackColor = darkMode.xanh;
+            btnXoa_DSL.BackColor = darkMode.xanh;
+            btnHuy_DSL.BackColor = darkMode.xanh;
+            btnThem_CT.BackColor = darkMode.xanh;
+            btnTim_DSL.BackColor = darkMode.xanh;
+            btnXoa_CT.BackColor = darkMode.xanh;
+            btnSua_CT.BackColor = darkMode.xanh;
+            btnSua_HDNG.BackColor = darkMode.xanh;
+            btnXoa_HDNG.BackColor = darkMode.xanh;
+            btnThem_HDNG.BackColor = darkMode.xanh;
+            btnTim_HDNG.BackColor = darkMode.xanh;
+            btnTim_CT.BackColor = darkMode.xanh;
             btnTim_TKB.BackColor = darkMode.xanh;
 
             label1.ForeColor = darkMode.trang;
@@ -103,28 +122,6 @@ namespace QuanLyHocSinh.Forms.Admin
 
         }
 
-        private void button6_Click_2(object sender, EventArgs e)
-        {
-            thêmHsThi hsThi = new thêmHsThi();
-            this.Hide();
-            hsThi.ShowDialog();
-            this.Show();
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            themHoatDong hoatDong = new themHoatDong();
-            this.Hide();
-            hoatDong.ShowDialog();
-            this.Show();
-
-        }
-
         private void chếĐộBanĐêmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             darkMode.TroCarMode();
@@ -135,24 +132,328 @@ namespace QuanLyHocSinh.Forms.Admin
         {
             this.Close();
         }
+        #endregion
 
-        private void label1_Click(object sender, EventArgs e)
+        #region Bảng điểm cuối kỳ
+        private void btnTim_BDCK_Click(object sender, EventArgs e)
         {
+            while (bangDiemBindingSource.Count > 0) bangDiemBindingSource.RemoveAt(0);
+
+            foreach (Classes.HocSinh hs in HocSinhs)
+            {
+                if (hs.MaLop == cbbMaLop_BDCK.Text)
+                {
+                    foreach (Classes.BangDiem bangDiem in BangDiems)
+                    {
+                        if (bangDiem.MaHocSinh == hs.MaHS && bangDiem.HocKy == Convert.ToInt32(cbbHocKy_BDCK.Text) && bangDiem.NamHoc == Convert.ToInt32(txbNamHoc_BDCK.Text))
+                        {
+                            bangDiemBindingSource.Add(bangDiem);
+                        }
+                    }
+
+                }
+            }
+        }
+        #endregion
+
+        #region Danh Sách Lớp
+        private void btnThem_DSL_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = 0;
+                foreach(Classes.Lop lop in Lops)
+                {
+                    if (txbMaLop_DSL.Text == lop.MaLop) break;
+                    i++;
+                }
+                if(i == Lops.Count)
+                using (DanhSachHocSinh danhSachHocSinh = new DanhSachHocSinh())
+                {
+                    if (danhSachHocSinh.ShowDialog() == DialogResult.OK)
+                    {
+                        Lops.Add(new Classes.Lop() { HocSinhs = danhSachHocSinh.HocSinhDaChon, MaGVCN = cbbGiaoVien_DSL.Text, MaLop = txbMaLop_DSL.Text, NamHoc = int.Parse(txbNamHoc_DSL.Text) });
+                        lopBindingSource.Add(Lops[Lops.Count - 1]);
+                        allLopBS.ResetCurrentItem();
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void btnTimTatCa_DSL_Click(object sender, EventArgs e)
+        {
+            while (lopBindingSource.Count > 0) lopBindingSource.RemoveAt(0);
+            foreach (Classes.Lop lop in Lops) lopBindingSource.Add((Classes.Lop)lop);
+            int x = allLopBS.Count;
+        }
+
+        private void btnTim_DSL_Click(object sender, EventArgs e)
+        {
+            while (lopBindingSource.Count > 0) lopBindingSource.RemoveAt(0);
+            foreach(Classes.Lop lop in Lops)
+            {
+                if(lop.NamHoc.ToString() == txbTimNamHoc_DSL.Text) lopBindingSource.Add((Classes.Lop)lop);   
+            }
+
+
+        }
+        private void dgvDSL_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                Classes.Lop lop = lopBindingSource.Current as Classes.Lop;
+                txbMaLop_DSL.Text = lop.MaLop;
+                txbNamHoc_DSL.Text = lop.NamHoc.ToString();
+                cbbGiaoVien_DSL.Text = lop.MaGVCN;
+                if (e.ColumnIndex == dgvDSL.Columns["ColumnButtonDSL"].Index)
+                {
+                    using (DanhSachHocSinh danhSachHocSinh = new DanhSachHocSinh(lop.HocSinhs))
+                    {
+                        if(danhSachHocSinh.ShowDialog() == DialogResult.OK)
+                        {
+                            foreach (Classes.Lop lop1 in Lops)
+                            {
+                                if (lop1.MaLop == lop.MaLop)
+                                {
+                                    lop.HocSinhs = lop1.HocSinhs = danhSachHocSinh.HocSinhDaChon;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            
+            
+        }
+        private void btnSua_DSL_Click(object sender, EventArgs e)
+        {
+            Classes.Lop lop = lopBindingSource.Current as Classes.Lop;
+            if(lop != null)
+            {
+                int i = 0;
+                foreach (Classes.Lop lop2 in Lops)
+                {
+                    if(txbMaLop_DSL.Text != lop.MaLop)
+                    if (lop2.MaLop == txbMaLop_DSL.Text) break;
+                    i++;
+                }
+                if (i == Lops.Count)
+                {
+                    foreach(Classes.Lop lop1 in Lops)
+                    {
+                        if(lop1.MaLop == lop.MaLop)
+                        {
+                            try
+                            {
+                                lop1.MaLop = txbMaLop_DSL.Text;
+                                lop1.NamHoc = int.Parse(txbNamHoc_DSL.Text);
+                                lop1.MaGVCN = cbbGiaoVien_DSL.Text;
+                                lopBindingSource[dgvDSL.SelectedRows[0].Index] = new Classes.Lop() { MaLop = txbMaLop_DSL.Text, MaGVCN = cbbGiaoVien_DSL.Text, NamHoc = int.Parse(txbNamHoc_DSL.Text), HocSinhs = lop.HocSinhs };
+                            } catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
+
+                        }
+                    }
+                }
+                else MessageBox.Show("Mã lớp không được trùng");
+            }
+        }
+        private void btnXoa_DSL_Click(object sender, EventArgs e)
+        {
+            if(dgvDSL.SelectedRows.Count > 0)
+            { 
+                foreach(Classes.Lop lop in Lops)
+                {
+                    if(lop.MaLop == dgvDSL.SelectedRows[0].Cells[0].Value.ToString()){
+                        Lops.Remove(lop);
+                        lopBindingSource.RemoveAt(dgvDSL.SelectedRows[0].Index);
+                        btnHuy_DSL_Click(sender, e);
+                        return;
+                    }
+                }
+            }
+        }
+        private void btnHuy_DSL_Click(object sender, EventArgs e)
+        {
+            lopBindingSource.Position = -1;
+            dgvDSL.ClearSelection();
+            txbMaLop_DSL.Text = "";
+            cbbGiaoVien_DSL.Text = "";
+            txbNamHoc_DSL.Text = "";
+        }
+
+        #endregion
+
+        #region Hoạt động ngoài giờ
+        private void btnThem_HDNG_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = 0;
+                foreach(Classes.HoatDong hd in HDs)
+                {
+                    if (txbMaHD_HDNG.Text == hd.MaHD) break;
+                    i++;
+                }
+                if(i == HDs.Count)
+                using (DanhSachHocSinh danhSachHocSinh = new DanhSachHocSinh())
+                {
+                    if (danhSachHocSinh.ShowDialog() == DialogResult.OK)
+                    {
+                        HDs.Add(new Classes.HoatDong() {HocSinhs = danhSachHocSinh.HocSinhDaChon, MaHD = txbMaHD_HDNG.Text, TenHD = txbTenHD_HDNG.Text, DiaDiem = txbDiaDiem_HDNG.Text, ThoiGian = dtp_HDNG.Value, MaGvPhuTrach = cbbMaGv_HDNG.Text });
+                        hoatDongBindingSource.Add(HDs[HDs.Count - 1]);
+                        allHoatDongBS.ResetCurrentItem();
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void rbtnMaHD_HDNG_CheckedChanged(object sender, EventArgs e)
         {
-            DanhSachHocSinh ds = new DanhSachHocSinh();
-            this.Hide();
-            ds.ShowDialog();
-            this.Show();
+            cbbMaHD_HDNG.Enabled = !cbbMaHD_HDNG.Enabled;
+            cbbTimMaGV_HDNG.Enabled = !cbbTimMaGV_HDNG.Enabled;
+        }
+        private void btnTim_HDNG_Click(object sender, EventArgs e)
+        {
+            while (hoatDongBindingSource.Count > 0) hoatDongBindingSource.RemoveAt(0);
+            if (cbbMaHD_HDNG.Enabled)
+            {
+                foreach (Classes.HoatDong hd in HDs)
+                {
+                    if (hd.MaHD == cbbMaHD_HDNG.Text) hoatDongBindingSource.Add(hd);
+                }
+            } else
+            {
+                foreach (Classes.HoatDong hd in HDs)
+                {
+                    if (hd.MaGvPhuTrach == cbbTimMaGV_HDNG.Text) hoatDongBindingSource.Add(hd);
+                }
+            }
         }
 
+        private void btnTatCa_HDNG_Click(object sender, EventArgs e)
+        {
+            while (hoatDongBindingSource.Count > 0) hoatDongBindingSource.RemoveAt(0);
+            foreach (Classes.HoatDong hd in HDs) hoatDongBindingSource.Add(hd);
+        }
+        private void btnXoa_HDNG_Click(object sender, EventArgs e)
+        {
+            if (dgvHDNG.SelectedRows.Count > 0)
+            {
+                foreach (Classes.HoatDong hd in HDs)
+                {
+                    if (hd.MaHD == dgvHDNG.SelectedRows[0].Cells[0].Value.ToString())
+                    {
+                        HDs.Remove(hd);
+                        for (int i = 0; i < HDs.Count; i++) allHoatDongBS.ResetItem(i);
+                        hoatDongBindingSource.RemoveAt(dgvHDNG.SelectedRows[0].Index);                        
+                        btnHuy_DSL_Click(sender, e);
+                        return;
+                    }
+                }
+            }
+        }
+        private void btnSua_HDNG_Click(object sender, EventArgs e)
+        {
+            Classes.HoatDong hd = hoatDongBindingSource.Current as Classes.HoatDong;
+            if (hd != null)
+            {
+                int i = 0;
+                foreach (Classes.HoatDong hd2 in HDs)
+                {
+                    if (txbMaHD_HDNG.Text != hd.MaHD)
+                        if (hd2.MaHD == txbMaHD_HDNG.Text) break;
+                    i++;
+                }
+                if (i == HDs.Count)
+                {
+                    foreach (Classes.HoatDong hd1 in HDs)
+                    {
+                        if (hd1.MaHD == hd.MaHD)
+                        {
+                            try
+                            {
+                                hd1.MaHD = txbMaHD_HDNG.Text;
+                                hd1.DiaDiem = txbDiaDiem_HDNG.Text;
+                                hd1.MaGvPhuTrach = cbbMaGv_HDNG.Text;
+                                hd1.TenHD = txbTenHD_HDNG.Text;
+                                hd1.ThoiGian = dtp_HDNG.Value;
+                                for(int j = 0; j< HDs.Count; j++) allHoatDongBS.ResetItem(j);
+                                hoatDongBindingSource[dgvHDNG.SelectedRows[0].Index] = new Classes.HoatDong() { MaHD = txbMaHD_HDNG.Text, TenHD = txbTenHD_HDNG.Text, DiaDiem = txbDiaDiem_HDNG.Text, ThoiGian = dtp_HDNG.Value, MaGvPhuTrach = cbbMaGv_HDNG.Text, HocSinhs = hd.HocSinhs };
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
 
-        //
-        //Thời khóa biểu
-        //
+                        }
+                    }
+                }
+                else MessageBox.Show("Mã lớp không được trùng");
+            }
+        }
+        private void dgvHDNG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                Classes.HoatDong hd = hoatDongBindingSource.Current as Classes.HoatDong;
+                txbMaHD_HDNG.Text = hd.MaHD;
+                txbTenHD_HDNG.Text = hd.TenHD;
+                cbbMaGv_HDNG.Text = hd.MaGvPhuTrach;
+                txbDiaDiem_HDNG.Text = hd.DiaDiem;
+                dtp_HDNG.Value = hd.ThoiGian;
+                if (e.ColumnIndex == dgvHDNG.Columns["ColumnButtonHDNG"].Index)
+                {
+                    using (DanhSachHocSinh danhSachHocSinh = new DanhSachHocSinh(hd.HocSinhs))
+                    {
+                        if (danhSachHocSinh.ShowDialog() == DialogResult.OK)
+                        {
+                            foreach (Classes.HoatDong hd1 in HDs)
+                            {
+                                if (hd1.MaHD == hd.MaHD)
+                                {
+                                    hd.HocSinhs = hd1.HocSinhs = danhSachHocSinh.HocSinhDaChon;
+                                    return;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        #region Danh sách cuộc thi
+        private void btnTim_CT_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+
+
+
+
+
+
+
+
+
+        #endregion
+
+
 
     }
 }
