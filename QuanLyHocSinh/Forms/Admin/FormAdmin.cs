@@ -38,11 +38,15 @@ namespace QuanLyHocSinh.Forms.Admin
             HDs = new List<Classes.HoatDong>();
             allHoatDongBS.DataSource = HDs;
 
+            CTs = new List<Classes.CuocThi>();
+            allCuocThiBS.DataSource = CTs;
+
             Lops = new List<Classes.Lop>();
             allLopBS.DataSource = Lops;
             foreach(Classes.Lop lop in Lops) lopBindingSource.Add(lop);
             Lops.Add(new Classes.Lop() { MaLop = "001", MaGVCN = "001", NamHoc = 2021 });
             Lops.Add(new Classes.Lop() { MaLop = "002", MaGVCN = "002", NamHoc = 2021 });
+            for (int i = 0; i < Lops.Count; i++) allLopBS.ResetItem(i);
 
             CTs = new List<Classes.CuocThi>();
 
@@ -72,8 +76,18 @@ namespace QuanLyHocSinh.Forms.Admin
             HocSinhs.Add(new Classes.HocSinh() { MaHS = "010", MaLop = "003", TenHS = "Thằng thứ mười" });
 
             TKBs = new List<Classes.ThoiKhoaBieu>();
-            TKBs.Add(new Classes.ThoiKhoaBieu() { MaLop = "001", MaTKB = "001", NamHoc = 2021, HocKy = 1, MonHoc = new string[,] { { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" } } });
-            TKBs.Add(new Classes.ThoiKhoaBieu() { MaLop = "002", MaTKB = "001", NamHoc = 2021, HocKy = 1, MonHoc = new string[,] { { "Tiếng Việt", "Tiếng Việt", "Tiếng Việt", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" } } });
+            TKBs.Add(new Classes.ThoiKhoaBieu() { MaLop = "001", MaTKB = "001", NamHoc = 2021, HocKy = 1, MonHoc = new string[,] {  { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" },
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" } } });
+            TKBs.Add(new Classes.ThoiKhoaBieu() { MaLop = "002", MaTKB = "001", NamHoc = 2021, HocKy = 1, MonHoc = new string[,] {  { "Tiếng Việt", "Tiếng Việt", "Tiếng Việt", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" }, 
+                                                                                                                                    { "Toán", "Toán", "Toán", "Toán", "Toán", "Toán", "Toán" } } });
 
             lbTKBs = new Label[,] { { lbMonHoc2_1, lbMonhoc2_2, lbMonhoc2_3, lbMonhoc2_4, lbMonhoc2_5, lbMonhoc2_6, lbMonhoc2_7 } , { lbMonhoc3_1, lbMonhoc3_2, lbMonhoc3_3, lbMonhoc3_4, lbMonhoc3_5, lbMonhoc3_6, lbMonhoc3_7 },{ lbMonhoc4_1, lbMonhoc4_2, lbMonhoc4_3, lbMonhoc4_4, lbMonhoc4_5, lbMonhoc4_6, lbMonhoc4_7 },{ lbMonhoc5_1, lbMonhoc5_2, lbMonhoc5_3, lbMonhoc5_4, lbMonhoc5_5, lbMonhoc5_6, lbMonhoc5_7 },{ lbMonhoc6_1, lbMonhoc6_2, lbMonhoc6_3, lbMonhoc6_4, lbMonhoc6_5, lbMonhoc6_6, lbMonhoc6_7 },{ lbMonhoc7_1, lbMonhoc7_2, lbMonhoc7_3, lbMonhoc7_4, lbMonhoc7_5, lbMonhoc7_6, lbMonhoc7_7 } };
 
@@ -176,6 +190,9 @@ namespace QuanLyHocSinh.Forms.Admin
                         lopBindingSource.Add(Lops[Lops.Count - 1]);
                         allLopBS.ResetCurrentItem();
                     }
+                } else
+                {
+                    MessageBox.Show("Mã lớp không được trùng");
                 }
             }
 
@@ -359,8 +376,9 @@ namespace QuanLyHocSinh.Forms.Admin
                     {
                         HDs.Remove(hd);
                         for (int i = 0; i < HDs.Count; i++) allHoatDongBS.ResetItem(i);
-                        hoatDongBindingSource.RemoveAt(dgvHDNG.SelectedRows[0].Index);                        
-                        btnHuy_DSL_Click(sender, e);
+                        hoatDongBindingSource.RemoveAt(dgvHDNG.SelectedRows[0].Index);
+                        dgvHDNG.ClearSelection();
+                        hoatDongBindingSource.Position = -1;
                         return;
                     }
                 }
@@ -402,7 +420,7 @@ namespace QuanLyHocSinh.Forms.Admin
                         }
                     }
                 }
-                else MessageBox.Show("Mã lớp không được trùng");
+                else MessageBox.Show("Mã hoạt động không được trùng");
             }
         }
         private void dgvHDNG_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -435,25 +453,183 @@ namespace QuanLyHocSinh.Forms.Admin
                 }
             }
         }
+        #endregion
         #region Danh sách cuộc thi
         private void btnTim_CT_Click(object sender, EventArgs e)
         {
+            while (cuocThiBindingSource.Count > 0) cuocThiBindingSource.RemoveAt(0);
+            foreach(Classes.CuocThi ct in CTs)
+            {
+                try
+                {
+                    if (ct.NamHoc == int.Parse(txbTimNamHoc_CT.Text)) cuocThiBindingSource.Add(ct);
+                } catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+            }
+        }
+        private void btnTatCa_CT_Click(object sender, EventArgs e)
+        {
+            while (cuocThiBindingSource.Count > 0) cuocThiBindingSource.RemoveAt(0);
+            foreach (Classes.CuocThi ct in CTs) cuocThiBindingSource.Add(ct);
+        }
+        private void btnThem_CT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = 0;
+                foreach(Classes.CuocThi ct in CTs)
+                {
+                    if (txbMaCuocThi_CT.Text == ct.MaCuocThi) break;
+                    i++;
+                }
+                if(i == CTs.Count)
+                {
+                    using (DanhSachHocSinh danhSachHocSinh = new DanhSachHocSinh())
+                    {
+                        if (danhSachHocSinh.ShowDialog() == DialogResult.OK)
+                        {
+                            CTs.Add(new CuocThi() { MaCuocThi = txbMaCuocThi_CT.Text, MaGvPhuTrach = cbbMaGV_CT.Text, QuyMo = cbbQuyMo_CT.Text, DiaDiem = txbDiaDiem_CT.Text, MonThi = txbMonThi_CT.Text, NamHoc = int.Parse(txbNamHoc_CT.Text), ThoiGian = dtp_CT.Value, HocSinhs = danhSachHocSinh.HocSinhDaChon });
+                            cuocThiBindingSource.Add(CTs[CTs.Count - 1]);
+                        }
+                    }
+                } else
+                {
+                    MessageBox.Show("Mã cuộc thi không được trùng");
+                }        
+            }
 
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        
+        private void btnSua_CT_Click(object sender, EventArgs e)
+        {
+            Classes.CuocThi ct = cuocThiBindingSource.Current as Classes.CuocThi;
+            if (ct != null)
+            {
+                int i = 0;
+                foreach (Classes.CuocThi ct2 in CTs)
+                {
+                    if (txbMaCuocThi_CT.Text != ct.MaCuocThi)
+                        if (ct2.MaCuocThi == txbMaCuocThi_CT.Text) break;
+                    i++;
+                }
+                if (i == CTs.Count)
+                {
+                    foreach (Classes.CuocThi ct1 in CTs)
+                    {
+                        if (ct1.MaCuocThi == ct.MaCuocThi)
+                        {
+                            try
+                            {
+                                ct1.MaCuocThi = txbMaCuocThi_CT.Text;
+                                ct1.MaGvPhuTrach = cbbMaGV_CT.Text;
+                                ct1.QuyMo = cbbQuyMo_CT.Text;
+                                ct1.DiaDiem = txbDiaDiem_CT.Text;
+                                ct1.ThoiGian = dtp_CT.Value;
+                                ct1.MonThi = txbMonThi_CT.Text;
+                                ct1.NamHoc = int.Parse(txbNamHoc_CT.Text);
+                                cuocThiBindingSource[dgvCT.SelectedRows[0].Index] = ct1;
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
+
+                        }
+                    }
+                }
+                else MessageBox.Show("Mã lớp không được trùng");
+            }
+        }
+
+        private void dgvCT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                Classes.CuocThi ct = cuocThiBindingSource.Current as Classes.CuocThi;
+                txbMaCuocThi_CT.Text = ct.MaCuocThi;
+                cbbMaGV_CT.Text = ct.MaGvPhuTrach;
+                cbbQuyMo_CT.Text = ct.QuyMo;
+                txbDiaDiem_CT.Text = ct.DiaDiem;
+                dtp_CT.Value = ct.ThoiGian;
+                cbbQuyMo_CT.Text = ct.QuyMo;
+                txbMonThi_CT.Text = ct.MonThi;
+                txbNamHoc_CT.Text = ct.NamHoc.ToString();
+                if (e.ColumnIndex == dgvCT.Columns["ColumnButtonCT"].Index)
+                {
+                    using (DanhSachHocSinh danhSachHocSinh = new DanhSachHocSinh(ct.HocSinhs))
+                    {
+                        if (danhSachHocSinh.ShowDialog() == DialogResult.OK)
+                        {
+                            foreach (Classes.CuocThi ct1 in CTs)
+                            {
+                                if (ct1.MaCuocThi == ct.MaCuocThi)
+                                {
+                                    ct.HocSinhs = ct1.HocSinhs = danhSachHocSinh.HocSinhDaChon;
+                                    return;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }   
+        }
+        private void btnXoa_CT_Click(object sender, EventArgs e)
+        {
+            if (dgvCT.SelectedRows.Count > 0)
+            {
+                foreach (Classes.CuocThi ct in CTs)
+                {
+                    if (ct.MaCuocThi == dgvCT.SelectedRows[0].Cells[0].Value.ToString())
+                    {
+                        CTs.Remove(ct);
+                        for (int i = 0; i < CTs.Count; i++) allCuocThiBS.ResetItem(i);
+                        cuocThiBindingSource.RemoveAt(dgvCT.SelectedRows[0].Index);
+                        dgvCT.ClearSelection();
+                        cuocThiBindingSource.Position = -1;
+                        return;
+                    }
+                }
+            }
+        }
+
+        #endregion
+
+        #region Thời khóa biểu
+        private void btnTim_TKB_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (Classes.ThoiKhoaBieu tkb in TKBs)
+                {
+                    if (tkb.MaLop == cbbMaLop_TKB.Text && tkb.NamHoc == Convert.ToInt32(txbNamHoc_TKB.Text) && tkb.HocKy == Convert.ToInt32(cbbHocKy_TKB.Text))
+                    {
+                        string[,] hmm = tkb.MonHoc;
+                        for (int i = 0; i < 6; i++)
+                        {
+                            for (int j = 0; j < 7; j++)
+                            {
+                                lbTKBs[i, j].Text = hmm[i, j];
+                            }
+                        }
+                        break;
+                    }
+
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+            
         }
         #endregion
-
-
-
-
-
-
-
-
-
-
-        #endregion
-
-
-
     }
 }
