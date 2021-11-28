@@ -21,7 +21,6 @@ D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\Quan
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fGiaovien.resources
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fNhapdiem.resources
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fTaotkb.resources
-D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fPDF.resources
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.AssemblyReference.cache
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb
@@ -35,3 +34,6 @@ D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fTaot
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\BouncyCastle.Crypto.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\itextsharp.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\itextsharp.xml
