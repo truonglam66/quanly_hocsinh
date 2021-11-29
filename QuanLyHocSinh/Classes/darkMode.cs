@@ -13,7 +13,7 @@ namespace QuanLyHocSinh.Classes
         public static Color trang;
         public static Color denlot;
         public static Color xanh;
-        public static bool click = false;
+        public static bool click = true;
         public static void TroCarMode()
         {
             if (click)

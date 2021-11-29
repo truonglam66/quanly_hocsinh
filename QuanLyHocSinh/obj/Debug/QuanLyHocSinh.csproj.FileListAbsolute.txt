@@ -90,3 +90,16 @@ C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\quanly_hocsinh\QuanL
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
 C:\DATA\đại học\HK3\Lập trình trực quan\Đồ án\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.AssemblyReference.cache
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.Admin.FormAdmin.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.Admin.themHoatDong.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.Admin.thêmHsThi.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.DanhSachHocSinh.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb

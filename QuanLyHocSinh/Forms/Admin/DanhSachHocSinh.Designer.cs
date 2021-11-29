@@ -30,7 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvHocSinhChuaChon = new System.Windows.Forms.DataGridView();
+            this.maHSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenHSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hocSinhChuaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dgvHocSinhDaChon = new System.Windows.Forms.DataGridView();
+            this.maHSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenHSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maLopDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hocSinhDaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,18 +49,10 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.maHSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenHSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maLopDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hocSinhDaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.maHSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenHSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hocSinhChuaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinhChuaChon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hocSinhChuaChonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinhDaChon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocSinhDaChonBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hocSinhChuaChonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvHocSinhChuaChon
@@ -70,13 +70,38 @@
             this.tenHSDataGridViewTextBoxColumn,
             this.maLopDataGridViewTextBoxColumn});
             this.dgvHocSinhChuaChon.DataSource = this.hocSinhChuaChonBindingSource;
-            this.dgvHocSinhChuaChon.Location = new System.Drawing.Point(-15, 75);
+            this.dgvHocSinhChuaChon.Location = new System.Drawing.Point(0, 75);
             this.dgvHocSinhChuaChon.Name = "dgvHocSinhChuaChon";
             this.dgvHocSinhChuaChon.ReadOnly = true;
             this.dgvHocSinhChuaChon.RowHeadersVisible = false;
             this.dgvHocSinhChuaChon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHocSinhChuaChon.Size = new System.Drawing.Size(589, 573);
+            this.dgvHocSinhChuaChon.Size = new System.Drawing.Size(574, 573);
             this.dgvHocSinhChuaChon.TabIndex = 0;
+            // 
+            // maHSDataGridViewTextBoxColumn
+            // 
+            this.maHSDataGridViewTextBoxColumn.DataPropertyName = "MaHS";
+            this.maHSDataGridViewTextBoxColumn.HeaderText = "MaHS";
+            this.maHSDataGridViewTextBoxColumn.Name = "maHSDataGridViewTextBoxColumn";
+            this.maHSDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenHSDataGridViewTextBoxColumn
+            // 
+            this.tenHSDataGridViewTextBoxColumn.DataPropertyName = "TenHS";
+            this.tenHSDataGridViewTextBoxColumn.HeaderText = "TenHS";
+            this.tenHSDataGridViewTextBoxColumn.Name = "tenHSDataGridViewTextBoxColumn";
+            this.tenHSDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // maLopDataGridViewTextBoxColumn
+            // 
+            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
+            this.maLopDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hocSinhChuaChonBindingSource
+            // 
+            this.hocSinhChuaChonBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.HocSinh);
             // 
             // dgvHocSinhDaChon
             // 
@@ -100,6 +125,31 @@
             this.dgvHocSinhDaChon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHocSinhDaChon.Size = new System.Drawing.Size(594, 573);
             this.dgvHocSinhDaChon.TabIndex = 1;
+            // 
+            // maHSDataGridViewTextBoxColumn1
+            // 
+            this.maHSDataGridViewTextBoxColumn1.DataPropertyName = "MaHS";
+            this.maHSDataGridViewTextBoxColumn1.HeaderText = "MaHS";
+            this.maHSDataGridViewTextBoxColumn1.Name = "maHSDataGridViewTextBoxColumn1";
+            this.maHSDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // tenHSDataGridViewTextBoxColumn1
+            // 
+            this.tenHSDataGridViewTextBoxColumn1.DataPropertyName = "TenHS";
+            this.tenHSDataGridViewTextBoxColumn1.HeaderText = "TenHS";
+            this.tenHSDataGridViewTextBoxColumn1.Name = "tenHSDataGridViewTextBoxColumn1";
+            this.tenHSDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // maLopDataGridViewTextBoxColumn1
+            // 
+            this.maLopDataGridViewTextBoxColumn1.DataPropertyName = "MaLop";
+            this.maLopDataGridViewTextBoxColumn1.HeaderText = "MaLop";
+            this.maLopDataGridViewTextBoxColumn1.Name = "maLopDataGridViewTextBoxColumn1";
+            this.maLopDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // hocSinhDaChonBindingSource
+            // 
+            this.hocSinhDaChonBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.HocSinh);
             // 
             // panel1
             // 
@@ -211,56 +261,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.btnXong_Click);
             // 
-            // maHSDataGridViewTextBoxColumn1
-            // 
-            this.maHSDataGridViewTextBoxColumn1.DataPropertyName = "MaHS";
-            this.maHSDataGridViewTextBoxColumn1.HeaderText = "MaHS";
-            this.maHSDataGridViewTextBoxColumn1.Name = "maHSDataGridViewTextBoxColumn1";
-            this.maHSDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // tenHSDataGridViewTextBoxColumn1
-            // 
-            this.tenHSDataGridViewTextBoxColumn1.DataPropertyName = "TenHS";
-            this.tenHSDataGridViewTextBoxColumn1.HeaderText = "TenHS";
-            this.tenHSDataGridViewTextBoxColumn1.Name = "tenHSDataGridViewTextBoxColumn1";
-            this.tenHSDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // maLopDataGridViewTextBoxColumn1
-            // 
-            this.maLopDataGridViewTextBoxColumn1.DataPropertyName = "MaLop";
-            this.maLopDataGridViewTextBoxColumn1.HeaderText = "MaLop";
-            this.maLopDataGridViewTextBoxColumn1.Name = "maLopDataGridViewTextBoxColumn1";
-            this.maLopDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // hocSinhDaChonBindingSource
-            // 
-            this.hocSinhDaChonBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.HocSinh);
-            // 
-            // maHSDataGridViewTextBoxColumn
-            // 
-            this.maHSDataGridViewTextBoxColumn.DataPropertyName = "MaHS";
-            this.maHSDataGridViewTextBoxColumn.HeaderText = "MaHS";
-            this.maHSDataGridViewTextBoxColumn.Name = "maHSDataGridViewTextBoxColumn";
-            this.maHSDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tenHSDataGridViewTextBoxColumn
-            // 
-            this.tenHSDataGridViewTextBoxColumn.DataPropertyName = "TenHS";
-            this.tenHSDataGridViewTextBoxColumn.HeaderText = "TenHS";
-            this.tenHSDataGridViewTextBoxColumn.Name = "tenHSDataGridViewTextBoxColumn";
-            this.tenHSDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // maLopDataGridViewTextBoxColumn
-            // 
-            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
-            this.maLopDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // hocSinhChuaChonBindingSource
-            // 
-            this.hocSinhChuaChonBindingSource.DataSource = typeof(QuanLyHocSinh.Classes.HocSinh);
-            // 
             // DanhSachHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,9 +284,9 @@
             this.Text = "DanhSachHocSinh";
             this.Load += new System.EventHandler(this.DanhSachHocSinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinhChuaChon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hocSinhChuaChonBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinhDaChon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocSinhDaChonBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hocSinhChuaChonBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

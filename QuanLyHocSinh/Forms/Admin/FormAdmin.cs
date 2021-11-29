@@ -123,6 +123,9 @@ namespace QuanLyHocSinh.Forms.Admin
             btnTim_HDNG.BackColor = darkMode.xanh;
             btnTim_CT.BackColor = darkMode.xanh;
             btnTim_TKB.BackColor = darkMode.xanh;
+            btnTatCa_DLS.BackColor = darkMode.xanh;
+            btnTatCa_HDNG.BackColor = darkMode.xanh;
+            btnTatCa_CT.BackColor = darkMode.xanh;
 
             label1.ForeColor = darkMode.trang;
             tabPage1.ForeColor = darkMode.trang;
