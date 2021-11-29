@@ -37,3 +37,20 @@ D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.Core
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\BouncyCastle.Crypto.dll
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\itextsharp.dll
 D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\itextsharp.xml
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\BouncyCastle.Crypto.dll
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\itextsharp.dll
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\bin\Debug\itextsharp.xml
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.AssemblyReference.cache
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fAdmin.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fGiaovien.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fNhapdiem.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fTaotkb.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CopyComplete
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
+D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb

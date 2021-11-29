@@ -38,6 +38,10 @@ namespace QuanLyHocSinh.Forms
             tabPage2.BackColor = darkMode.denlot;
             tabPage3.BackColor = darkMode.denlot;
             tabPage4.BackColor = darkMode.denlot;
+            dgvDiemCK.DefaultCellStyle.BackColor = darkMode.denlot;
+            dgvCuocthi.DefaultCellStyle.BackColor = darkMode.denlot;
+            dgvDiemCK.DefaultCellStyle.BackColor = darkMode.denlot;
+            dgvHDNG.DefaultCellStyle.BackColor = darkMode.denlot;
 
             label2.ForeColor = darkMode.trang;
             tabPage1.ForeColor = darkMode.trang;

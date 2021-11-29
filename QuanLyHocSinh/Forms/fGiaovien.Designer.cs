@@ -148,11 +148,11 @@ namespace QuanLyHocSinh.Forms
             this.tabPage4.Controls.Add(this.dgvTKB);
             this.tabPage4.Controls.Add(this.label12);
             this.tabPage4.ForeColor = System.Drawing.Color.Blue;
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(1899, 794);
+            this.tabPage4.Size = new System.Drawing.Size(1899, 803);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Thời khóa biểu";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -175,7 +175,7 @@ namespace QuanLyHocSinh.Forms
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(93, 595);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(212, 33);
+            this.comboBox4.Size = new System.Drawing.Size(212, 24);
             this.comboBox4.TabIndex = 82;
             // 
             // label1
@@ -185,7 +185,7 @@ namespace QuanLyHocSinh.Forms
             this.label1.Location = new System.Drawing.Point(551, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(367, 33);
+            this.label1.Size = new System.Drawing.Size(247, 24);
             this.label1.TabIndex = 79;
             this.label1.Text = "Danh sách thời khóa biểu";
             // 
@@ -223,7 +223,7 @@ namespace QuanLyHocSinh.Forms
             this.label12.Location = new System.Drawing.Point(9, 592);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 33);
+            this.label12.Size = new System.Drawing.Size(77, 24);
             this.label12.TabIndex = 80;
             this.label12.Text = "Xuất file";
             // 
@@ -253,11 +253,11 @@ namespace QuanLyHocSinh.Forms
             this.tabPage3.Controls.Add(this.label47);
             this.tabPage3.Controls.Add(this.label48);
             this.tabPage3.ForeColor = System.Drawing.Color.Blue;
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(1899, 794);
+            this.tabPage3.Size = new System.Drawing.Size(1899, 803);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cuộc thi";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -283,7 +283,7 @@ namespace QuanLyHocSinh.Forms
             this.label11.Location = new System.Drawing.Point(772, 2);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(339, 33);
+            this.label11.Size = new System.Drawing.Size(228, 24);
             this.label11.TabIndex = 78;
             this.label11.Text = "Danh sách các cuộc thi";
             // 
@@ -294,7 +294,7 @@ namespace QuanLyHocSinh.Forms
             this.label10.Location = new System.Drawing.Point(112, 2);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 33);
+            this.label10.Size = new System.Drawing.Size(99, 24);
             this.label10.TabIndex = 77;
             this.label10.Text = "Thông tin";
             // 
@@ -306,7 +306,7 @@ namespace QuanLyHocSinh.Forms
             "File Excel"});
             this.cbCuocthi.Location = new System.Drawing.Point(94, 544);
             this.cbCuocthi.Name = "cbCuocthi";
-            this.cbCuocthi.Size = new System.Drawing.Size(212, 33);
+            this.cbCuocthi.Size = new System.Drawing.Size(212, 24);
             this.cbCuocthi.TabIndex = 76;
             // 
             // btXuatCT
@@ -330,7 +330,7 @@ namespace QuanLyHocSinh.Forms
             this.label9.Location = new System.Drawing.Point(10, 544);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 33);
+            this.label9.Size = new System.Drawing.Size(77, 24);
             this.label9.TabIndex = 74;
             this.label9.Text = "Xuất file";
             // 
@@ -359,7 +359,7 @@ namespace QuanLyHocSinh.Forms
             this.cbGVPT.Location = new System.Drawing.Point(137, 151);
             this.cbGVPT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbGVPT.Name = "cbGVPT";
-            this.cbGVPT.Size = new System.Drawing.Size(169, 33);
+            this.cbGVPT.Size = new System.Drawing.Size(169, 24);
             this.cbGVPT.TabIndex = 42;
             // 
             // cbCapthi
@@ -373,7 +373,7 @@ namespace QuanLyHocSinh.Forms
             this.cbCapthi.Location = new System.Drawing.Point(74, 311);
             this.cbCapthi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCapthi.Name = "cbCapthi";
-            this.cbCapthi.Size = new System.Drawing.Size(234, 33);
+            this.cbCapthi.Size = new System.Drawing.Size(234, 24);
             this.cbCapthi.TabIndex = 41;
             // 
             // txbNamthi
@@ -381,7 +381,7 @@ namespace QuanLyHocSinh.Forms
             this.txbNamthi.Location = new System.Drawing.Point(78, 447);
             this.txbNamthi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbNamthi.Name = "txbNamthi";
-            this.txbNamthi.Size = new System.Drawing.Size(228, 30);
+            this.txbNamthi.Size = new System.Drawing.Size(228, 22);
             this.txbNamthi.TabIndex = 40;
             // 
             // txbDiadiemthi
@@ -389,7 +389,7 @@ namespace QuanLyHocSinh.Forms
             this.txbDiadiemthi.Location = new System.Drawing.Point(80, 403);
             this.txbDiadiemthi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbDiadiemthi.Name = "txbDiadiemthi";
-            this.txbDiadiemthi.Size = new System.Drawing.Size(226, 30);
+            this.txbDiadiemthi.Size = new System.Drawing.Size(226, 22);
             this.txbDiadiemthi.TabIndex = 39;
             // 
             // txbTGthi
@@ -397,7 +397,7 @@ namespace QuanLyHocSinh.Forms
             this.txbTGthi.Location = new System.Drawing.Point(80, 357);
             this.txbTGthi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbTGthi.Name = "txbTGthi";
-            this.txbTGthi.Size = new System.Drawing.Size(228, 30);
+            this.txbTGthi.Size = new System.Drawing.Size(228, 22);
             this.txbTGthi.TabIndex = 38;
             // 
             // txbHsThi
@@ -414,7 +414,7 @@ namespace QuanLyHocSinh.Forms
             this.txbMonthi.Location = new System.Drawing.Point(64, 112);
             this.txbMonthi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbMonthi.Name = "txbMonthi";
-            this.txbMonthi.Size = new System.Drawing.Size(242, 30);
+            this.txbMonthi.Size = new System.Drawing.Size(242, 22);
             this.txbMonthi.TabIndex = 36;
             // 
             // txbMaCT
@@ -422,7 +422,7 @@ namespace QuanLyHocSinh.Forms
             this.txbMaCT.Location = new System.Drawing.Point(58, 70);
             this.txbMaCT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbMaCT.Name = "txbMaCT";
-            this.txbMaCT.Size = new System.Drawing.Size(248, 30);
+            this.txbMaCT.Size = new System.Drawing.Size(248, 22);
             this.txbMaCT.TabIndex = 35;
             // 
             // label41
@@ -430,7 +430,7 @@ namespace QuanLyHocSinh.Forms
             this.label41.AutoSize = true;
             this.label41.Location = new System.Drawing.Point(10, 453);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(90, 25);
+            this.label41.Size = new System.Drawing.Size(62, 16);
             this.label41.TabIndex = 34;
             this.label41.Text = "Năm học";
             // 
@@ -439,7 +439,7 @@ namespace QuanLyHocSinh.Forms
             this.label42.AutoSize = true;
             this.label42.Location = new System.Drawing.Point(10, 409);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(88, 25);
+            this.label42.Size = new System.Drawing.Size(61, 16);
             this.label42.TabIndex = 33;
             this.label42.Text = "Địa điểm";
             // 
@@ -448,7 +448,7 @@ namespace QuanLyHocSinh.Forms
             this.label43.AutoSize = true;
             this.label43.Location = new System.Drawing.Point(10, 363);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(93, 25);
+            this.label43.Size = new System.Drawing.Size(64, 16);
             this.label43.TabIndex = 32;
             this.label43.Text = "Thời gian";
             // 
@@ -457,7 +457,7 @@ namespace QuanLyHocSinh.Forms
             this.label44.AutoSize = true;
             this.label44.Location = new System.Drawing.Point(12, 319);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(74, 25);
+            this.label44.Size = new System.Drawing.Size(49, 16);
             this.label44.TabIndex = 31;
             this.label44.Text = "Cấp thi";
             // 
@@ -466,7 +466,7 @@ namespace QuanLyHocSinh.Forms
             this.label45.AutoSize = true;
             this.label45.Location = new System.Drawing.Point(10, 196);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(184, 25);
+            this.label45.Size = new System.Drawing.Size(124, 16);
             this.label45.TabIndex = 30;
             this.label45.Text = "Danh sách học sinh";
             // 
@@ -475,7 +475,7 @@ namespace QuanLyHocSinh.Forms
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(9, 159);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(180, 25);
+            this.label46.Size = new System.Drawing.Size(122, 16);
             this.label46.TabIndex = 29;
             this.label46.Text = "Giáo viên phụ trách";
             // 
@@ -484,7 +484,7 @@ namespace QuanLyHocSinh.Forms
             this.label47.AutoSize = true;
             this.label47.Location = new System.Drawing.Point(8, 118);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(76, 25);
+            this.label47.Size = new System.Drawing.Size(50, 16);
             this.label47.TabIndex = 28;
             this.label47.Text = "Môn thi";
             // 
@@ -493,7 +493,7 @@ namespace QuanLyHocSinh.Forms
             this.label48.AutoSize = true;
             this.label48.Location = new System.Drawing.Point(9, 76);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(65, 25);
+            this.label48.Size = new System.Drawing.Size(43, 16);
             this.label48.TabIndex = 27;
             this.label48.Text = "Mã thi";
             // 
@@ -519,11 +519,11 @@ namespace QuanLyHocSinh.Forms
             this.tabPage2.Controls.Add(this.label56);
             this.tabPage2.Controls.Add(this.label57);
             this.tabPage2.ForeColor = System.Drawing.Color.Blue;
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1899, 794);
+            this.tabPage2.Size = new System.Drawing.Size(1899, 803);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Hoạt động ngoài giờ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -549,7 +549,7 @@ namespace QuanLyHocSinh.Forms
             this.label8.Location = new System.Drawing.Point(90, 2);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(145, 33);
+            this.label8.Size = new System.Drawing.Size(99, 24);
             this.label8.TabIndex = 75;
             this.label8.Text = "Thông tin";
             // 
@@ -560,7 +560,7 @@ namespace QuanLyHocSinh.Forms
             this.label7.Location = new System.Drawing.Point(664, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(309, 33);
+            this.label7.Size = new System.Drawing.Size(210, 24);
             this.label7.TabIndex = 74;
             this.label7.Text = "Danh sách hoạt động";
             // 
@@ -572,7 +572,7 @@ namespace QuanLyHocSinh.Forms
             "File Excel"});
             this.cbHDNG.Location = new System.Drawing.Point(94, 531);
             this.cbHDNG.Name = "cbHDNG";
-            this.cbHDNG.Size = new System.Drawing.Size(212, 33);
+            this.cbHDNG.Size = new System.Drawing.Size(212, 24);
             this.cbHDNG.TabIndex = 73;
             // 
             // btnXuatHD
@@ -596,7 +596,7 @@ namespace QuanLyHocSinh.Forms
             this.label6.Location = new System.Drawing.Point(9, 529);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 33);
+            this.label6.Size = new System.Drawing.Size(77, 24);
             this.label6.TabIndex = 71;
             this.label6.Text = "Xuất file";
             // 
@@ -611,7 +611,7 @@ namespace QuanLyHocSinh.Forms
             this.dgvHDNG.Name = "dgvHDNG";
             this.dgvHDNG.RowHeadersWidth = 62;
             this.dgvHDNG.RowTemplate.Height = 28;
-            this.dgvHDNG.Size = new System.Drawing.Size(1012, 585);
+            this.dgvHDNG.Size = new System.Drawing.Size(1095, 585);
             this.dgvHDNG.TabIndex = 36;
             this.dgvHDNG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDNG_CellClick);
             this.dgvHDNG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDNG_CellContentClick);
@@ -621,7 +621,7 @@ namespace QuanLyHocSinh.Forms
             this.txbNam.Location = new System.Drawing.Point(80, 419);
             this.txbNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbNam.Name = "txbNam";
-            this.txbNam.Size = new System.Drawing.Size(226, 30);
+            this.txbNam.Size = new System.Drawing.Size(226, 22);
             this.txbNam.TabIndex = 35;
             // 
             // txbDiadiem
@@ -629,7 +629,7 @@ namespace QuanLyHocSinh.Forms
             this.txbDiadiem.Location = new System.Drawing.Point(80, 371);
             this.txbDiadiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbDiadiem.Name = "txbDiadiem";
-            this.txbDiadiem.Size = new System.Drawing.Size(226, 30);
+            this.txbDiadiem.Size = new System.Drawing.Size(226, 22);
             this.txbDiadiem.TabIndex = 34;
             // 
             // txbThoigian
@@ -637,7 +637,7 @@ namespace QuanLyHocSinh.Forms
             this.txbThoigian.Location = new System.Drawing.Point(78, 317);
             this.txbThoigian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbThoigian.Name = "txbThoigian";
-            this.txbThoigian.Size = new System.Drawing.Size(228, 30);
+            this.txbThoigian.Size = new System.Drawing.Size(228, 22);
             this.txbThoigian.TabIndex = 33;
             // 
             // txbHS
@@ -654,7 +654,7 @@ namespace QuanLyHocSinh.Forms
             this.txbGV.Location = new System.Drawing.Point(137, 114);
             this.txbGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbGV.Name = "txbGV";
-            this.txbGV.Size = new System.Drawing.Size(169, 30);
+            this.txbGV.Size = new System.Drawing.Size(169, 22);
             this.txbGV.TabIndex = 31;
             // 
             // txbMaHD
@@ -662,7 +662,7 @@ namespace QuanLyHocSinh.Forms
             this.txbMaHD.Location = new System.Drawing.Point(106, 74);
             this.txbMaHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbMaHD.Name = "txbMaHD";
-            this.txbMaHD.Size = new System.Drawing.Size(200, 30);
+            this.txbMaHD.Size = new System.Drawing.Size(200, 22);
             this.txbMaHD.TabIndex = 30;
             // 
             // label52
@@ -670,7 +670,7 @@ namespace QuanLyHocSinh.Forms
             this.label52.AutoSize = true;
             this.label52.Location = new System.Drawing.Point(12, 425);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(90, 25);
+            this.label52.Size = new System.Drawing.Size(62, 16);
             this.label52.TabIndex = 29;
             this.label52.Text = "Năm học";
             // 
@@ -679,7 +679,7 @@ namespace QuanLyHocSinh.Forms
             this.label53.AutoSize = true;
             this.label53.Location = new System.Drawing.Point(12, 374);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(88, 25);
+            this.label53.Size = new System.Drawing.Size(61, 16);
             this.label53.TabIndex = 28;
             this.label53.Text = "Địa điểm";
             // 
@@ -688,7 +688,7 @@ namespace QuanLyHocSinh.Forms
             this.label54.AutoSize = true;
             this.label54.Location = new System.Drawing.Point(10, 320);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(93, 25);
+            this.label54.Size = new System.Drawing.Size(64, 16);
             this.label54.TabIndex = 27;
             this.label54.Text = "Thời gian";
             // 
@@ -697,7 +697,7 @@ namespace QuanLyHocSinh.Forms
             this.label55.AutoSize = true;
             this.label55.Location = new System.Drawing.Point(8, 160);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(184, 25);
+            this.label55.Size = new System.Drawing.Size(124, 16);
             this.label55.TabIndex = 26;
             this.label55.Text = "Danh sách học sinh";
             // 
@@ -706,7 +706,7 @@ namespace QuanLyHocSinh.Forms
             this.label56.AutoSize = true;
             this.label56.Location = new System.Drawing.Point(9, 120);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(180, 25);
+            this.label56.Size = new System.Drawing.Size(122, 16);
             this.label56.TabIndex = 24;
             this.label56.Text = "Giáo viên phụ trách";
             // 
@@ -715,7 +715,7 @@ namespace QuanLyHocSinh.Forms
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(10, 80);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(132, 25);
+            this.label57.Size = new System.Drawing.Size(90, 16);
             this.label57.TabIndex = 23;
             this.label57.Text = "Mã hoạt động";
             // 
@@ -762,11 +762,11 @@ namespace QuanLyHocSinh.Forms
             this.tabPage1.Controls.Add(this.dgvDiemCK);
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.ForeColor = System.Drawing.Color.Blue;
-            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1899, 794);
+            this.tabPage1.Size = new System.Drawing.Size(1899, 803);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nhập điểm cuối kì";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -779,7 +779,7 @@ namespace QuanLyHocSinh.Forms
             "File Excel"});
             this.cbDiemCK.Location = new System.Drawing.Point(94, 547);
             this.cbDiemCK.Name = "cbDiemCK";
-            this.cbDiemCK.Size = new System.Drawing.Size(224, 33);
+            this.cbDiemCK.Size = new System.Drawing.Size(224, 24);
             this.cbDiemCK.TabIndex = 70;
             // 
             // btnXuatFileCK
@@ -803,7 +803,7 @@ namespace QuanLyHocSinh.Forms
             this.label5.Location = new System.Drawing.Point(9, 545);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 33);
+            this.label5.Size = new System.Drawing.Size(77, 24);
             this.label5.TabIndex = 68;
             this.label5.Text = "Xuất file";
             // 
@@ -814,7 +814,7 @@ namespace QuanLyHocSinh.Forms
             this.label4.Location = new System.Drawing.Point(836, 2);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(240, 33);
+            this.label4.Size = new System.Drawing.Size(162, 24);
             this.label4.TabIndex = 67;
             this.label4.Text = "Danh sách điểm";
             // 
@@ -826,7 +826,7 @@ namespace QuanLyHocSinh.Forms
             this.label3.Location = new System.Drawing.Point(99, 2);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 33);
+            this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Điểm";
             // 
@@ -849,7 +849,7 @@ namespace QuanLyHocSinh.Forms
             this.txbTheduc.Location = new System.Drawing.Point(147, 439);
             this.txbTheduc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbTheduc.Name = "txbTheduc";
-            this.txbTheduc.Size = new System.Drawing.Size(171, 30);
+            this.txbTheduc.Size = new System.Drawing.Size(171, 22);
             this.txbTheduc.TabIndex = 66;
             // 
             // txbKithuat
@@ -857,7 +857,7 @@ namespace QuanLyHocSinh.Forms
             this.txbKithuat.Location = new System.Drawing.Point(147, 403);
             this.txbKithuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbKithuat.Name = "txbKithuat";
-            this.txbKithuat.Size = new System.Drawing.Size(171, 30);
+            this.txbKithuat.Size = new System.Drawing.Size(171, 22);
             this.txbKithuat.TabIndex = 65;
             // 
             // txbMythuat
@@ -865,7 +865,7 @@ namespace QuanLyHocSinh.Forms
             this.txbMythuat.Location = new System.Drawing.Point(147, 368);
             this.txbMythuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbMythuat.Name = "txbMythuat";
-            this.txbMythuat.Size = new System.Drawing.Size(171, 30);
+            this.txbMythuat.Size = new System.Drawing.Size(171, 22);
             this.txbMythuat.TabIndex = 64;
             // 
             // txbAmnhac
@@ -873,7 +873,7 @@ namespace QuanLyHocSinh.Forms
             this.txbAmnhac.Location = new System.Drawing.Point(147, 342);
             this.txbAmnhac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbAmnhac.Name = "txbAmnhac";
-            this.txbAmnhac.Size = new System.Drawing.Size(171, 30);
+            this.txbAmnhac.Size = new System.Drawing.Size(171, 22);
             this.txbAmnhac.TabIndex = 63;
             // 
             // txbNghethuat
@@ -881,7 +881,7 @@ namespace QuanLyHocSinh.Forms
             this.txbNghethuat.Location = new System.Drawing.Point(147, 316);
             this.txbNghethuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbNghethuat.Name = "txbNghethuat";
-            this.txbNghethuat.Size = new System.Drawing.Size(171, 30);
+            this.txbNghethuat.Size = new System.Drawing.Size(171, 22);
             this.txbNghethuat.TabIndex = 62;
             // 
             // txbLSvaDL
@@ -889,7 +889,7 @@ namespace QuanLyHocSinh.Forms
             this.txbLSvaDL.Location = new System.Drawing.Point(147, 290);
             this.txbLSvaDL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbLSvaDL.Name = "txbLSvaDL";
-            this.txbLSvaDL.Size = new System.Drawing.Size(171, 30);
+            this.txbLSvaDL.Size = new System.Drawing.Size(171, 22);
             this.txbLSvaDL.TabIndex = 61;
             // 
             // txbKhoahoc
@@ -897,7 +897,7 @@ namespace QuanLyHocSinh.Forms
             this.txbKhoahoc.Location = new System.Drawing.Point(147, 264);
             this.txbKhoahoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbKhoahoc.Name = "txbKhoahoc";
-            this.txbKhoahoc.Size = new System.Drawing.Size(171, 30);
+            this.txbKhoahoc.Size = new System.Drawing.Size(171, 22);
             this.txbKhoahoc.TabIndex = 60;
             // 
             // txbTNvaXH
@@ -905,7 +905,7 @@ namespace QuanLyHocSinh.Forms
             this.txbTNvaXH.Location = new System.Drawing.Point(147, 240);
             this.txbTNvaXH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbTNvaXH.Name = "txbTNvaXH";
-            this.txbTNvaXH.Size = new System.Drawing.Size(171, 30);
+            this.txbTNvaXH.Size = new System.Drawing.Size(171, 22);
             this.txbTNvaXH.TabIndex = 59;
             // 
             // txbDaoduc
@@ -913,7 +913,7 @@ namespace QuanLyHocSinh.Forms
             this.txbDaoduc.Location = new System.Drawing.Point(147, 214);
             this.txbDaoduc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbDaoduc.Name = "txbDaoduc";
-            this.txbDaoduc.Size = new System.Drawing.Size(171, 30);
+            this.txbDaoduc.Size = new System.Drawing.Size(171, 22);
             this.txbDaoduc.TabIndex = 58;
             // 
             // txbTiengviet
@@ -921,7 +921,7 @@ namespace QuanLyHocSinh.Forms
             this.txbTiengviet.Location = new System.Drawing.Point(147, 188);
             this.txbTiengviet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbTiengviet.Name = "txbTiengviet";
-            this.txbTiengviet.Size = new System.Drawing.Size(171, 30);
+            this.txbTiengviet.Size = new System.Drawing.Size(171, 22);
             this.txbTiengviet.TabIndex = 57;
             // 
             // txbToan
@@ -929,7 +929,7 @@ namespace QuanLyHocSinh.Forms
             this.txbToan.Location = new System.Drawing.Point(147, 162);
             this.txbToan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbToan.Name = "txbToan";
-            this.txbToan.Size = new System.Drawing.Size(171, 30);
+            this.txbToan.Size = new System.Drawing.Size(171, 22);
             this.txbToan.TabIndex = 56;
             // 
             // txbNamhoc
@@ -937,7 +937,7 @@ namespace QuanLyHocSinh.Forms
             this.txbNamhoc.Location = new System.Drawing.Point(147, 136);
             this.txbNamhoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbNamhoc.Name = "txbNamhoc";
-            this.txbNamhoc.Size = new System.Drawing.Size(171, 30);
+            this.txbNamhoc.Size = new System.Drawing.Size(171, 22);
             this.txbNamhoc.TabIndex = 55;
             // 
             // txbHocki
@@ -945,7 +945,7 @@ namespace QuanLyHocSinh.Forms
             this.txbHocki.Location = new System.Drawing.Point(147, 112);
             this.txbHocki.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbHocki.Name = "txbHocki";
-            this.txbHocki.Size = new System.Drawing.Size(171, 30);
+            this.txbHocki.Size = new System.Drawing.Size(171, 22);
             this.txbHocki.TabIndex = 54;
             // 
             // txbMaHS
@@ -953,7 +953,7 @@ namespace QuanLyHocSinh.Forms
             this.txbMaHS.Location = new System.Drawing.Point(147, 86);
             this.txbMaHS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbMaHS.Name = "txbMaHS";
-            this.txbMaHS.Size = new System.Drawing.Size(171, 30);
+            this.txbMaHS.Size = new System.Drawing.Size(171, 22);
             this.txbMaHS.TabIndex = 53;
             // 
             // txbMaBangdiem
@@ -961,7 +961,7 @@ namespace QuanLyHocSinh.Forms
             this.txbMaBangdiem.Location = new System.Drawing.Point(147, 60);
             this.txbMaBangdiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbMaBangdiem.Name = "txbMaBangdiem";
-            this.txbMaBangdiem.Size = new System.Drawing.Size(171, 30);
+            this.txbMaBangdiem.Size = new System.Drawing.Size(171, 22);
             this.txbMaBangdiem.TabIndex = 52;
             // 
             // label18
@@ -969,7 +969,7 @@ namespace QuanLyHocSinh.Forms
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(14, 442);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(126, 25);
+            this.label18.Size = new System.Drawing.Size(85, 16);
             this.label18.TabIndex = 51;
             this.label18.Text = "Điểm thể dục";
             // 
@@ -978,7 +978,7 @@ namespace QuanLyHocSinh.Forms
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(13, 406);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(124, 25);
+            this.label19.Size = new System.Drawing.Size(85, 16);
             this.label19.TabIndex = 50;
             this.label19.Text = "Điểm kĩ thuật";
             // 
@@ -987,7 +987,7 @@ namespace QuanLyHocSinh.Forms
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(13, 374);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(136, 25);
+            this.label20.Size = new System.Drawing.Size(91, 16);
             this.label20.TabIndex = 49;
             this.label20.Text = "Điểm mỹ thuật";
             // 
@@ -996,7 +996,7 @@ namespace QuanLyHocSinh.Forms
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(13, 344);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(137, 25);
+            this.label21.Size = new System.Drawing.Size(93, 16);
             this.label21.TabIndex = 48;
             this.label21.Text = "Điểm âm nhạc";
             // 
@@ -1005,7 +1005,7 @@ namespace QuanLyHocSinh.Forms
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(13, 318);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(154, 25);
+            this.label22.Size = new System.Drawing.Size(103, 16);
             this.label22.TabIndex = 47;
             this.label22.Text = "Điểm nghệ thuật";
             // 
@@ -1014,7 +1014,7 @@ namespace QuanLyHocSinh.Forms
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(14, 293);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(172, 25);
+            this.label23.Size = new System.Drawing.Size(117, 16);
             this.label23.TabIndex = 46;
             this.label23.Text = "Điểm lịch sử & địa lý";
             // 
@@ -1023,7 +1023,7 @@ namespace QuanLyHocSinh.Forms
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(13, 266);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(142, 25);
+            this.label24.Size = new System.Drawing.Size(97, 16);
             this.label24.TabIndex = 45;
             this.label24.Text = "Điểm khoa học";
             // 
@@ -1032,7 +1032,7 @@ namespace QuanLyHocSinh.Forms
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(13, 242);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(193, 25);
+            this.label25.Size = new System.Drawing.Size(128, 16);
             this.label25.TabIndex = 44;
             this.label25.Text = "Điểm tự nhiên & xã hội";
             // 
@@ -1041,7 +1041,7 @@ namespace QuanLyHocSinh.Forms
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(13, 216);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(132, 25);
+            this.label26.Size = new System.Drawing.Size(91, 16);
             this.label26.TabIndex = 43;
             this.label26.Text = "Điểm đạo đức";
             // 
@@ -1050,7 +1050,7 @@ namespace QuanLyHocSinh.Forms
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(13, 190);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(139, 25);
+            this.label27.Size = new System.Drawing.Size(95, 16);
             this.label27.TabIndex = 42;
             this.label27.Text = "Điểm tiếng việt";
             // 
@@ -1059,7 +1059,7 @@ namespace QuanLyHocSinh.Forms
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(13, 165);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 25);
+            this.label28.Size = new System.Drawing.Size(68, 16);
             this.label28.TabIndex = 41;
             this.label28.Text = "Điểm toán";
             // 
@@ -1068,7 +1068,7 @@ namespace QuanLyHocSinh.Forms
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(13, 138);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(90, 25);
+            this.label29.Size = new System.Drawing.Size(62, 16);
             this.label29.TabIndex = 40;
             this.label29.Text = "Năm học";
             // 
@@ -1077,7 +1077,7 @@ namespace QuanLyHocSinh.Forms
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(13, 114);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(66, 25);
+            this.label30.Size = new System.Drawing.Size(46, 16);
             this.label30.TabIndex = 38;
             this.label30.Text = "Học kì";
             // 
@@ -1086,7 +1086,7 @@ namespace QuanLyHocSinh.Forms
             this.label31.AutoSize = true;
             this.label31.Location = new System.Drawing.Point(13, 88);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(118, 25);
+            this.label31.Size = new System.Drawing.Size(79, 16);
             this.label31.TabIndex = 37;
             this.label31.Text = "Mã học sinh";
             // 
@@ -1095,7 +1095,7 @@ namespace QuanLyHocSinh.Forms
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(13, 62);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(136, 25);
+            this.label32.Size = new System.Drawing.Size(94, 16);
             this.label32.TabIndex = 36;
             this.label32.Text = "Mã bảng điểm";
             // 
@@ -1118,7 +1118,7 @@ namespace QuanLyHocSinh.Forms
             this.cbFileCK.Location = new System.Drawing.Point(112, 740);
             this.cbFileCK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbFileCK.Name = "cbFileCK";
-            this.cbFileCK.Size = new System.Drawing.Size(108, 33);
+            this.cbFileCK.Size = new System.Drawing.Size(108, 24);
             this.cbFileCK.TabIndex = 34;
             // 
             // dgvDiemCK
@@ -1140,7 +1140,7 @@ namespace QuanLyHocSinh.Forms
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(51, 742);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(78, 25);
+            this.label17.Size = new System.Drawing.Size(54, 16);
             this.label17.TabIndex = 33;
             this.label17.Text = "Loại file";
             // 
@@ -1161,14 +1161,13 @@ namespace QuanLyHocSinh.Forms
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Blue;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.càiĐặtToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1411, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1411, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -1180,7 +1179,7 @@ namespace QuanLyHocSinh.Forms
             this.thoátToolStripMenuItem});
             this.càiĐặtToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
-            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
+            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.càiĐặtToolStripMenuItem.Text = "Cài đặt";
             // 
             // chếĐộBanĐêmToolStripMenuItem
@@ -1188,7 +1187,7 @@ namespace QuanLyHocSinh.Forms
             this.chếĐộBanĐêmToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
             this.chếĐộBanĐêmToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.chếĐộBanĐêmToolStripMenuItem.Name = "chếĐộBanĐêmToolStripMenuItem";
-            this.chếĐộBanĐêmToolStripMenuItem.Size = new System.Drawing.Size(247, 34);
+            this.chếĐộBanĐêmToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.chếĐộBanĐêmToolStripMenuItem.Text = "Chế độ ban đêm";
             this.chếĐộBanĐêmToolStripMenuItem.Click += new System.EventHandler(this.chếĐộBanĐêmToolStripMenuItem_Click);
             // 
@@ -1197,7 +1196,7 @@ namespace QuanLyHocSinh.Forms
             this.thoátToolStripMenuItem.BackColor = System.Drawing.Color.Blue;
             this.thoátToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(247, 34);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -1209,13 +1208,13 @@ namespace QuanLyHocSinh.Forms
             this.label2.Location = new System.Drawing.Point(624, 38);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 40);
+            this.label2.Size = new System.Drawing.Size(127, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Giáo Viên";
             // 
             // fGiaovien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1411, 729);
