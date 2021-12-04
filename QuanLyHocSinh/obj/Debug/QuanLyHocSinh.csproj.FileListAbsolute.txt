@@ -54,3 +54,38 @@ D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.Core
 D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CopyComplete
 D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
 D:\Project\QLHS\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe.config
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\CommonServiceLocator.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Collections.Immutable.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Numerics.Vectors.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.ValueTuple.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.Core.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.Diagnostics.Eventing.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.Foundation.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.FluentTheme.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.FluentTheme.v1.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.FluentTheme.v2.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.Toolkit.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.Xaml.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Memory.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Buffers.dll
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Collections.Immutable.xml
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Numerics.Vectors.xml
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.ValueTuple.xml
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.Core.pdb
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.Core.xml
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.Diagnostics.Eventing.pdb
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.FluentTheme.pdb
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.FluentTheme.v1.pdb
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.FluentTheme.v2.pdb
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\Uno.UI.Toolkit.pdb

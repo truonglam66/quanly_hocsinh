@@ -12,7 +12,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Windows.Storage.Streams;
 using Excel = Microsoft.Office.Interop.Excel;
+using Font = System.Drawing.Font;
+using Word = Microsoft.Office.Interop.Word;
 
 
 namespace QuanLyHocSinh.Forms
@@ -104,72 +107,174 @@ namespace QuanLyHocSinh.Forms
         {
             if (cbHDNG.SelectedIndex == 0)
             {
-                if (dgvHDNG.Rows.Count > 0)
+                //if (dgvHDNG.Rows.Count > 0)
+                //{
+                //    SaveFileDialog sfd = new SaveFileDialog();
+                //    sfd.Filter = "PDF (*.pdf)|*.pdf";
+                //    sfd.FileName = "HDNGReportPDF";
+                //    bool fileError = false;
+                //    if (sfd.ShowDialog() == DialogResult.OK)
+                //    {
+                //        if (File.Exists(sfd.FileName))
+                //        {
+                //            try
+                //            {
+                //                File.Delete(sfd.FileName);
+                //            }
+                //            catch (IOException ex)
+                //            {
+                //                fileError = true;
+                //                MessageBox.Show("Không thể ghi dữ liệu vào đĩa." + ex.Message);
+                //            }
+                //        }
+                //        if (!fileError)
+                //        {
+                //            try
+                //            {
+                //                PdfPTable pdfTable = new PdfPTable(dgvHDNG.Columns.Count);
+                //                pdfTable.DefaultCell.Padding = 3;
+                //                pdfTable.WidthPercentage = 100;
+                //                pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
+
+                //                foreach (DataGridViewColumn column in dgvHDNG.Columns)
+                //                {
+                //                    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                //                    pdfTable.AddCell(cell);
+                //                }
+
+                //                foreach (DataGridViewRow row in dgvHDNG.Rows)
+                //                {
+                //                    foreach (DataGridViewCell cell in row.Cells)
+                //                    {
+                //                        pdfTable.AddCell(cell.Value.ToString());
+                //                    }
+                //                }
+
+                //                using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))
+                //                {
+                //                    Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
+                //                    PdfWriter.GetInstance(pdfDoc, stream);
+                //                    pdfDoc.Open();
+                //                    pdfDoc.Add(pdfTable);
+                //                    pdfDoc.Close();
+                //                    stream.Close();
+                //                }
+
+                //                MessageBox.Show("Dữ liệu được xuất thành công !!!", "Thông báo");
+                //            }
+                //            catch (Exception ex)
+                //            {
+                //                MessageBox.Show("Error :" + ex.Message);
+                //            }
+                //        }
+                //    }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Không có bản ghi nào để xuất !!!", "Thông báo");
+                //}
+
+
+                SaveFileDialog sfd = new SaveFileDialog();
+
+                sfd.Filter = "Word Documents (*.docx)|*.docx";
+
+                sfd.FileName = "export.docx";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    SaveFileDialog sfd = new SaveFileDialog();
-                    sfd.Filter = "PDF (*.pdf)|*.pdf";
-                    sfd.FileName = "HDNGReportPDF";
-                    bool fileError = false;
-                    if (sfd.ShowDialog() == DialogResult.OK)
+
+                    // Export_Data_To_Word(dataGridView1, sfd.FileName);
+                    if (dgvHDNG.Rows.Count != 0)
                     {
-                        if (File.Exists(sfd.FileName))
+                        int RowCount = dgvHDNG.Rows.Count;
+                        int ColumnCount = dgvHDNG.Columns.Count;
+                        Object[,] DataArray = new object[RowCount + 1, ColumnCount + 1];
+
+                        //add rows
+                        int r = 0;
+                        for (int c = 0; c <= ColumnCount - 1; c++)
                         {
-                            try
+                            for (r = 0; r <= RowCount - 1; r++)
                             {
-                                File.Delete(sfd.FileName);
-                            }
-                            catch (IOException ex)
+                                DataArray[r, c] = dgvHDNG.Rows[r].Cells[c].Value;
+                            } //end row loop
+                        } //end column loop
+
+                        Word.Document oDoc = new Word.Document();
+                        oDoc.Application.Visible = true;
+
+                        //page orintation
+                        oDoc.PageSetup.Orientation = Word.WdOrientation.wdOrientLandscape;
+
+
+                        dynamic oRange = oDoc.Content.Application.Selection.Range;
+                        string oTemp = "";
+                        for (r = 0; r <= RowCount - 1; r++)
+                        {
+                            for (int c = 0; c <= ColumnCount - 1; c++)
                             {
-                                fileError = true;
-                                MessageBox.Show("Không thể ghi dữ liệu vào đĩa." + ex.Message);
+                                oTemp = oTemp + DataArray[r, c] + "\t";
+
                             }
                         }
-                        if (!fileError)
+
+                        //table format
+                        oRange.Text = oTemp;
+
+                        object Separator = Word.WdTableFieldSeparator.wdSeparateByTabs;
+                        object ApplyBorders = true;
+                        object AutoFit = true;
+                        object AutoFitBehavior = Word.WdAutoFitBehavior.wdAutoFitContent;
+
+                        oRange.ConvertToTable(ref Separator, ref RowCount, ref ColumnCount,
+                                              Type.Missing, Type.Missing, ref ApplyBorders,
+                                              Type.Missing, Type.Missing, Type.Missing,
+                                              Type.Missing, Type.Missing, Type.Missing,
+                                              Type.Missing, ref AutoFit, ref AutoFitBehavior, Type.Missing);
+
+                        oRange.Select();
+
+                        oDoc.Application.Selection.Tables[1].Select();
+                        oDoc.Application.Selection.Tables[1].Rows.AllowBreakAcrossPages = 0;
+                        oDoc.Application.Selection.Tables[1].Rows.Alignment = 0;
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+                        oDoc.Application.Selection.InsertRowsAbove(1);
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+
+                        //header row style
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Bold = 1;
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Name = "Tahoma";
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Size = 14;
+
+                        //add header row manually
+                        for (int c = 0; c <= ColumnCount - 1; c++)
                         {
-                            try
-                            {
-                                PdfPTable pdfTable = new PdfPTable(dgvHDNG.Columns.Count);
-                                pdfTable.DefaultCell.Padding = 3;
-                                pdfTable.WidthPercentage = 100;
-                                pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
-
-                                foreach (DataGridViewColumn column in dgvHDNG.Columns)
-                                {
-                                    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
-                                    pdfTable.AddCell(cell);
-                                }
-
-                                foreach (DataGridViewRow row in dgvHDNG.Rows)
-                                {
-                                    foreach (DataGridViewCell cell in row.Cells)
-                                    {
-                                        pdfTable.AddCell(cell.Value.ToString());
-                                    }
-                                }
-
-                                using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))
-                                {
-                                    Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
-                                    PdfWriter.GetInstance(pdfDoc, stream);
-                                    pdfDoc.Open();
-                                    pdfDoc.Add(pdfTable);
-                                    pdfDoc.Close();
-                                    stream.Close();
-                                }
-
-                                MessageBox.Show("Dữ liệu được xuất thành công !!!", "Thông báo");
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show("Error :" + ex.Message);
-                            }
+                            oDoc.Application.Selection.Tables[1].Cell(1, c + 1).Range.Text = dgvHDNG.Columns[c].HeaderText;
                         }
+
+                        //table style 
+                        oDoc.Application.Selection.Tables[1].set_Style("Grid Table 4 - Accent 5");
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+                        oDoc.Application.Selection.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
+                        //header text
+                        foreach (Word.Section section in oDoc.Application.ActiveDocument.Sections)
+                        {
+                            Word.Range headerRange = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
+                            headerRange.Fields.Add(headerRange, Word.WdFieldType.wdFieldPage);
+                            headerRange.Text = "DANH SÁCH HOẠT ĐỘNG NGOÀI GIỜ";
+                            headerRange.Font.Size = 16;
+                            headerRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+                        }
+
+                        //save the file
+                        oDoc.SaveAs2(sfd.FileName);
                     }
+
+
                 }
-                else
-                {
-                    MessageBox.Show("Không có bản ghi nào để xuất !!!", "Thông báo");
-                }
+
             }
             else
             {
@@ -408,72 +513,173 @@ namespace QuanLyHocSinh.Forms
         {
             if (cbDiemCK.SelectedIndex == 0)
             {
-                if (dgvDiemCK.Rows.Count > 0)
+                //if (dgvDiemCK.Rows.Count > 0)
+                //{
+                //    SaveFileDialog sfd = new SaveFileDialog();
+                //    sfd.Filter = "PDF (*.pdf)|*.pdf";
+                //    sfd.FileName = "DiemCKReportPDF";
+                //    bool fileError = false;
+                //    if (sfd.ShowDialog() == DialogResult.OK)
+                //    {
+                //        if (File.Exists(sfd.FileName))
+                //        {
+                //            try
+                //            {
+                //                File.Delete(sfd.FileName);
+                //            }
+                //            catch (IOException ex)
+                //            {
+                //                fileError = true;
+                //                MessageBox.Show("Không thể ghi dữ liệu vào đĩa." + ex.Message);
+                //            }
+                //        }
+                //        if (!fileError)
+                //        {
+                //            try
+                //            {
+                //                PdfPTable pdfTable = new PdfPTable(dgvDiemCK.Columns.Count);
+                //                pdfTable.DefaultCell.Padding = 3;
+                //                pdfTable.WidthPercentage = 100;
+                //                pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
+
+                //                foreach (DataGridViewColumn column in dgvDiemCK.Columns)
+                //                {
+                //                    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                //                    pdfTable.AddCell(cell);
+                //                }
+
+                //                foreach (DataGridViewRow row in dgvDiemCK.Rows)
+                //                {
+                //                    foreach (DataGridViewCell cell in row.Cells)
+                //                    {
+                //                        pdfTable.AddCell(cell.Value.ToString());
+                //                    }
+                //                }
+
+                //                using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))
+                //                {
+                //                    Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
+                //                    PdfWriter.GetInstance(pdfDoc, stream);
+                //                    pdfDoc.Open();
+                //                    pdfDoc.Add(pdfTable);
+                //                    pdfDoc.Close();
+                //                    stream.Close();
+                //                }
+
+                //                MessageBox.Show("Dữ liệu được xuất thành công !!!", "Thông báo");
+                //            }
+                //            catch (Exception ex)
+                //            {
+                //                MessageBox.Show("Error :" + ex.Message);
+                //            }
+                //        }
+                //    }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Không có bản ghi nào để xuất !!!", "Thông báo");
+                //}
+
+                SaveFileDialog sfd = new SaveFileDialog();
+
+                sfd.Filter = "Word Documents (*.docx)|*.docx";
+
+                sfd.FileName = "export.docx";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    SaveFileDialog sfd = new SaveFileDialog();
-                    sfd.Filter = "PDF (*.pdf)|*.pdf";
-                    sfd.FileName = "DiemCKReportPDF";
-                    bool fileError = false;
-                    if (sfd.ShowDialog() == DialogResult.OK)
+
+                    // Export_Data_To_Word(dataGridView1, sfd.FileName);
+                    if (dgvDiemCK.Rows.Count != 0)
                     {
-                        if (File.Exists(sfd.FileName))
+                        int RowCount = dgvDiemCK.Rows.Count;
+                        int ColumnCount = dgvDiemCK.Columns.Count;
+                        Object[,] DataArray = new object[RowCount + 1, ColumnCount + 1];
+
+                        //add rows
+                        int r = 0;
+                        for (int c = 0; c <= ColumnCount - 1; c++)
                         {
-                            try
+                            for (r = 0; r <= RowCount - 1; r++)
                             {
-                                File.Delete(sfd.FileName);
-                            }
-                            catch (IOException ex)
+                                DataArray[r, c] = dgvDiemCK.Rows[r].Cells[c].Value;
+                            } //end row loop
+                        } //end column loop
+
+                        Word.Document oDoc = new Word.Document();
+                        oDoc.Application.Visible = true;
+
+                        //page orintation
+                        oDoc.PageSetup.Orientation = Word.WdOrientation.wdOrientLandscape;
+
+
+                        dynamic oRange = oDoc.Content.Application.Selection.Range;
+                        string oTemp = "";
+                        for (r = 0; r <= RowCount - 1; r++)
+                        {
+                            for (int c = 0; c <= ColumnCount - 1; c++)
                             {
-                                fileError = true;
-                                MessageBox.Show("Không thể ghi dữ liệu vào đĩa." + ex.Message);
+                                oTemp = oTemp + DataArray[r, c] + "\t";
+
                             }
                         }
-                        if (!fileError)
+
+                        //table format
+                        oRange.Text = oTemp;
+
+                        object Separator = Word.WdTableFieldSeparator.wdSeparateByTabs;
+                        object ApplyBorders = true;
+                        object AutoFit = true;
+                        object AutoFitBehavior = Word.WdAutoFitBehavior.wdAutoFitContent;
+
+                        oRange.ConvertToTable(ref Separator, ref RowCount, ref ColumnCount,
+                                              Type.Missing, Type.Missing, ref ApplyBorders,
+                                              Type.Missing, Type.Missing, Type.Missing,
+                                              Type.Missing, Type.Missing, Type.Missing,
+                                              Type.Missing, ref AutoFit, ref AutoFitBehavior, Type.Missing);
+
+                        oRange.Select();
+
+                        oDoc.Application.Selection.Tables[1].Select();
+                        oDoc.Application.Selection.Tables[1].Rows.AllowBreakAcrossPages = 0;
+                        oDoc.Application.Selection.Tables[1].Rows.Alignment = 0;
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+                        oDoc.Application.Selection.InsertRowsAbove(1);
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+
+                        //header row style
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Bold = 1;
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Name = "Tahoma";
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Size = 14;
+
+                        //add header row manually
+                        for (int c = 0; c <= ColumnCount - 1; c++)
                         {
-                            try
-                            {
-                                PdfPTable pdfTable = new PdfPTable(dgvDiemCK.Columns.Count);
-                                pdfTable.DefaultCell.Padding = 3;
-                                pdfTable.WidthPercentage = 100;
-                                pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
-
-                                foreach (DataGridViewColumn column in dgvDiemCK.Columns)
-                                {
-                                    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
-                                    pdfTable.AddCell(cell);
-                                }
-
-                                foreach (DataGridViewRow row in dgvDiemCK.Rows)
-                                {
-                                    foreach (DataGridViewCell cell in row.Cells)
-                                    {
-                                        pdfTable.AddCell(cell.Value.ToString());
-                                    }
-                                }
-
-                                using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))
-                                {
-                                    Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
-                                    PdfWriter.GetInstance(pdfDoc, stream);
-                                    pdfDoc.Open();
-                                    pdfDoc.Add(pdfTable);
-                                    pdfDoc.Close();
-                                    stream.Close();
-                                }
-
-                                MessageBox.Show("Dữ liệu được xuất thành công !!!", "Thông báo");
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show("Error :" + ex.Message);
-                            }
+                            oDoc.Application.Selection.Tables[1].Cell(1, c + 1).Range.Text = dgvDiemCK.Columns[c].HeaderText;
                         }
+
+                        //table style 
+                        oDoc.Application.Selection.Tables[1].set_Style("Grid Table 4 - Accent 5");
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+                        oDoc.Application.Selection.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
+                        //header text
+                        foreach (Word.Section section in oDoc.Application.ActiveDocument.Sections)
+                        {
+                            Word.Range headerRange = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
+                            headerRange.Fields.Add(headerRange, Word.WdFieldType.wdFieldPage);
+                            headerRange.Text = "BẢNG ĐIỂM HỌC SINH";
+                            headerRange.Font.Size = 16;
+                            headerRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+                        }
+
+                        //save the file
+                        oDoc.SaveAs2(sfd.FileName);
                     }
+
+
                 }
-                else
-                {
-                    MessageBox.Show("Không có bản ghi nào để xuất !!!", "Thông báo");
-                }
+
             }
             else
             {
@@ -623,72 +829,199 @@ namespace QuanLyHocSinh.Forms
         {
             if (cbCuocthi.SelectedIndex == 0)
             {
-                if (dgvCuocthi.Rows.Count > 0)
+                //if (dgvCuocthi.Rows.Count > 0)
+                //{
+                //    SaveFileDialog sfd = new SaveFileDialog();
+                //    sfd.Filter = "PDF (*.pdf)|*.pdf";
+                //    sfd.FileName = "CuocThiReportPDF";
+                //    bool fileError = false;
+                //    if (sfd.ShowDialog() == DialogResult.OK)
+                //    {
+                //        if (File.Exists(sfd.FileName))
+                //        {
+                //            try
+                //            {
+                //                File.Delete(sfd.FileName);
+                //            }
+                //            catch (IOException ex)
+                //            {
+                //                fileError = true;
+                //                MessageBox.Show("Không thể ghi dữ liệu vào đĩa." + ex.Message);
+                //            }
+                //        }
+                //        if (!fileError)
+                //        {
+                //            try
+                //            {
+                //                PdfPTable pdfTable = new PdfPTable(dgvCuocthi.Columns.Count);
+                //                pdfTable.DefaultCell.Padding = 3;
+                //                pdfTable.WidthPercentage = 100;
+                //                pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
+
+
+                //                foreach (DataGridViewColumn column in dgvCuocthi.Columns)
+                //                {
+                //                    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                //                    pdfTable.AddCell(cell);
+                //                }
+
+                //                foreach (DataGridViewRow row in dgvCuocthi.Rows)
+                //                {
+                //                    foreach (DataGridViewCell cell in row.Cells)
+                //                    {
+                //                        pdfTable.AddCell(cell.Value.ToString());
+                //                    }
+                //                }
+
+                //                using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))
+                //                {
+                //                    /*Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
+                //                    PdfWriter.GetInstance(pdfDoc, stream);
+                //                    pdfDoc.Open();
+                //                    pdfDoc.Add(pdfTable);
+                //                    pdfDoc.Close();
+                //                    stream.Close();*/
+
+                //                    //Đây là phần cần xem lại
+
+                //                    Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
+                //                    PdfWriter.GetInstance(pdfDoc, stream);
+                //                    pdfDoc.Open();
+                //                    BaseFont bf = BaseFont.CreateFont("C:\\Windows\\Fonts\\VNI-Times", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+                //                    Font f = new Font(bf.ToString(), 12);
+                //                    //var f = font;
+                //                    Paragraph p = new Paragraph(f.ToString());
+                //                    pdfDoc.Add(pdfTable);
+                //                    pdfDoc.Close();
+                //                    stream.Close();
+
+                //                    /*Document document = new Document();
+                //                    PdfWriter.getInstance(document, new FileOutputStream(dest));
+                //                    document.IsOpen();
+                //                    BaseFont bf = BaseFont.createFont(FONT, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+                //                    Font f = new Font(bf, 12);
+                //                    Paragraph p = new Paragraph(TEXT, f);
+                //                    document.add(p);
+                //                    document.close();*/
+
+                //                }
+
+                //                MessageBox.Show("Dữ liệu được xuất thành công !!!", "Thông báo");
+                //            }
+                //            catch (Exception ex)
+                //            {
+                //                MessageBox.Show("Error :" + ex.Message);
+                //            }
+                //        }
+                //    }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Không có bản ghi nào để xuất !!!", "Thông báo");
+                //}
+
+
+                SaveFileDialog sfd = new SaveFileDialog();
+
+                sfd.Filter = "Word Documents (*.docx)|*.docx";
+
+                sfd.FileName = "export.docx";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    SaveFileDialog sfd = new SaveFileDialog();
-                    sfd.Filter = "PDF (*.pdf)|*.pdf";
-                    sfd.FileName = "CuocThiReportPDF";
-                    bool fileError = false;
-                    if (sfd.ShowDialog() == DialogResult.OK)
+
+                    // Export_Data_To_Word(dataGridView1, sfd.FileName);
+                    if (dgvCuocthi.Rows.Count != 0)
                     {
-                        if (File.Exists(sfd.FileName))
+                        int RowCount = dgvCuocthi.Rows.Count;
+                        int ColumnCount = dgvCuocthi.Columns.Count;
+                        Object[,] DataArray = new object[RowCount + 1, ColumnCount + 1];
+
+                        //add rows
+                        int r = 0;
+                        for (int c = 0; c <= ColumnCount - 1; c++)
                         {
-                            try
+                            for (r = 0; r <= RowCount - 1; r++)
                             {
-                                File.Delete(sfd.FileName);
-                            }
-                            catch (IOException ex)
+                                DataArray[r, c] = dgvCuocthi.Rows[r].Cells[c].Value;
+                            } //end row loop
+                        } //end column loop
+
+                        Word.Document oDoc = new Word.Document();
+                        oDoc.Application.Visible = true;
+
+                        //page orintation
+                        oDoc.PageSetup.Orientation = Word.WdOrientation.wdOrientLandscape;
+
+
+                        dynamic oRange = oDoc.Content.Application.Selection.Range;
+                        string oTemp = "";
+                        for (r = 0; r <= RowCount - 1; r++)
+                        {
+                            for (int c = 0; c <= ColumnCount - 1; c++)
                             {
-                                fileError = true;
-                                MessageBox.Show("Không thể ghi dữ liệu vào đĩa." + ex.Message);
+                                oTemp = oTemp + DataArray[r, c] + "\t";
+
                             }
                         }
-                        if (!fileError)
+
+                        //table format
+                        oRange.Text = oTemp;
+
+                        object Separator = Word.WdTableFieldSeparator.wdSeparateByTabs;
+                        object ApplyBorders = true;
+                        object AutoFit = true;
+                        object AutoFitBehavior = Word.WdAutoFitBehavior.wdAutoFitContent;
+
+                        oRange.ConvertToTable(ref Separator, ref RowCount, ref ColumnCount,
+                                              Type.Missing, Type.Missing, ref ApplyBorders,
+                                              Type.Missing, Type.Missing, Type.Missing,
+                                              Type.Missing, Type.Missing, Type.Missing,
+                                              Type.Missing, ref AutoFit, ref AutoFitBehavior, Type.Missing);
+
+                        oRange.Select();
+
+                        oDoc.Application.Selection.Tables[1].Select();
+                        oDoc.Application.Selection.Tables[1].Rows.AllowBreakAcrossPages = 0;
+                        oDoc.Application.Selection.Tables[1].Rows.Alignment = 0;
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+                        oDoc.Application.Selection.InsertRowsAbove(1);
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+
+                        //header row style
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Bold = 1;
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Name = "Tahoma";
+                        oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Size = 14;
+
+                        //add header row manually
+                        for (int c = 0; c <= ColumnCount - 1; c++)
                         {
-                            try
-                            {
-                                PdfPTable pdfTable = new PdfPTable(dgvCuocthi.Columns.Count);
-                                pdfTable.DefaultCell.Padding = 3;
-                                pdfTable.WidthPercentage = 100;
-                                pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
-
-                                foreach (DataGridViewColumn column in dgvCuocthi.Columns)
-                                {
-                                    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
-                                    pdfTable.AddCell(cell);
-                                }
-
-                                foreach (DataGridViewRow row in dgvCuocthi.Rows)
-                                {
-                                    foreach (DataGridViewCell cell in row.Cells)
-                                    {
-                                        pdfTable.AddCell(cell.Value.ToString());
-                                    }
-                                }
-
-                                using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))
-                                {
-                                    Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
-                                    PdfWriter.GetInstance(pdfDoc, stream);
-                                    pdfDoc.Open();
-                                    pdfDoc.Add(pdfTable);
-                                    pdfDoc.Close();
-                                    stream.Close();
-                                }
-
-                                MessageBox.Show("Dữ liệu được xuất thành công !!!", "Thông báo");
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show("Error :" + ex.Message);
-                            }
+                            oDoc.Application.Selection.Tables[1].Cell(1, c + 1).Range.Text = dgvCuocthi.Columns[c].HeaderText;
                         }
+
+                        //table style 
+                        oDoc.Application.Selection.Tables[1].set_Style("Grid Table 4 - Accent 5");
+                        oDoc.Application.Selection.Tables[1].Rows[1].Select();
+                        oDoc.Application.Selection.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
+                        //header text
+                        foreach (Word.Section section in oDoc.Application.ActiveDocument.Sections)
+                        {
+                            Word.Range headerRange = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
+                            headerRange.Fields.Add(headerRange, Word.WdFieldType.wdFieldPage);
+                            headerRange.Text = "DANH SÁCH CUỘC THI";
+                            headerRange.Font.Size = 16;
+                            headerRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+                        }
+
+                        //save the file
+                        oDoc.SaveAs2(sfd.FileName);
                     }
+
+
                 }
-                else
-                {
-                    MessageBox.Show("Không có bản ghi nào để xuất !!!", "Thông báo");
-                }
+
+
             }
             else
             {
@@ -728,6 +1061,9 @@ namespace QuanLyHocSinh.Forms
                 app.Quit();
             }
         }
+
+        public static String FONT = "resources/fonts/FreeSans.ttf";
+        public static String TEXT = "this string contains special characters like this  \u2208, \u2229, \u2211, \u222b, \u2206";
 
         private void dgvCuocthi_CellClick(object sender, DataGridViewCellEventArgs e)
         {
