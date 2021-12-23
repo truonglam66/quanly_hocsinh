@@ -23,32 +23,32 @@ namespace QuanLyHocSinh.Forms.Manager
             InitializeComponent();
 
             //ds hocsinh
-            DSHS.Add(new CHocSinh(1000000, "Nguyễn Thông Thái", 1, new DateTime(2015, 12, 5), "Đang học"));
-            DSHS.Add(new CHocSinh(1000001, "Lâm Ý Bình", 2, new DateTime(2015, 6, 15), "Đang học"));
-            DSHS.Add(new CHocSinh(1000002, "Lâm Vũ", 2, new DateTime(2015, 5, 5), "Đang học"));
-            DSHS.Add(new CHocSinh(1000003, "Lý Hùng", 3, new DateTime(2015, 6, 25), "Đang học"));
-            DSHS.Add(new CHocSinh(1000004, "Nguyễn Đoàn Tấn Thịnh", 4, new DateTime(2015, 1, 1), "Đang học"));
-            DSHS.Add(new CHocSinh(1000005, "Trần Công Phúc", 5, new DateTime(2015, 10, 6), "Đang học"));
-            DSHS.Add(new CHocSinh(1000006, "Trần Tỵ", 6, new DateTime(2015, 4, 28), "Đang xử lý chuyển trường"));
-            DSHS.Add(new CHocSinh(1000007, "Lã Minh Hùng", 7, new DateTime(2015, 2, 17), "Đang học"));
-            DSHS.Add(new CHocSinh(1000008, "Lê Thanh Minh Tùng", 8, new DateTime(2015, 4, 12), "Đang học"));
-            DSHS.Add(new CHocSinh(1000009, "Lê Thị Tuyết Nhung", 8, new DateTime(2015, 9, 14), "Báo nằm viện"));
-            DSHS.Add(new CHocSinh(1000010, "Nguyễn Huỳnh Đức", 9, new DateTime(2015, 12, 12), "Đang học"));
-            DSHS.Add(new CHocSinh(1000011, "Nguyễn Hùng Mạnh", 10, new DateTime(2015, 9, 15), "Đang học"));
-            DSHS.Add(new CHocSinh(1000012, "Võ Ngọc Trân", 11, new DateTime(2015, 11, 23), "Đang học"));
-            DSHS.Add(new CHocSinh(1000013, "Trần Thị Thu Hương", 12, new DateTime(2015, 6, 24), "Đang học"));
-            DSHS.Add(new CHocSinh(1000014, "Kiều Nguyệt Nga", 13, new DateTime(2015, 6, 30), "Đang học"));
-            DSHS.Add(new CHocSinh(1000015, "Trần Thống", 14, new DateTime(2015, 5, 9), "Đang học"));
-            DSHS.Add(new CHocSinh(1000016, "Lê Thị Hồng Hoa", 15, new DateTime(2015, 3, 13), "Đang học"));
-            DSHS.Add(new CHocSinh(1000017, "Trần Bảo An", 16, new DateTime(2015, 8, 8), "Đang học"));
-            DSHS.Add(new CHocSinh(1000018, "Nguyễn Tấn Phúc", 17, new DateTime(2015, 11, 20), "Đang học"));
-            DSHS.Add(new CHocSinh(1000019, "Nguyễn Tấn Tài", 17, new DateTime(2015, 11, 16), "Đang học"));
-            DSHS.Add(new CHocSinh(1000020, "Huỳnh Minh Trí", 18, new DateTime(2015, 3, 21), "Đang học"));
-            DSHS.Add(new CHocSinh(1000021, "Lý Kim Anh", 19, new DateTime(2015, 7, 14), "Đang học"));
-            DSHS.Add(new CHocSinh(1000022, "Nguyễn Thị Hồng Nhung", 20, new DateTime(2015, 7, 6), "Đang học"));
-            DSHS.Add(new CHocSinh(1000023, "Lâm Ngọc Hải", 21, new DateTime(2015, 12, 21), "Đang học"));
-            DSHS.Add(new CHocSinh(1000024, "Ngô Minh Toàn", 22, new DateTime(2015, 12, 5), "Đang học"));
-            DSHS.Add(new CHocSinh(1000025, "Nguyễn Thị Minh Thư", 23, new DateTime(2015, 12, 5), "Đang học"));
+            DSHS.Add(new CHocSinh(1000000, "Nguyễn Thông Thái", 1, new DateTime(2015, 12, 5), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000001, "Lâm Ý Bình", 2, new DateTime(2015, 6, 15), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000002, "Lâm Vũ", 2, new DateTime(2015, 5, 5), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000003, "Lý Hùng", 3, new DateTime(2015, 6, 25), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000004, "Nguyễn Đoàn Tấn Thịnh", 4, new DateTime(2015, 1, 1), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000005, "Trần Công Phúc", 5, new DateTime(2015, 10, 6), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000006, "Trần Tỵ", 6, new DateTime(2015, 4, 28), "TP.HCM", "Đang xử lý chuyển trường"));
+            DSHS.Add(new CHocSinh(1000007, "Lã Minh Hùng", 7, new DateTime(2015, 2, 17), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000008, "Lê Thanh Minh Tùng", 8, new DateTime(2015, 4, 12), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000009, "Lê Thị Tuyết Nhung", 8, new DateTime(2015, 9, 14), "TP.HCM", "Báo nằm viện"));
+            DSHS.Add(new CHocSinh(1000010, "Nguyễn Huỳnh Đức", 9, new DateTime(2015, 12, 12), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000011, "Nguyễn Hùng Mạnh", 10, new DateTime(2015, 9, 15), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000012, "Võ Ngọc Trân", 11, new DateTime(2015, 11, 23), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000013, "Trần Thị Thu Hương", 12, new DateTime(2015, 6, 24), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000014, "Kiều Nguyệt Nga", 13, new DateTime(2015, 6, 30), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000015, "Trần Thống", 14, new DateTime(2015, 5, 9), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000016, "Lê Thị Hồng Hoa", 15, new DateTime(2015, 3, 13), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000017, "Trần Bảo An", 16, new DateTime(2015, 8, 8), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000018, "Nguyễn Tấn Phúc", 17, new DateTime(2015, 11, 20), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000019, "Nguyễn Tấn Tài", 17, new DateTime(2015, 11, 16), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000020, "Huỳnh Minh Trí", 18, new DateTime(2015, 3, 21), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000021, "Lý Kim Anh", 19, new DateTime(2015, 7, 14), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000022, "Nguyễn Thị Hồng Nhung", 20, new DateTime(2015, 7, 6), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000023, "Lâm Ngọc Hải", 21, new DateTime(2015, 12, 21), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000024, "Ngô Minh Toàn", 22, new DateTime(2015, 12, 5), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000025, "Nguyễn Thị Minh Thư", 23, new DateTime(2015, 12, 5), "TP.HCM", "Đang học"));
 
             //ds phuhuynh
             DSPH.Add(new CPhuHuynh(1, "Nguyễn Thông Thạo", "0905746135"));
@@ -148,7 +148,7 @@ namespace QuanLyHocSinh.Forms.Manager
             else
             {
                 //executed code
-                DSHS.Add(new CHocSinh(DSHS[DSHS.Count - 1].GetMaHS() + 1, name_hs, DSPH[DSPH.Count - 1].GetMaPH(), dob, "đang học"));
+                DSHS.Add(new CHocSinh(DSHS[DSHS.Count - 1].GetMaHS() + 1, name_hs, DSPH[DSPH.Count - 1].GetMaPH(), dob, adress, "đang học"));
                 DSPH.Add(new CPhuHuynh(DSPH[DSPH.Count - 1].GetMaPH() + 1, name_ph, sdt));
 
                 dt_hs.Rows.Add(DSHS[DSHS.Count - 1].GetMaHS(), DSHS[DSHS.Count - 1].GetTenHS(), DSHS[DSHS.Count - 1].GetMaLop(), DSPH[DSPH.Count - 1].GetTenPH(), DSHS[DSHS.Count - 1].GetNgaySinh(), DSHS[DSHS.Count - 1].GetStatus());

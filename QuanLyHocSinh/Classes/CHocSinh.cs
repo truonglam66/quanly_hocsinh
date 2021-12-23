@@ -23,15 +23,17 @@ namespace QuanLyHocSinh.Classes
             this.MaLop = 0;
             this.MaPH = 0;
             this.NgaySinh = new DateTime();
+            this.DiaChi = "";
             this.Status = "";
         }
 
-        public CHocSinh(int _mahs, string _tenhs, int _maph, DateTime _ngaysinh, string _status)
+        public CHocSinh(int _mahs, string _tenhs, int _maph, DateTime _ngaysinh, string _diachi, string _status)
         {
             this.MaHS = _mahs;
             this.TenHS = _tenhs;
             this.MaPH = _maph;
             this.NgaySinh = _ngaysinh;
+            this.DiaChi = _diachi;
             this.Status = _status;
         }
 

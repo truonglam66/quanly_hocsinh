@@ -1,4 +1,5 @@
 ﻿using QuanLyHocSinh.Classes;
+using QuanLyHocSinh.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,6 +42,9 @@ namespace QuanLyHocSinh
                 if (txt_username.Text == nhanvien.GetUserName() && txt_password.Text == nhanvien.GetPassword())
                 {
                     //Load Form Manager
+                    Form form = new FormManagerMenu();
+                    this.Hide();
+                    form.Show();
                 }
                 if (txt_username.Text == nhanvien.GetUserName() && txt_password.Text == nhanvien.GetPassword())
                 {
