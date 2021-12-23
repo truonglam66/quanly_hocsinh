@@ -63,9 +63,25 @@ namespace QuanLyHocSinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap search_icon_png_9965 {
             get {
                 object obj = ResourceManager.GetObject("search-icon-png-9965", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap education_icon_300x300 {
+            get {
+                object obj = ResourceManager.GetObject("education-icon-300x300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap School_Icon {
+            get {
+                object obj = ResourceManager.GetObject("School-Icon", resourceCulture);
+>>>>>>> origin/HoangTruong
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

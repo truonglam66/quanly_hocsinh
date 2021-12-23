@@ -123,5 +123,11 @@
   <ItemGroup>
     <Folder Include="Images\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\School-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\education-icon-300x300.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
