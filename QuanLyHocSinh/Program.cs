@@ -20,11 +20,7 @@ namespace QuanLyHocSinh
             darkMode.TroCarMode();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new FormManagerMenu());
-=======
             Application.Run(new FormLogin());
->>>>>>> origin/HoangTruong
         }
     }
 }
