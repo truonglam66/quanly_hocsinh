@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyHocSinh.Classes;
+using MySql.Data.MySqlClient;
+
 namespace QuanLyHocSinh
 {
     static class Program

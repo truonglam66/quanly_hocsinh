@@ -39,6 +39,9 @@
     <Reference Include="Aspose.Words.Pdf2Word, Version=21.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>packages\Aspose.Words.21.11.0\lib\net461\Aspose.Words.Pdf2Word.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\Downloads\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +62,8 @@
     <Compile Include="Classes\CNhanVienQL.cs" />
     <Compile Include="Classes\CPhuHuynh.cs" />
     <Compile Include="Classes\darkMode.cs" />
+    <Compile Include="DBMySQLUtils.cs" />
+    <Compile Include="DBUtils.cs" />
     <Compile Include="Forms\Manager\FormManagerMenu.cs">
       <SubType>Form</SubType>
     </Compile>
