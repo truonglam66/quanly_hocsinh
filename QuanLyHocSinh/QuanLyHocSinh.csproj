@@ -33,15 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Reference Include="Aspose.Words, Version=21.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>packages\Aspose.Words.21.11.0\lib\net461\Aspose.Words.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.Words.Pdf2Word, Version=21.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>packages\Aspose.Words.21.11.0\lib\net461\Aspose.Words.Pdf2Word.dll</HintPath>
     </Reference>
-=======
->>>>>>> origin/hoangtruong
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,7 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CHocSinh.cs" />
-<<<<<<< HEAD
     <Compile Include="Classes\CLop.cs" />
     <Compile Include="Classes\CGiaoVien.cs" />
     <Compile Include="Classes\CMonHoc.cs" />
@@ -71,9 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Manager\FormManagerMenu.resx">
-      <DependentUpon>FormManagerMenu.cs</DependentUpon>
-=======
+	  <EmbeddedResource Include="Forms\Manager\FormManagerMenu.resx">
+		  <DependentUpon>FormManagerMenu.cs</DependentUpon>
+	  </EmbeddedResource>
     <Compile Include="Classes\CNhanVienQL.cs" />
     <Compile Include="Classes\CPhuHuynh.cs" />
     <Compile Include="Forms\FormLogin.cs">
@@ -95,7 +91,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Manager\FormDKNhapHoc.resx">
       <DependentUpon>FormDKNhapHoc.cs</DependentUpon>
->>>>>>> origin/hoangtruong
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,13 +100,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-<<<<<<< HEAD
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
-=======
-    </Compile>
->>>>>>> origin/hoangtruong
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,14 +116,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
-  <ItemGroup>
-    <None Include="Images\search-icon-png-9965.png" />
-=======
+	<ItemGroup>
+		<None Include="Images\search-icon-png-9965.png" />
+	</ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
->>>>>>> origin/hoangtruong
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

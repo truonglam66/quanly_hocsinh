@@ -8,16 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-<<<<<<< HEAD
 namespace QuanLyHocSinh.Properties {
     using System;
     
     
-=======
-
-namespace QuanLyHocSinh.Properties
-{
->>>>>>> origin/hoangtruong
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -25,7 +19,6 @@ namespace QuanLyHocSinh.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -39,56 +32,25 @@ namespace QuanLyHocSinh.Properties
         internal Resources() {
         }
         
-=======
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
-        private static global::System.Resources.ResourceManager resourceMan;
-
-        private static global::System.Globalization.CultureInfo resourceCulture;
-
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
-        }
-
->>>>>>> origin/hoangtruong
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-<<<<<<< HEAD
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-=======
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
->>>>>>> origin/hoangtruong
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QuanLyHocSinh.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> origin/hoangtruong
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-<<<<<<< HEAD
         internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
@@ -107,18 +69,5 @@ namespace QuanLyHocSinh.Properties
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-=======
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
-                return resourceCulture;
-            }
-            set
-            {
-                resourceCulture = value;
-            }
-        }
->>>>>>> origin/hoangtruong
     }
 }

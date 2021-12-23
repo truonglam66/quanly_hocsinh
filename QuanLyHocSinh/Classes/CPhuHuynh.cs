@@ -19,11 +19,7 @@ namespace QuanLyHocSinh.Classes
             SDT = "";
         }
 
-<<<<<<< HEAD
         public CPhuHuynh(int _maph,string _tenph,string _sdt)
-=======
-        public CPhuHuynh(int _maph, string _tenph, string _sdt)
->>>>>>> origin/hoangtruong
         {
             MaPH = _maph;
             TenPH = _tenph;

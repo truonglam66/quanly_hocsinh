@@ -35,11 +35,7 @@ namespace QuanLyHocSinh.Classes
             this.Status = _status;
         }
 
-<<<<<<< HEAD
         public CHocSinh(int _mahs, string _tenhs, int _malop,int _maph,string _status)
-=======
-        public CHocSinh(int _mahs, string _tenhs, int _malop, int _maph, string _status)
->>>>>>> origin/hoangtruong
         {
             this.MaHS = _mahs;
             this.TenHS = _tenhs;
