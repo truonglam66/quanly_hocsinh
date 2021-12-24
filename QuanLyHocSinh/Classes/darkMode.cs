@@ -25,7 +25,7 @@ namespace QuanLyHocSinh.Classes
                 trang = Color.Black;
                 dendam = Color.FromArgb(191, 191, 191);
                 denlot = Color.FromArgb(242, 242, 242);
-                xanh = Color.Blue;
+                xanh = Color.FromArgb(0, 204, 204);
 
                 click = true;
             }
@@ -36,7 +36,7 @@ namespace QuanLyHocSinh.Classes
             trang = Color.White;
             dendam = Color.FromArgb(38, 38, 38);
             denlot = Color.FromArgb(51, 51, 51);
-            xanh = Color.FromArgb(38, 38, 38); ;
+            xanh = Color.FromArgb(0, 204, 204); ;
 
             click = false;
         }

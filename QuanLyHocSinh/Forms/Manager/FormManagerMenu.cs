@@ -21,46 +21,63 @@ namespace QuanLyHocSinh.Forms
         List<CLop> DSLop = new List<CLop>();
         List<CGiaoVien> DSGV = new List<CGiaoVien>();
         List<CPhuHuynh> DSPH = new List<CPhuHuynh>();
+        List<CTKB> DSTKB = new List<CTKB>();
 
         DataTable dt_hs = new DataTable();
         DataTable dt_hs_xeplop = new DataTable();
         DataTable dt_lop = new DataTable();
         DataTable dt_gv = new DataTable();
         DataTable dt_ph = new DataTable();
+        DataTable dt_tkb = new DataTable();
 
         public FormManagerMenu()
         {
             InitializeComponent();
             //setColor();
+            //welcome
+
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormManagerMenu_FormClosing);
 
             //ds hocsinh
-            DSHS.Add(new CHocSinh(1000000, "Nguyễn Thông Thái", 1, new DateTime(2015, 12, 5), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000001, "Lâm Ý Bình", 2, new DateTime(2015, 6, 15), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000002, "Lâm Vũ", 2, new DateTime(2015, 5, 5), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000003, "Lý Hùng", 3, new DateTime(2015, 6, 25), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000004, "Nguyễn Đoàn Tấn Thịnh", 4, new DateTime(2015, 1, 1), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000005, "Trần Công Phúc", 5, new DateTime(2015, 10, 6), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000006, "Trần Tỵ", 6, new DateTime(2015, 4, 28), "TP.HCM", "Đang xử lý chuyển trường"));
-            DSHS.Add(new CHocSinh(1000007, "Lã Minh Hùng", 7, new DateTime(2015, 2, 17), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000008, "Lê Thanh Minh Tùng", 8, new DateTime(2015, 4, 12), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000009, "Lê Thị Tuyết Nhung", 8, new DateTime(2015, 9, 14), "TP.HCM", "Báo nằm viện"));
-            DSHS.Add(new CHocSinh(1000010, "Nguyễn Huỳnh Đức", 9, new DateTime(2015, 12, 12), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000011, "Nguyễn Hùng Mạnh", 10, new DateTime(2015, 9, 15), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000012, "Võ Ngọc Trân", 11, new DateTime(2015, 11, 23), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000013, "Trần Thị Thu Hương", 12, new DateTime(2015, 6, 24), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000014, "Kiều Nguyệt Nga", 13, new DateTime(2015, 6, 30), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000015, "Trần Thống", 14, new DateTime(2015, 5, 9), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000016, "Lê Thị Hồng Hoa", 15, new DateTime(2015, 3, 13), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000017, "Trần Bảo An", 16, new DateTime(2015, 8, 8), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000018, "Nguyễn Tấn Phúc", 17, new DateTime(2015, 11, 20), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000019, "Nguyễn Tấn Tài", 17, new DateTime(2015, 11, 16), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000020, "Huỳnh Minh Trí", 18, new DateTime(2015, 3, 21), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000021, "Lý Kim Anh", 19, new DateTime(2015, 7, 14), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000022, "Nguyễn Thị Hồng Nhung", 20, new DateTime(2015, 7, 6), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000023, "Lâm Ngọc Hải", 21, new DateTime(2015, 12, 21), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000024, "Ngô Minh Toàn", 22, new DateTime(2015, 12, 5), "TP.HCM", "Đang học"));
-            DSHS.Add(new CHocSinh(1000025, "Nguyễn Thị Minh Thư", 23, new DateTime(2015, 12, 5), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000000, "Nguyễn Thông Thái", 101,1, new DateTime(2015, 12, 5), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000001, "Lâm Ý Bình", 101, 2, new DateTime(2015, 6, 15), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000002, "Lâm Vũ", 101, 2, new DateTime(2015, 5, 5), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000003, "Lý Hùng", 101, 3, new DateTime(2015, 6, 25), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000004, "Nguyễn Đoàn Tấn Thịnh", 101, 4, new DateTime(2015, 1, 1), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000005, "Trần Công Phúc", 101, 5, new DateTime(2015, 10, 6), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000006, "Trần Tỵ", 102, 6, new DateTime(2015, 4, 28), "TP.HCM", "Đang xử lý chuyển trường"));
+            DSHS.Add(new CHocSinh(1000007, "Lã Minh Hùng", 102, 7, new DateTime(2015, 2, 17), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000008, "Lê Thanh Minh Tùng", 103, 8, new DateTime(2015, 4, 12), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000009, "Lê Thị Tuyết Nhung", 104, 8, new DateTime(2015, 9, 14), "TP.HCM", "Báo nằm viện"));
+            DSHS.Add(new CHocSinh(1000010, "Nguyễn Huỳnh Đức", 201, 9, new DateTime(2014, 12, 12), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000011, "Nguyễn Hùng Mạnh", 201, 10, new DateTime(2014, 9, 15), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000012, "Võ Ngọc Trân", 202, 11, new DateTime(2014, 11, 23), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000013, "Trần Thị Thu Hương", 202, 12, new DateTime(2014, 6, 24), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000014, "Kiều Nguyệt Nga", 202, 13, new DateTime(2014, 6, 30), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000015, "Trần Thống", 203, 14, new DateTime(2014, 5, 9), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000016, "Lê Thị Hồng Hoa", 204, 15, new DateTime(2014, 3, 13), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000017, "Trần Bảo An", 301, 16, new DateTime(2013, 8, 8), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000018, "Nguyễn Tấn Phúc", 302, 17, new DateTime(2013, 11, 20), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000019, "Nguyễn Tấn Tài", 302, 17, new DateTime(2013, 11, 16), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000020, "Huỳnh Minh Trí", 303, 18, new DateTime(2013, 3, 21), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000021, "Lý Kim Anh", 303, 19, new DateTime(2013, 7, 14), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000022, "Nguyễn Thị Hồng Nhung", 303, 20, new DateTime(2013, 7, 6), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000023, "Lâm Ngọc Hải", 304, 21, new DateTime(2013, 12, 21), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000024, "Ngô Minh Toàn", 304, 22, new DateTime(2013, 12, 5), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000025, "Nguyễn Thị Minh Thư", 401, 23, new DateTime(2012, 12, 5), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000026, "Lê Hoàng", 401, 24, new DateTime(2012, 12, 6), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000027, "Lê Minh Triết", 402, 24, new DateTime(2012, 12, 6), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000028, "Đỗ Minh Nhật", 403, 25, new DateTime(2012, 5, 13), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000029, "Nguyễn Đức Huy", 0, 26, new DateTime(2015, 12, 31), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000030, "Trần Việt Hùng", 0, 27, new DateTime(2015, 7, 23), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000031, "Mai Anh Tài", 0, 28, new DateTime(2015, 12, 21), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000032, "Nguyễn Đức Hiển", 0, 29, new DateTime(2015, 5, 15), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000033, "Nguyễn Anh Thư", 0, 29, new DateTime(2015, 5, 14), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000034, "Trần Huyền Trang", 0, 30, new DateTime(2015, 1, 23), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000035, "Đỗ Xuân Hợp", 0, 31, new DateTime(2015, 5, 12), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000036, "Nguyễn Thị Thanh", 0, 32, new DateTime(2015, 3, 24), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000037, "Nguyễn Cao Cường", 0, 33, new DateTime(2015, 3, 12), "TP.HCM", "Đang học"));
+            DSHS.Add(new CHocSinh(1000038, "Hoàng Minh Trí", 0, 34, new DateTime(2015, 7, 1), "TP.HCM", "Đang học"));
 
             //ds phuhuynh
             DSPH.Add(new CPhuHuynh(1, "Nguyễn Thông Thạo", "0905746135"));
@@ -86,15 +103,39 @@ namespace QuanLyHocSinh.Forms
             DSPH.Add(new CPhuHuynh(21, "Lâm Xung", "0987551653"));
             DSPH.Add(new CPhuHuynh(22, "Ngô Quốc Lâm", "01223398512"));
             DSPH.Add(new CPhuHuynh(23, "Nguyễn Đức Mạnh", "01699357410"));
+            DSPH.Add(new CPhuHuynh(24, "Lê Thanh Toàn", "0903656069"));
+            DSPH.Add(new CPhuHuynh(25, "Nguyễn Thị Cúc", "0936728675"));
+            DSPH.Add(new CPhuHuynh(26, "Nguyễn Minh Nhựt", "01658999043"));
+            DSPH.Add(new CPhuHuynh(27, "Trần Đình Trọng", "02552886004"));
+            DSPH.Add(new CPhuHuynh(28, "Mai Quốc Hùng", "0932536069"));
+            DSPH.Add(new CPhuHuynh(29, "Nguyễn Thị Đinh Lan", "03268705900"));
+            DSPH.Add(new CPhuHuynh(30, "Nguyễn Trần Công Trí", "0976443916"));
+            DSPH.Add(new CPhuHuynh(31, "Trần Xuân Hùng", "0913220661"));
+            DSPH.Add(new CPhuHuynh(32, "Trần Thị Trúc", "0988752012"));
+            DSPH.Add(new CPhuHuynh(33, "Nguyễn Anh Dũng", "0947653001"));
+            DSPH.Add(new CPhuHuynh(34, "Trần Thị Kiều Trinh", "0909665087"));
 
             //ds lop
             DSLop.Add(new CLop(101));
             DSLop.Add(new CLop(102));
             DSLop.Add(new CLop(103));
             DSLop.Add(new CLop(104));
-            DSLop.Add(new CLop(105));
-            DSLop.Add(new CLop(106));
-            DSLop.Add(new CLop(107));
+            DSLop.Add(new CLop(201));
+            DSLop.Add(new CLop(202));
+            DSLop.Add(new CLop(203));
+            DSLop.Add(new CLop(204));
+            DSLop.Add(new CLop(301));
+            DSLop.Add(new CLop(302));
+            DSLop.Add(new CLop(303));
+            DSLop.Add(new CLop(304));
+            DSLop.Add(new CLop(401));
+            DSLop.Add(new CLop(402));
+            DSLop.Add(new CLop(403));
+            DSLop.Add(new CLop(404));
+            DSLop.Add(new CLop(501));
+            DSLop.Add(new CLop(502));
+            DSLop.Add(new CLop(503));
+            DSLop.Add(new CLop(504));
 
             //mon hoc
             DSMH.Add(new CMonHoc(1, "Toán"));
@@ -122,6 +163,13 @@ namespace QuanLyHocSinh.Forms
             DSGV.Add(new CGiaoVien(100009, "Vũ Vy Oanh", "Giáo Viên Bộ Môn", DSMH[9]));
             DSGV.Add(new CGiaoVien(100010, "Trịnh Trần Phương Tuấn", "Giáo Viên Bộ Môn", DSMH[6]));
 
+            //ds tkb
+            DSTKB.Add(new CTKB(1000, 101, 1, 2021, new DateTime(2021, 11, 21)));
+            DSTKB.Add(new CTKB(1001, 102, 1, 2021, new DateTime(2021, 11, 21)));
+            DSTKB.Add(new CTKB(1002, 103, 1, 2021, new DateTime(2021, 11, 21)));
+            DSTKB.Add(new CTKB(1003, 104, 1, 2021, new DateTime(2021, 11, 21)));
+            DSTKB.Add(new CTKB(1004, 201, 1, 2021, new DateTime(2021, 10, 21)));
+
             //add columns dt_hs
             dt_hs.Columns.Add("Mã số");
             dt_hs.Columns.Add("Họ tên");
@@ -146,6 +194,13 @@ namespace QuanLyHocSinh.Forms
             dt_gv.Columns.Add("Chức vụ");
             dt_gv.Columns.Add("Bộ môn");
 
+            //add colums dt_tkb
+            dt_tkb.Columns.Add("Mã TKB");
+            dt_tkb.Columns.Add("Lớp");
+            dt_tkb.Columns.Add("Học Kỳ");
+            dt_tkb.Columns.Add("Năm Học");
+            dt_tkb.Columns.Add("Ngày Tạo");
+
             //add data dt_hs
             for (int i = 0; i < DSHS.Count; i++)
             {
@@ -165,21 +220,38 @@ namespace QuanLyHocSinh.Forms
 
             //add data dt_hs_xeplop
             for (int i = 0; i < DSHS.Count; i++)
-            { 
-                dt_hs_xeplop.Rows.Add(DSHS[i].GetMaHS(), DSHS[i].GetTenHS(), DSHS[i].GetMaLop());
+            {
+                if(DSHS[i].GetMaLop() == 0)
+                {
+                    dt_hs_xeplop.Rows.Add(DSHS[i].GetMaHS(), DSHS[i].GetTenHS(), DSHS[i].GetMaLop());
+                }
+                
             }
 
             //add data dt_lop
             for (int i = 0; i < DSLop.Count; i++)
             {
+                int siso = 0;
+                for(int j=0;j<DSHS.Count;j++)
+                {
+                    if (DSHS[j].GetMaLop() == DSLop[i].GetMaLop())
+                        siso++;
+                }
                 string tenlop = DSLop[i].GetMaLop().ToString().Substring(0, 1) + "A" + DSLop[i].GetMaLop().ToString().Substring(2, 1);
-                dt_lop.Rows.Add(DSLop[i].GetMaLop(), tenlop, DSLop[i].GetMaGVCN());
+                dt_lop.Rows.Add(DSLop[i].GetMaLop(), tenlop, DSLop[i].GetMaGVCN(),siso);
             }
 
             //add data dt_gv
             for (int i = 0; i < DSGV.Count; i++)
             {
                 dt_gv.Rows.Add(DSGV[i].GetMaGV(), DSGV[i].GetTenGV(), DSGV[i].GetChucVu(), DSGV[i].GetBoMon().GetTenMH());
+            }
+
+            //add data dt_tkb
+            for(int i=0; i<DSTKB.Count; i++)
+            {
+                string tenlop = DSTKB[i].GetMaLop().ToString().Substring(0, 1) + "A" + DSTKB[i].GetMaLop().ToString().Substring(2, 1);
+                dt_tkb.Rows.Add(DSTKB[i].GetMaTKB(), DSTKB[i].GetMaLop(), DSTKB[i].GetHK(), DSTKB[i].GetNamHoc(), DSTKB[i].GetNgayTao());
             }
 
             //add data dataGridView_HS
@@ -202,6 +274,9 @@ namespace QuanLyHocSinh.Forms
 
             //add data dataGridView_DSHS
             dataGridView_DSHS.DataSource = dt_hs;
+
+            //add data dgv_TKB
+            dgv_TKB.DataSource = dt_tkb;
         }
 
         private void btn_searchHS_Click(object sender, EventArgs e)
@@ -357,12 +432,13 @@ namespace QuanLyHocSinh.Forms
             }
         }
 
-        private void btn_Create2_Click(object sender, EventArgs e)
+        private void btn_CreateWord2_Click(object sender, EventArgs e)
         {
             string name = dataGridView_HS2.Rows[dataGridView_HS2.CurrentCell.RowIndex].Cells[1].Value.ToString();
             DateTime curentDate = DateTime.UtcNow.Date;
-            string lop= dataGridView_HS2.Rows[dataGridView_HS2.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            string lop = DSHS[dataGridView_HS1.CurrentCell.RowIndex].GetMaLop().ToString().Substring(0, 1) + "A" + DSHS[dataGridView_HS1.CurrentCell.RowIndex].GetMaLop().ToString().Substring(2, 1);
             DateTime dob = DSHS[dataGridView_DSHS.CurrentCell.RowIndex].GetNgaySinh();
+            string address = DSHS[dataGridView_DSHS.CurrentCell.RowIndex].GetDiaChi();
 
             //dia chi add later
             //string diachi = dataGridView_HS2.Rows[dataGridView_HS2.CurrentCell.RowIndex].Cells[1].Value.ToString();
@@ -412,15 +488,14 @@ namespace QuanLyHocSinh.Forms
                 builder.Writeln("Ngày sinh: ngày "+dob.Day+" tháng "+dob.Month+" năm "+dob.Year);
                 builder.Writeln("Nơi sinh: Xã … - Huyện … - Tỉnh …");
                 builder.Writeln("Lớp: "+lop+" Trường Tiểu Học Tân Thạnh Đông");
-                builder.Writeln("Hiện đang cư trú tại: ");
+                builder.Writeln("Hiện đang cư trú tại: "+address);
                 builder.Writeln("Đã được công nhận tốt nghiệp tiểu học tại hội đồng xét công nhận tốt nghiệp");
-                builder.Writeln("Trường Tiểu học Tân Thạnh Đông ngày "+ curentDate.Day+" tháng "+curentDate.Month+" năm "+curentDate.Year);
+                builder.Writeln("Trường Tiểu học Tâm An ngày "+ curentDate.Day+" tháng "+curentDate.Month+" năm "+curentDate.Year);
                 builder.Writeln("Xếp loại tốt nghiệp: …");
                 builder.Writeln("\t\t\t\t\t\t… … … , ngày … … tháng … năm …");
                 builder.Writeln("\t\t\t\t\t\t\tHIỆU TRƯỞNG");
 
-                doc.Save("C:/Users/DELL 6440/OneDrive/DocumentsDocument.docx");
-                doc.Save("Document.txt");
+                doc.Save("C:/Users/DELL 6440/OneDrive/GiayChungNhanTotNghiep.docx");
                 MessageBox.Show("Save successful");
             }
             catch(Exception ex)
@@ -429,8 +504,13 @@ namespace QuanLyHocSinh.Forms
             }
         }
 
-        private void btn_Create_Click(object sender, EventArgs e)
+        private void btn_CreateWord_Click(object sender, EventArgs e)
         {
+            string name = dataGridView_HS1.Rows[dataGridView_HS1.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            string nameph = dataGridView_HS1.Rows[dataGridView_HS1.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            DateTime curentDate = DateTime.UtcNow.Date;
+            string lop = DSHS[dataGridView_HS1.CurrentCell.RowIndex].GetMaLop().ToString().Substring(0, 1) + "A" + DSHS[dataGridView_HS1.CurrentCell.RowIndex].GetMaLop().ToString().Substring(2, 1);
+
             try
             {
                 Document doc = new Document();
@@ -444,7 +524,7 @@ namespace QuanLyHocSinh.Forms
                 font.Color = Color.DarkRed;
 
                 builder.ParagraphFormat.LineSpacingRule = LineSpacingRule.Multiple;
-                builder.ParagraphFormat.LineSpacing = 18;
+                builder.ParagraphFormat.LineSpacing = 14;
 
                 builder.Writeln("\t\t\tCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM");
                 font.Size = 11;
@@ -456,27 +536,27 @@ namespace QuanLyHocSinh.Forms
                 builder.Writeln("\t\tĐƠN XIN CHUYỂN TRƯỜNG TIỂU HỌC");
                 font.Size = 12;
                 font.Color = Color.Black;
-                builder.Writeln("Kính gửi: - Phòng Giáo dục và Đào tạo...........................(1)");
-                builder.Writeln(" - Hiệu trưởng Trường Tiểu học...........................(2)");
-                builder.Writeln("Tên tôi là: ................");
+                builder.Writeln("Kính gửi: - Phòng Giáo dục và Đào tạo...........TP.HCM................(1)");
+                builder.Writeln(" - Hiệu trưởng Trường Tiểu học...........Tâm An................(2)");
+                builder.Writeln("Tên tôi là: ......."+nameph+".........");
                 builder.Writeln("Sinh ngày: ...........................");
                 builder.Writeln("CMND/CCCD số: ........................Cấp ngày: ..............................Tại: .................................................................");
                 builder.Writeln("Hộ khẩu thường trú: .....................................");
                 builder.Writeln("Số điện thoại: ....................................");
-                builder.Writeln("Là cha mẹ/ người giám hộ của học sinh: ........................");
-                builder.Writeln("Đang học lớp: ............... Trường Tiểu học ........................ Quận (Huyện) ...............................");
-                builder.Writeln("Tỉnh( Thành phố) .....................................");
+                builder.Writeln("Là cha mẹ/ người giám hộ của học sinh: ..........."+name+".............");
+                builder.Writeln("Đang học lớp: ......."+lop+"........ Trường Tiểu học ..........Tâm An.............. Quận (Huyện) ..............Thủ Đức.................");
+                builder.Writeln("Tỉnh( Thành phố) .............Tp.HCM........................");
                 builder.Writeln("Kết quả học tập năm học .............. Học lực:................Hạnh kiểm:.................");
-                builder.Writeln("Nay tôi làm đơn này xin phép Hiệu trưởng Trường Tiểu học ................................" +
-                    "Quận(Huyện)...............Tỉnh(Thành phố)...............đồng ý cho học sinh............." +
+                builder.Writeln("Nay tôi làm đơn này xin phép Hiệu trưởng Trường Tiểu học ..........Tâm An......................" +
+                    "Quận(Huyện).......Thủ Đức........Tỉnh(Thành phố)......Tp.HCM.........đồng ý cho học sinh......"+name+"......." +
                     "được chuyển đến học tại Trường Tiểu học......................Quận(Huyện)...............Tỉnh(Thành phố)................" +
                     "đồng thời xin phép Hiểu trưởng Trường Tiểu học.....................Quận(Huyện).............................." +
-                    "Tỉnh(Thành phố).................đồng ý cho học sinh.......................được nhập học tại nhà Trường");
+                    "Tỉnh(Thành phố).................đồng ý cho học sinh........."+name+"..............được nhập học tại nhà Trường");
                 builder.Writeln("Lý do chuyển trường:(3).....................................................................................................");
                 builder.Writeln("Mong nhận được sự đồng ý và chấp thuận của Quý Hiệu trưởng và Nhà trường");
                 builder.Writeln("Tôi xin chân thành cảm ơn.");
                 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-                builder.Writeln(".............., ngày.....tháng.......năm 20...");
+                builder.Writeln(".......Tp.HCM......., ngày.."+curentDate.Date.ToString()+"...tháng...."+curentDate.Month.ToString()+"...năm ."+curentDate.Year.ToString()+"..");
                 font.Bold = true;
                 font.Color = Color.DarkRed;
                 font.Size = 14;
@@ -486,8 +566,7 @@ namespace QuanLyHocSinh.Forms
                 font.Size = 12;
                 builder.Writeln("(Ký và ghi rõ họ tên)");
 
-                doc.Save("C:/Users/DELL 6440/OneDrive/Document.docx");
-                doc.Save("Document.txt");
+                doc.Save("C:/Users/DELL 6440/OneDrive/DonXinChuyenTruong.docx");
                 MessageBox.Show("Save successful");
             }
             catch (Exception ex)
@@ -540,10 +619,10 @@ namespace QuanLyHocSinh.Forms
             else
             {
                 //executed code
-                DSHS.Add(new CHocSinh(DSHS[DSHS.Count - 1].GetMaHS() + 1, name_hs, DSPH[DSPH.Count - 1].GetMaPH(), dob, adress, "đang học"));
+                DSHS.Add(new CHocSinh(DSHS[DSHS.Count - 1].GetMaHS() + 1, name_hs, 0, DSPH[DSPH.Count - 1].GetMaPH(), dob, adress, "đang học"));
                 DSPH.Add(new CPhuHuynh(DSPH[DSPH.Count - 1].GetMaPH() + 1, name_ph, sdt));
 
-                dt_hs.Rows.Add(DSHS[DSHS.Count - 1].GetMaHS(), DSHS[DSHS.Count - 1].GetTenHS(), DSHS[DSHS.Count - 1].GetMaLop(), DSPH[DSPH.Count-1].GetTenPH(), DSHS[DSHS.Count - 1].GetNgaySinh(), DSHS[DSHS.Count - 1].GetStatus());
+                dt_hs.Rows.Add(DSHS[DSHS.Count - 1].GetMaHS(), DSHS[DSHS.Count - 1].GetTenHS(), DSPH[DSPH.Count-1].GetTenPH(),DSHS[DSHS.Count-1].GetNgaySinh().ToString("dd/mm/yyyy"), DSHS[DSHS.Count - 1].GetStatus());
 
                 MessageBox.Show("Lưu thành công!");
             }
@@ -590,59 +669,164 @@ namespace QuanLyHocSinh.Forms
                 form.Show();
             }
         }
-        private void setColor()
-        {
-            menuStrip1.BackColor = darkMode.xanh;
-            settingToolStripMenuItem.BackColor = darkMode.xanh;
-
-            this.BackColor = darkMode.denlot;
-            tabPageDKNH.BackColor = darkMode.denlot;
-            tabPageHS.BackColor = darkMode.denlot;
-            tabPageGVCN.BackColor = darkMode.denlot;
-            tabPageChuyenTruong.BackColor = darkMode.denlot;
-            tabPageTotNghiep.BackColor = darkMode.denlot;
-            tabPageDKXL.BackColor = darkMode.denlot;
-
-
-
-            lbl_header.ForeColor = darkMode.trang;
-            tabPageDKNH.ForeColor = darkMode.trang;
-            tabPageHS.ForeColor = darkMode.trang;
-            tabPageGVCN.ForeColor = darkMode.trang;
-            tabPageChuyenTruong.ForeColor = darkMode.trang;
-            tabPageTotNghiep.ForeColor = darkMode.trang;
-            tabPageDKXL.ForeColor = darkMode.trang;
-
-
-            btn_Save.BackColor = darkMode.xanh;
-            btn_searchHS.BackColor = darkMode.xanh;
-            btn_searchLop.BackColor = darkMode.xanh;
-            btn_searchGV.BackColor = darkMode.xanh;
-            btn_Lop1.BackColor = darkMode.xanh;
-            btn_OK.BackColor = darkMode.xanh;
-            btn_OK1.BackColor = darkMode.xanh;
-            btn_Create.BackColor = darkMode.xanh;
-            btn_Create2.BackColor = darkMode.xanh;
-
-
-
-
-
-            đăngXuấtToolStripMenuItem.BackColor = darkMode.xanh;
-            chếĐộBanĐêmToolStripMenuItem.BackColor = darkMode.xanh;
-            thoátToolStripMenuItem.BackColor = darkMode.xanh;
-
-        }
-
-        private void chếĐộBanĐêmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            darkMode.TroCarMode();
-            setColor();
-        }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_CreatePDF2_Click(object sender, EventArgs e)
+        {
+            string name = dataGridView_HS2.Rows[dataGridView_HS2.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            DateTime curentDate = DateTime.UtcNow.Date;
+            string lop = DSHS[dataGridView_HS1.CurrentCell.RowIndex].GetMaLop().ToString().Substring(0, 1) + "A" + DSHS[dataGridView_HS1.CurrentCell.RowIndex].GetMaLop().ToString().Substring(2, 1);
+            DateTime dob = DSHS[dataGridView_DSHS.CurrentCell.RowIndex].GetNgaySinh();
+            string address = DSHS[dataGridView_DSHS.CurrentCell.RowIndex].GetDiaChi();
+
+            //dia chi add later
+            //string diachi = dataGridView_HS2.Rows[dataGridView_HS2.CurrentCell.RowIndex].Cells[1].Value.ToString();
+
+            try
+            {
+                Document doc = new Document();
+                DocumentBuilder builder = new DocumentBuilder(doc);
+
+                // Specify font formatting
+                Aspose.Words.Font font = builder.Font;
+                font.Size = 11;
+                font.Color = System.Drawing.Color.Black;
+                font.Name = "Calibri";
+
+                builder.ParagraphFormat.LineSpacingRule = LineSpacingRule.Multiple;
+                builder.ParagraphFormat.LineSpacing = 18;
+
+                //Insert text
+                font.Size = 12;
+                builder.Write("PHÒNG GD&DT HUYỆN \t\t\t\t");
+                builder.Writeln("CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM");
+
+                //Change formatting for next elements.
+                font.Bold = true;
+                font.Size = 11;
+
+                //Text
+                builder.Write("\tTRƯỜNG TIỂU HỌC TÂN THẠNH ĐÔNG\t\t\t");
+                builder.Writeln("Độc lập – Tự do – Hạnh phúc");
+                builder.Writeln();
+
+                //Change formatting for next elements.
+                font.Size = 20;
+
+                //Text
+                builder.Writeln("\t\tGIẤY CHỨNG NHẬN TỐT NGHIỆP TIỂU HỌC");
+
+                //Change formatting for next elements.
+                font.Size = 11;
+                font.Bold = false;
+
+                //Text
+                builder.Writeln("\t\t\t\t\t\t(tạm thời)");
+                font.Size = 14;
+                builder.Writeln("Chứng nhận: " + name);
+                builder.Writeln("Ngày sinh: ngày " + dob.Day + " tháng " + dob.Month + " năm " + dob.Year);
+                builder.Writeln("Nơi sinh: Xã … - Huyện … - Tỉnh …");
+                builder.Writeln("Lớp: " + lop + " Trường Tiểu Học Tân Thạnh Đông");
+                builder.Writeln("Hiện đang cư trú tại: " + address);
+                builder.Writeln("Đã được công nhận tốt nghiệp tiểu học tại hội đồng xét công nhận tốt nghiệp");
+                builder.Writeln("Trường Tiểu học Tâm An ngày " + curentDate.Day + " tháng " + curentDate.Month + " năm " + curentDate.Year);
+                builder.Writeln("Xếp loại tốt nghiệp: …");
+                builder.Writeln("\t\t\t\t\t\t… … … , ngày … … tháng … năm …");
+                builder.Writeln("\t\t\t\t\t\t\tHIỆU TRƯỞNG");
+
+                doc.Save("C:/Users/DELL 6440/OneDrive/GiayChungNhanTotNghiep.docx");
+                MessageBox.Show("Save successful");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btn_CreatePDF_Click(object sender, EventArgs e)
+        {
+            string name = dataGridView_HS1.Rows[dataGridView_HS1.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            string nameph = dataGridView_HS1.Rows[dataGridView_HS1.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            DateTime curentDate = DateTime.UtcNow.Date;
+            string lop = DSHS[dataGridView_HS1.CurrentCell.RowIndex].GetMaLop().ToString().Substring(0, 1) + "A" + DSHS[dataGridView_HS1.CurrentCell.RowIndex].GetMaLop().ToString().Substring(2, 1);
+
+            try
+            {
+                Document doc = new Document();
+                DocumentBuilder builder = new DocumentBuilder(doc);
+
+                // Specify font formatting
+                Aspose.Words.Font font = builder.Font;
+                font.Size = 12;
+                font.Color = System.Drawing.Color.Black;
+                font.Name = "Calibri";
+                font.Color = Color.DarkRed;
+
+                builder.ParagraphFormat.LineSpacingRule = LineSpacingRule.Multiple;
+                builder.ParagraphFormat.LineSpacing = 14;
+
+                builder.Writeln("\t\t\tCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM");
+                font.Size = 11;
+                font.Bold = true;
+                builder.Writeln("\t\t\t\tĐộc lập - Tự do - Hạnh phúc");
+                font.Bold = false;
+                builder.Writeln("\t\t\t\t-------------------------");
+                font.Size = 22;
+                builder.Writeln("\t\tĐƠN XIN CHUYỂN TRƯỜNG TIỂU HỌC");
+                font.Size = 12;
+                font.Color = Color.Black;
+                builder.Writeln("Kính gửi: - Phòng Giáo dục và Đào tạo...........TP.HCM................(1)");
+                builder.Writeln(" - Hiệu trưởng Trường Tiểu học...........Tâm An................(2)");
+                builder.Writeln("Tên tôi là: ......." + nameph + ".........");
+                builder.Writeln("Sinh ngày: ...........................");
+                builder.Writeln("CMND/CCCD số: ........................Cấp ngày: ..............................Tại: .................................................................");
+                builder.Writeln("Hộ khẩu thường trú: .....................................");
+                builder.Writeln("Số điện thoại: ....................................");
+                builder.Writeln("Là cha mẹ/ người giám hộ của học sinh: ..........." + name + ".............");
+                builder.Writeln("Đang học lớp: ......." + lop + "........ Trường Tiểu học ..........Tâm An.............. Quận (Huyện) ..............Thủ Đức.................");
+                builder.Writeln("Tỉnh( Thành phố) .............Tp.HCM........................");
+                builder.Writeln("Kết quả học tập năm học .............. Học lực:................Hạnh kiểm:.................");
+                builder.Writeln("Nay tôi làm đơn này xin phép Hiệu trưởng Trường Tiểu học ..........Tâm An......................" +
+                    "Quận(Huyện).......Thủ Đức........Tỉnh(Thành phố)......Tp.HCM.........đồng ý cho học sinh......" + name + "......." +
+                    "được chuyển đến học tại Trường Tiểu học......................Quận(Huyện)...............Tỉnh(Thành phố)................" +
+                    "đồng thời xin phép Hiểu trưởng Trường Tiểu học.....................Quận(Huyện).............................." +
+                    "Tỉnh(Thành phố).................đồng ý cho học sinh........." + name + "..............được nhập học tại nhà Trường");
+                builder.Writeln("Lý do chuyển trường:(3).....................................................................................................");
+                builder.Writeln("Mong nhận được sự đồng ý và chấp thuận của Quý Hiệu trưởng và Nhà trường");
+                builder.Writeln("Tôi xin chân thành cảm ơn.");
+                builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+                builder.Writeln(".......Tp.HCM......., ngày.." + curentDate.Date.ToString() + "...tháng...." + curentDate.Month.ToString() + "...năm ." + curentDate.Year.ToString() + "..");
+                font.Bold = true;
+                font.Color = Color.DarkRed;
+                font.Size = 14;
+                builder.Writeln("NGƯỜI LÀM ĐƠN");
+                font.Color = Color.Black;
+                font.Bold = false;
+                font.Size = 12;
+                builder.Writeln("(Ký và ghi rõ họ tên)");
+
+                doc.Save("C:/Users/DELL 6440/OneDrive/DonXinChuyenTruong.pdf");
+                MessageBox.Show("Save successful");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btn_taotkb_Click(object sender, EventArgs e)
+        {
+            Form form = new FormSetupTKB();
+            form.ShowDialog();
+        }
+
+        private void btn_CreateExcel_Click(object sender, EventArgs e)
+        {
+
         }
     }
     

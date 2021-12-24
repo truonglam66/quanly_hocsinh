@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+=======
+>>>>>>> Line
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csprojAssemblyReference.cache
+C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.FormLogin.resources
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
 C:\Users\DELL 6440\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
@@ -27,7 +30,6 @@ D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.Core
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CopyComplete
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
 D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb
-=======
 C:\Users\DELL 6440\hoangtruong\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
 C:\Users\DELL 6440\hoangtruong\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
 C:\Users\DELL 6440\hoangtruong\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
@@ -73,3 +75,28 @@ C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\bin\Debug\K4os.Hash.xxHash.
 C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\bin\Debug\MySql.Data.xml
 C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe.config
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe.config
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.exe
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\bin\Debug\QuanLyHocSinh.pdb
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.AssemblyReference.cache
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fAdmin.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Properties.Resources.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.GenerateResource.cache
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.csproj.CoreCompileInputs.cache
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.exe
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.pdb
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fGiaovien.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fNhapdiem.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fTaotkb.resources
+D:\Đồ án Trực quan\Code\GitHub\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fPDF.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fAdmin.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fGiaovien.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fNhapdiem.resources
+D:\C#\Đồ án\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fTaotkb.resources
+C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fAdmin.resources
+C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fGiaovien.resources
+C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fNhapdiem.resources
+C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.fTaotkb.resources
+C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.FormSetupTKB.resources
+C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.FormPickTKB.resources
+C:\Users\DELL 6440\DoAn\quanly_hocsinh\QuanLyHocSinh\obj\Debug\QuanLyHocSinh.Forms.FormNhapDiem.resources

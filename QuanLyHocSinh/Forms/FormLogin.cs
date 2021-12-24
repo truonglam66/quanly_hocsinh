@@ -14,7 +14,18 @@ namespace QuanLyHocSinh
 {
     public partial class FormLogin : Form
     {
-        CNhanVienQL nhanvien = new CNhanVienQL("truong", "123");
+        CNhanVienQL nhanvien = new CNhanVienQL("lamtruong", "123");
+        CGiaoVien giaovien1 = new CGiaoVien("toannv", "123");
+        CGiaoVien giaovien2 = new CGiaoVien("minhnt", "123");
+        CGiaoVien giaovien3 = new CGiaoVien("lincd", "123");
+        CGiaoVien giaovien4 = new CGiaoVien("vantn", "123");
+        CGiaoVien giaovien5 = new CGiaoVien("hungtq", "123");
+        CGiaoVien giaovien6 = new CGiaoVien("nganlt", "123");
+        CGiaoVien giaovien7 = new CGiaoVien("vannth", "123");
+        CGiaoVien giaovien8 = new CGiaoVien("linhlh", "123");
+        CGiaoVien giaovien9 = new CGiaoVien("dungdv", "123");
+        CGiaoVien giaovien10 = new CGiaoVien("oanhvv", "123");
+        CGiaoVien giaovien11 = new CGiaoVien("tuanttp", "123");
 
         public FormLogin()
         {
@@ -46,11 +57,24 @@ namespace QuanLyHocSinh
                     this.Hide();
                     form.Show();
                 }
-                if (txt_username.Text == nhanvien.GetUserName() && txt_password.Text == nhanvien.GetPassword())
+                else if ((txt_username.Text == giaovien1.GetUserName() && txt_password.Text == giaovien1.GetPassword())
+                    || (txt_username.Text == giaovien2.GetUserName() && txt_password.Text == giaovien2.GetPassword())
+                    || (txt_username.Text == giaovien3.GetUserName() && txt_password.Text == giaovien3.GetPassword())
+                    || (txt_username.Text == giaovien4.GetUserName() && txt_password.Text == giaovien4.GetPassword())
+                    || (txt_username.Text == giaovien5.GetUserName() && txt_password.Text == giaovien5.GetPassword())
+                    || (txt_username.Text == giaovien6.GetUserName() && txt_password.Text == giaovien6.GetPassword())
+                    || (txt_username.Text == giaovien7.GetUserName() && txt_password.Text == giaovien7.GetPassword())
+                    || (txt_username.Text == giaovien8.GetUserName() && txt_password.Text == giaovien8.GetPassword())
+                    || (txt_username.Text == giaovien9.GetUserName() && txt_password.Text == giaovien9.GetPassword())
+                    || (txt_username.Text == giaovien10.GetUserName() && txt_password.Text == giaovien10.GetPassword())
+                    || (txt_username.Text == giaovien11.GetUserName() && txt_password.Text == giaovien11.GetPassword()))
                 {
                     //Load Form Teacher
+                    Form form = new fGiaovien();
+                    this.Hide();
+                    form.Show();
                 }
-                if (txt_username.Text == nhanvien.GetUserName() && txt_password.Text == nhanvien.GetPassword())
+                else if (txt_username.Text == nhanvien.GetUserName() && txt_password.Text == nhanvien.GetPassword())
                 {
                     //Load Form Admin
                 }

@@ -55,13 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CBangDiem.cs" />
     <Compile Include="Classes\CHocSinh.cs" />
     <Compile Include="Classes\CLop.cs" />
     <Compile Include="Classes\CGiaoVien.cs" />
     <Compile Include="Classes\CMonHoc.cs" />
-    <Compile Include="Classes\CNhanVienQL.cs" />
     <Compile Include="Classes\CPhuHuynh.cs" />
     <Compile Include="Classes\darkMode.cs" />
+    <Compile Include="Classes\CTKB.cs" />
     <Compile Include="DBMySQLUtils.cs" />
     <Compile Include="DBUtils.cs" />
     <Compile Include="Forms\Manager\FormManagerMenu.cs">
@@ -70,32 +71,89 @@
     <Compile Include="Forms\Manager\FormManagerMenu.Designer.cs">
       <DependentUpon>FormManagerMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Manager\FormPickTKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\FormPickTKB.Designer.cs">
+      <DependentUpon>FormPickTKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\FormSetupTKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\FormSetupTKB.Designer.cs">
+      <DependentUpon>FormSetupTKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\FormNhapDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\FormNhapDiem.Designer.cs">
+      <DependentUpon>FormNhapDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-	  <EmbeddedResource Include="Forms\Manager\FormManagerMenu.resx">
-		  <DependentUpon>FormManagerMenu.cs</DependentUpon>
-	  </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\FormManagerMenu.resx">
+      <DependentUpon>FormManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Classes\CNhanVienQL.cs" />
-    <Compile Include="Classes\CPhuHuynh.cs" />
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Manager\FormDKNhapHoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Manager\FormDKNhapHoc.Designer.cs">
-      <DependentUpon>FormDKNhapHoc.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Manager\FormDKNhapHoc.resx">
-      <DependentUpon>FormDKNhapHoc.cs</DependentUpon>
+    <Compile Include="Class\darkMode.cs" />
+    <Compile Include="Forms\Teacher\fAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\fAdmin.Designer.cs">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\fGiaovien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\fGiaovien.Designer.cs">
+      <DependentUpon>fGiaovien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\fNhapdiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\fNhapdiem.Designer.cs">
+      <DependentUpon>fNhapdiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\fTaotkb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\fTaotkb.Designer.cs">
+      <DependentUpon>fTaotkb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaiKhoan.cs" />
+    <EmbeddedResource Include="Forms\Manager\FormPickTKB.resx">
+      <DependentUpon>FormPickTKB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\FormSetupTKB.resx">
+      <DependentUpon>FormSetupTKB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\fAdmin.resx">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\fGiaovien.resx">
+      <DependentUpon>fGiaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\fNhapdiem.resx">
+      <DependentUpon>fNhapdiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\FormNhapDiem.resx">
+      <DependentUpon>FormNhapDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\fTaotkb.resx">
+      <DependentUpon>fTaotkb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,13 +179,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
-	<ItemGroup>
-		<None Include="Images\search-icon-png-9965.png" />
-	</ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
+    <None Include="Images\logo-msword.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\search-icon-png-9965.png" />
+  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\School-Icon.png" />
   </ItemGroup>

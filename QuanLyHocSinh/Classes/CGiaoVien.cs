@@ -12,6 +12,14 @@ namespace QuanLyHocSinh.Classes
         private string TenGV;
         private string ChucVu;
         private CMonHoc BoMon;
+        string username;
+        string password;
+
+        public CGiaoVien(string username, string password)
+        {
+            this.username = username;
+            this.password = password;
+        }
 
         public CGiaoVien(int _magv, string _tengv, string _chucvu, CMonHoc _bomon)
         {
@@ -59,6 +67,16 @@ namespace QuanLyHocSinh.Classes
         public void SetBoMon(CMonHoc _monhoc)
         {
             this.BoMon = _monhoc;
+        }
+
+        public string GetUserName()
+        {
+            return username;
+        }
+
+        public string GetPassword()
+        {
+            return password;
         }
     }
 }

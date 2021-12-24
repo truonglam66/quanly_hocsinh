@@ -1,5 +1,4 @@
 ﻿using QuanLyHocSinh.Forms;
-﻿using QuanLyHocSinh.Forms.Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +20,7 @@ namespace QuanLyHocSinh
             darkMode.TroCarMode();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new fGiaovien());
         }
     }
 }
