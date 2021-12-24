@@ -4,10 +4,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace QuanLyHocSinh.Forms
 {
@@ -24,6 +27,8 @@ namespace QuanLyHocSinh.Forms
         DataTable dt_lop = new DataTable();
         DataTable dt_gv = new DataTable();
         DataTable dt_ph = new DataTable();
+        DataTable dt_hs_bandau = new DataTable();
+        DataTable dt_hs_dachon = new DataTable();
 
         public fGiaovien()
         {
@@ -174,6 +179,18 @@ namespace QuanLyHocSinh.Forms
             dt_lop.Columns.Add("Giáo viên chủ nhiệm");
             dt_lop.Columns.Add("Sĩ số");
 
+            // add columns dt_hs_bandau
+            dt_hs_bandau.Columns.Add("Mã số");
+            dt_hs_bandau.Columns.Add("Họ tên");
+            dt_hs_bandau.Columns.Add("Lớp");
+
+            // add columns dt_hs_dachon
+            dt_hs_dachon.Columns.Add("Mã số");
+            dt_hs_dachon.Columns.Add("Họ tên");
+            dt_hs_dachon.Columns.Add("Lớp");
+
+
+
             //add data dt_hs_nhapdiem
             for (int i = 0; i < DSHS.Count; i++)
             {
@@ -200,6 +217,21 @@ namespace QuanLyHocSinh.Forms
 
             //add data dataGridView_HS
             dgv_DSHS.DataSource = dt_hs_nhapdiem;
+
+            // add data dt_hsbandau
+            for (int i = 0; i < DSHS.Count; i++)
+            {
+                if (DSHS[i].GetMaLop() != 0)
+                {
+                    string tenlop = DSHS[i].GetMaLop().ToString().Substring(0, 1) + "A" + DSHS[i].GetMaLop().ToString().Substring(2, 1);
+                    dt_hs_bandau.Rows.Add(DSHS[i].GetMaHS(), DSHS[i].GetTenHS(), tenlop);
+                }
+
+            }
+            //add data dgv_HsBanDau
+            dgvDSHS_HD.DataSource = dt_hs_bandau;
+            // add data dgv_HsDaChon
+            dgvHsDaChon.DataSource = dt_hs_dachon;
         }
 
         private void kếtQuảLớpHọcToolStripMenuItem_Click(object sender, EventArgs e)
@@ -273,6 +305,106 @@ namespace QuanLyHocSinh.Forms
         private void fGiaovien_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            app.Visible = true;
+            worksheet = workbook.Sheets["Sheet1"];
+            worksheet = workbook.ActiveSheet;
+            worksheet.Name = "Exported from gridview";
+            worksheet.Cells[1, 1] = "Thời gian"; worksheet.Cells[1, 2] = dateTimePicker1.Value.ToString();
+            worksheet.Cells[2, 1] = "Địa điểm"; worksheet.Cells[2, 2] = textBox3.Text;
+            worksheet.Cells[3, 1] = "Học kì"; worksheet.Cells[3, 2] = textBox4.Text;
+            worksheet.Cells[4, 1] = "Năm học"; worksheet.Cells[4, 2] = textBox5.Text;
+            for (int i = 1; i < dgvHsDaChon.Columns.Count + 1; i++)
+            {
+                worksheet.Cells[5, i] = dgvHsDaChon.Columns[i - 1].HeaderText;
+            }
+            for (int i = 0; i < dgvHsDaChon.Rows.Count - 1; i++)
+            {
+                for (int j = 0; j < dgvHsDaChon.Columns.Count; j++)
+                {
+                    worksheet.Cells[i + 6, j + 1] = dgvHsDaChon.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+            var savefile = new SaveFileDialog();
+            savefile.FileName = "DanhSach";
+            savefile.Filter = "Excel Files|*.xlsx";
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                workbook.SaveAs(savefile.FileName);
+            }
+            app.Quit();
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            if(dgvDSHS_HD.SelectedRows.Count > 0)
+            {                
+                foreach(DataGridViewRow row in dgvHsDaChon.Rows)
+                {
+                    if(row.Cells[0].Value == dgvDSHS_HD.SelectedRows[0].Cells[0].Value)
+                    {
+                        MessageBox.Show("Học sinh này đã chọn");
+                        return;
+                    }
+                }
+                dt_hs_dachon.Rows.Add(dgvDSHS_HD.SelectedRows[0].Cells[0].Value, dgvDSHS_HD.SelectedRows[0].Cells[1].Value, dgvDSHS_HD.SelectedRows[0].Cells[2].Value);
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if(dgvHsDaChon.SelectedRows.Count > 0)
+            {
+                dt_hs_dachon.Rows.RemoveAt(dgvHsDaChon.SelectedRows[0].Index);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            PdfPTable pdftable = new PdfPTable(dgvHsDaChon.Columns.Count);
+            pdftable.DefaultCell.Padding = 3;
+            pdftable.WidthPercentage = 100;
+            pdftable.HorizontalAlignment = Element.ALIGN_LEFT;
+            foreach(DataGridViewColumn column in dgvHsDaChon.Columns)
+            {
+                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                pdftable.AddCell(cell);
+            }
+            foreach(DataGridViewRow row in dgvHsDaChon.Rows)
+            {
+                foreach(DataGridViewCell cell in row.Cells)
+                {
+                    pdftable.AddCell(cell.Value.ToString());
+                }
+            }
+            var savefile = new SaveFileDialog();
+            savefile.FileName = "DanhSach";
+            savefile.Filter = "PDF Files|*.pdf";
+            if(savefile.ShowDialog() == DialogResult.OK)
+            {
+                using(FileStream fs = new FileStream(savefile.FileName, FileMode.Create))
+                {
+                    Document pdfdoc = new Document(PageSize.A4,10f,10f,10f,0f);
+                    PdfWriter.GetInstance(pdfdoc, fs);
+                    pdfdoc.Open();
+                    Paragraph p = new Paragraph("Thời gian: " + dateTimePicker1.Value.ToString() + "\n" +
+                                                 "Địa điểm: " + textBox3.Text + "\n" +
+                                                 "Học kì: " + textBox4.Text + "\n" +
+                                                 "Năm học: " + textBox5.Text + "\n");
+                    pdfdoc.Add(p);
+                    pdfdoc.Add(pdftable);
+                    pdfdoc.Close();
+                    fs.Close();
+                }
+            }
+
+            
         }
     }
 }

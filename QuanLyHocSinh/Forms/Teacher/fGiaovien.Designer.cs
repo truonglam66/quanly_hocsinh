@@ -30,6 +30,29 @@ namespace QuanLyHocSinh.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fGiaovien));
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.càiĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemLogOut = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.btnExcel = new System.Windows.Forms.Button();
+            this.dgvHsDaChon = new System.Windows.Forms.DataGridView();
+            this.dgvDSHS_HD = new System.Windows.Forms.DataGridView();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -93,12 +116,10 @@ namespace QuanLyHocSinh.Forms
             this.dgv_DSHS = new System.Windows.Forms.DataGridView();
             this.label17 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.càiĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemLogOut = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.menuStrip1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHsDaChon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSHS_HD)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTKB)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -109,8 +130,268 @@ namespace QuanLyHocSinh.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSHS)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.càiĐặtToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1370, 28);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // càiĐặtToolStripMenuItem
+            // 
+            this.càiĐặtToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.càiĐặtToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.càiĐặtToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemLogOut,
+            this.ToolStripMenuItemExit});
+            this.càiĐặtToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
+            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.càiĐặtToolStripMenuItem.Text = "Cài đặt";
+            // 
+            // ToolStripMenuItemLogOut
+            // 
+            this.ToolStripMenuItemLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ToolStripMenuItemLogOut.ForeColor = System.Drawing.Color.White;
+            this.ToolStripMenuItemLogOut.Name = "ToolStripMenuItemLogOut";
+            this.ToolStripMenuItemLogOut.Size = new System.Drawing.Size(160, 26);
+            this.ToolStripMenuItemLogOut.Text = "Đăng xuất";
+            this.ToolStripMenuItemLogOut.Click += new System.EventHandler(this.ToolStripMenuItemLogOut_Click);
+            // 
+            // ToolStripMenuItemExit
+            // 
+            this.ToolStripMenuItemExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ToolStripMenuItemExit.ForeColor = System.Drawing.Color.White;
+            this.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
+            this.ToolStripMenuItemExit.Size = new System.Drawing.Size(160, 26);
+            this.ToolStripMenuItemExit.Text = "Thoát";
+            this.ToolStripMenuItemExit.Click += new System.EventHandler(this.ToolStripMenuItemExit_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(562, 38);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(237, 35);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Menu Giáo Viên";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tabPage5.Controls.Add(this.label3);
+            this.tabPage5.Controls.Add(this.label4);
+            this.tabPage5.Controls.Add(this.dateTimePicker1);
+            this.tabPage5.Controls.Add(this.button7);
+            this.tabPage5.Controls.Add(this.button9);
+            this.tabPage5.Controls.Add(this.button8);
+            this.tabPage5.Controls.Add(this.btnExcel);
+            this.tabPage5.Controls.Add(this.dgvHsDaChon);
+            this.tabPage5.Controls.Add(this.dgvDSHS_HD);
+            this.tabPage5.Controls.Add(this.textBox3);
+            this.tabPage5.Controls.Add(this.textBox4);
+            this.tabPage5.Controls.Add(this.textBox5);
+            this.tabPage5.Controls.Add(this.label15);
+            this.tabPage5.Controls.Add(this.label16);
+            this.tabPage5.Controls.Add(this.label18);
+            this.tabPage5.Controls.Add(this.label19);
+            this.tabPage5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage5.Location = new System.Drawing.Point(4, 30);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage5.Size = new System.Drawing.Size(1899, 798);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "Hoạt động ngoài giờ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(941, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(365, 29);
+            this.label3.TabIndex = 78;
+            this.label3.Text = "Danh sách học sinh được chọn";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(511, 20);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(338, 29);
+            this.label4.TabIndex = 78;
+            this.label4.Text = "Danh sách học sinh ban đầu";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(137, 73);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 26);
+            this.dateTimePicker1.TabIndex = 77;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(78, 399);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(165, 78);
+            this.button7.TabIndex = 76;
+            this.button7.Text = "Xuất PDF";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(865, 258);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(74, 44);
+            this.button9.TabIndex = 76;
+            this.button9.Text = "<<";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(865, 160);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(74, 44);
+            this.button8.TabIndex = 76;
+            this.button8.Text = ">>";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExcel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExcel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel.ForeColor = System.Drawing.Color.White;
+            this.btnExcel.Location = new System.Drawing.Point(78, 284);
+            this.btnExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(165, 78);
+            this.btnExcel.TabIndex = 76;
+            this.btnExcel.Text = "Xuất Excel";
+            this.btnExcel.UseVisualStyleBackColor = false;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
+            // dgvHsDaChon
+            // 
+            this.dgvHsDaChon.AllowUserToAddRows = false;
+            this.dgvHsDaChon.BackgroundColor = System.Drawing.Color.White;
+            this.dgvHsDaChon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHsDaChon.Location = new System.Drawing.Point(967, 80);
+            this.dgvHsDaChon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvHsDaChon.Name = "dgvHsDaChon";
+            this.dgvHsDaChon.ReadOnly = true;
+            this.dgvHsDaChon.RowHeadersWidth = 62;
+            this.dgvHsDaChon.RowTemplate.Height = 28;
+            this.dgvHsDaChon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvHsDaChon.Size = new System.Drawing.Size(339, 334);
+            this.dgvHsDaChon.TabIndex = 36;
+            // 
+            // dgvDSHS_HD
+            // 
+            this.dgvDSHS_HD.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDSHS_HD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSHS_HD.Location = new System.Drawing.Point(516, 73);
+            this.dgvDSHS_HD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvDSHS_HD.MultiSelect = false;
+            this.dgvDSHS_HD.Name = "dgvDSHS_HD";
+            this.dgvDSHS_HD.ReadOnly = true;
+            this.dgvDSHS_HD.RowHeadersWidth = 62;
+            this.dgvDSHS_HD.RowTemplate.Height = 28;
+            this.dgvDSHS_HD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDSHS_HD.Size = new System.Drawing.Size(339, 334);
+            this.dgvDSHS_HD.TabIndex = 36;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(137, 117);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(228, 26);
+            this.textBox3.TabIndex = 33;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(137, 157);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(159, 26);
+            this.textBox4.TabIndex = 32;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(137, 200);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(169, 26);
+            this.textBox5.TabIndex = 31;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(8, 203);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(74, 19);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "Năm học";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(8, 160);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(56, 19);
+            this.label16.TabIndex = 26;
+            this.label16.Text = "Học kì";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(9, 120);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(75, 19);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "Địa điểm";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(10, 80);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(78, 19);
+            this.label19.TabIndex = 23;
+            this.label19.Text = "Thời gian";
             // 
             // tabPage4
             // 
@@ -122,11 +403,11 @@ namespace QuanLyHocSinh.Forms
             this.tabPage4.Controls.Add(this.dgvTKB);
             this.tabPage4.Controls.Add(this.label12);
             this.tabPage4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage4.Location = new System.Drawing.Point(4, 28);
+            this.tabPage4.Location = new System.Drawing.Point(4, 30);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(1899, 800);
+            this.tabPage4.Size = new System.Drawing.Size(1899, 798);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Thời khóa biểu";
             // 
@@ -148,7 +429,7 @@ namespace QuanLyHocSinh.Forms
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(93, 595);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(212, 24);
+            this.comboBox4.Size = new System.Drawing.Size(212, 26);
             this.comboBox4.TabIndex = 82;
             // 
             // label1
@@ -158,7 +439,7 @@ namespace QuanLyHocSinh.Forms
             this.label1.Location = new System.Drawing.Point(551, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 24);
+            this.label1.Size = new System.Drawing.Size(305, 29);
             this.label1.TabIndex = 79;
             this.label1.Text = "Danh sách thời khóa biểu";
             // 
@@ -196,7 +477,7 @@ namespace QuanLyHocSinh.Forms
             this.label12.Location = new System.Drawing.Point(9, 592);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 24);
+            this.label12.Size = new System.Drawing.Size(100, 29);
             this.label12.TabIndex = 80;
             this.label12.Text = "Xuất file";
             // 
@@ -227,11 +508,11 @@ namespace QuanLyHocSinh.Forms
             this.tabPage3.Controls.Add(this.label47);
             this.tabPage3.Controls.Add(this.label48);
             this.tabPage3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
+            this.tabPage3.Location = new System.Drawing.Point(4, 30);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(1899, 800);
+            this.tabPage3.Size = new System.Drawing.Size(1899, 798);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cuộc thi";
             // 
@@ -255,7 +536,7 @@ namespace QuanLyHocSinh.Forms
             this.label11.Location = new System.Drawing.Point(772, 2);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(228, 24);
+            this.label11.Size = new System.Drawing.Size(278, 29);
             this.label11.TabIndex = 78;
             this.label11.Text = "Danh sách các cuộc thi";
             // 
@@ -266,7 +547,7 @@ namespace QuanLyHocSinh.Forms
             this.label10.Location = new System.Drawing.Point(112, 2);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 24);
+            this.label10.Size = new System.Drawing.Size(123, 29);
             this.label10.TabIndex = 77;
             this.label10.Text = "Thông tin";
             // 
@@ -275,7 +556,7 @@ namespace QuanLyHocSinh.Forms
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(94, 544);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(212, 24);
+            this.comboBox3.Size = new System.Drawing.Size(212, 26);
             this.comboBox3.TabIndex = 76;
             // 
             // button4
@@ -298,7 +579,7 @@ namespace QuanLyHocSinh.Forms
             this.label9.Location = new System.Drawing.Point(10, 544);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 24);
+            this.label9.Size = new System.Drawing.Size(100, 29);
             this.label9.TabIndex = 74;
             this.label9.Text = "Xuất file";
             // 
@@ -325,7 +606,7 @@ namespace QuanLyHocSinh.Forms
             this.cbGV.Location = new System.Drawing.Point(137, 151);
             this.cbGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbGV.Name = "cbGV";
-            this.cbGV.Size = new System.Drawing.Size(169, 24);
+            this.cbGV.Size = new System.Drawing.Size(169, 26);
             this.cbGV.TabIndex = 42;
             // 
             // cbCapthi
@@ -339,7 +620,7 @@ namespace QuanLyHocSinh.Forms
             this.cbCapthi.Location = new System.Drawing.Point(72, 231);
             this.cbCapthi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCapthi.Name = "cbCapthi";
-            this.cbCapthi.Size = new System.Drawing.Size(234, 24);
+            this.cbCapthi.Size = new System.Drawing.Size(234, 26);
             this.cbCapthi.TabIndex = 41;
             // 
             // txbNamthi
@@ -347,7 +628,7 @@ namespace QuanLyHocSinh.Forms
             this.txbNamthi.Location = new System.Drawing.Point(78, 447);
             this.txbNamthi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbNamthi.Name = "txbNamthi";
-            this.txbNamthi.Size = new System.Drawing.Size(228, 22);
+            this.txbNamthi.Size = new System.Drawing.Size(228, 26);
             this.txbNamthi.TabIndex = 40;
             // 
             // txbDiadiemthi
@@ -364,7 +645,7 @@ namespace QuanLyHocSinh.Forms
             this.txbTGthi.Location = new System.Drawing.Point(78, 274);
             this.txbTGthi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbTGthi.Name = "txbTGthi";
-            this.txbTGthi.Size = new System.Drawing.Size(228, 22);
+            this.txbTGthi.Size = new System.Drawing.Size(228, 26);
             this.txbTGthi.TabIndex = 38;
             // 
             // txbHsThi
@@ -372,7 +653,7 @@ namespace QuanLyHocSinh.Forms
             this.txbHsThi.Location = new System.Drawing.Point(140, 190);
             this.txbHsThi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbHsThi.Name = "txbHsThi";
-            this.txbHsThi.Size = new System.Drawing.Size(166, 22);
+            this.txbHsThi.Size = new System.Drawing.Size(166, 26);
             this.txbHsThi.TabIndex = 37;
             // 
             // textBox44
@@ -380,7 +661,7 @@ namespace QuanLyHocSinh.Forms
             this.textBox44.Location = new System.Drawing.Point(64, 112);
             this.textBox44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(242, 22);
+            this.textBox44.Size = new System.Drawing.Size(242, 26);
             this.textBox44.TabIndex = 36;
             // 
             // txbMaCT
@@ -388,7 +669,7 @@ namespace QuanLyHocSinh.Forms
             this.txbMaCT.Location = new System.Drawing.Point(58, 70);
             this.txbMaCT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbMaCT.Name = "txbMaCT";
-            this.txbMaCT.Size = new System.Drawing.Size(248, 22);
+            this.txbMaCT.Size = new System.Drawing.Size(248, 26);
             this.txbMaCT.TabIndex = 35;
             // 
             // label41
@@ -396,7 +677,7 @@ namespace QuanLyHocSinh.Forms
             this.label41.AutoSize = true;
             this.label41.Location = new System.Drawing.Point(10, 453);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(60, 16);
+            this.label41.Size = new System.Drawing.Size(74, 19);
             this.label41.TabIndex = 34;
             this.label41.Text = "Năm học";
             // 
@@ -405,7 +686,7 @@ namespace QuanLyHocSinh.Forms
             this.label42.AutoSize = true;
             this.label42.Location = new System.Drawing.Point(10, 331);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(59, 16);
+            this.label42.Size = new System.Drawing.Size(75, 19);
             this.label42.TabIndex = 33;
             this.label42.Text = "Địa điểm";
             // 
@@ -414,7 +695,7 @@ namespace QuanLyHocSinh.Forms
             this.label43.AutoSize = true;
             this.label43.Location = new System.Drawing.Point(8, 280);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(62, 16);
+            this.label43.Size = new System.Drawing.Size(78, 19);
             this.label43.TabIndex = 32;
             this.label43.Text = "Thời gian";
             // 
@@ -423,7 +704,7 @@ namespace QuanLyHocSinh.Forms
             this.label44.AutoSize = true;
             this.label44.Location = new System.Drawing.Point(10, 239);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(49, 16);
+            this.label44.Size = new System.Drawing.Size(61, 19);
             this.label44.TabIndex = 31;
             this.label44.Text = "Cấp thi";
             // 
@@ -432,7 +713,7 @@ namespace QuanLyHocSinh.Forms
             this.label45.AutoSize = true;
             this.label45.Location = new System.Drawing.Point(10, 196);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(123, 16);
+            this.label45.Size = new System.Drawing.Size(155, 19);
             this.label45.TabIndex = 30;
             this.label45.Text = "Danh sách học sinh";
             // 
@@ -441,7 +722,7 @@ namespace QuanLyHocSinh.Forms
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(9, 159);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(119, 16);
+            this.label46.Size = new System.Drawing.Size(151, 19);
             this.label46.TabIndex = 29;
             this.label46.Text = "Giáo viên phụ trách";
             // 
@@ -450,7 +731,7 @@ namespace QuanLyHocSinh.Forms
             this.label47.AutoSize = true;
             this.label47.Location = new System.Drawing.Point(8, 118);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(51, 16);
+            this.label47.Size = new System.Drawing.Size(62, 19);
             this.label47.TabIndex = 28;
             this.label47.Text = "Môn thi";
             // 
@@ -459,7 +740,7 @@ namespace QuanLyHocSinh.Forms
             this.label48.AutoSize = true;
             this.label48.Location = new System.Drawing.Point(9, 76);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(44, 16);
+            this.label48.Size = new System.Drawing.Size(53, 19);
             this.label48.TabIndex = 27;
             this.label48.Text = "Mã thi";
             // 
@@ -486,11 +767,11 @@ namespace QuanLyHocSinh.Forms
             this.tabPage2.Controls.Add(this.label56);
             this.tabPage2.Controls.Add(this.label57);
             this.tabPage2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1899, 800);
+            this.tabPage2.Size = new System.Drawing.Size(1899, 798);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Hoạt động ngoài giờ";
             // 
@@ -514,7 +795,7 @@ namespace QuanLyHocSinh.Forms
             this.label8.Location = new System.Drawing.Point(90, 2);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 24);
+            this.label8.Size = new System.Drawing.Size(123, 29);
             this.label8.TabIndex = 75;
             this.label8.Text = "Thông tin";
             // 
@@ -525,7 +806,7 @@ namespace QuanLyHocSinh.Forms
             this.label7.Location = new System.Drawing.Point(829, 2);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(210, 24);
+            this.label7.Size = new System.Drawing.Size(257, 29);
             this.label7.TabIndex = 74;
             this.label7.Text = "Danh sách hoạt động";
             // 
@@ -534,7 +815,7 @@ namespace QuanLyHocSinh.Forms
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(94, 531);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(212, 24);
+            this.comboBox2.Size = new System.Drawing.Size(212, 26);
             this.comboBox2.TabIndex = 73;
             // 
             // button2
@@ -558,7 +839,7 @@ namespace QuanLyHocSinh.Forms
             this.label6.Location = new System.Drawing.Point(9, 529);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 24);
+            this.label6.Size = new System.Drawing.Size(100, 29);
             this.label6.TabIndex = 71;
             this.label6.Text = "Xuất file";
             // 
@@ -579,7 +860,7 @@ namespace QuanLyHocSinh.Forms
             this.txbNam.Location = new System.Drawing.Point(80, 419);
             this.txbNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbNam.Name = "txbNam";
-            this.txbNam.Size = new System.Drawing.Size(226, 22);
+            this.txbNam.Size = new System.Drawing.Size(226, 26);
             this.txbNam.TabIndex = 35;
             // 
             // txbDiadiem
@@ -596,7 +877,7 @@ namespace QuanLyHocSinh.Forms
             this.txbThoigian.Location = new System.Drawing.Point(78, 200);
             this.txbThoigian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbThoigian.Name = "txbThoigian";
-            this.txbThoigian.Size = new System.Drawing.Size(228, 22);
+            this.txbThoigian.Size = new System.Drawing.Size(228, 26);
             this.txbThoigian.TabIndex = 33;
             // 
             // txbHS
@@ -604,7 +885,7 @@ namespace QuanLyHocSinh.Forms
             this.txbHS.Location = new System.Drawing.Point(147, 154);
             this.txbHS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbHS.Name = "txbHS";
-            this.txbHS.Size = new System.Drawing.Size(159, 22);
+            this.txbHS.Size = new System.Drawing.Size(159, 26);
             this.txbHS.TabIndex = 32;
             // 
             // txbGV
@@ -612,7 +893,7 @@ namespace QuanLyHocSinh.Forms
             this.txbGV.Location = new System.Drawing.Point(137, 114);
             this.txbGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbGV.Name = "txbGV";
-            this.txbGV.Size = new System.Drawing.Size(169, 22);
+            this.txbGV.Size = new System.Drawing.Size(169, 26);
             this.txbGV.TabIndex = 31;
             // 
             // txbMaHD
@@ -620,7 +901,7 @@ namespace QuanLyHocSinh.Forms
             this.txbMaHD.Location = new System.Drawing.Point(106, 74);
             this.txbMaHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbMaHD.Name = "txbMaHD";
-            this.txbMaHD.Size = new System.Drawing.Size(200, 22);
+            this.txbMaHD.Size = new System.Drawing.Size(200, 26);
             this.txbMaHD.TabIndex = 30;
             // 
             // label52
@@ -628,7 +909,7 @@ namespace QuanLyHocSinh.Forms
             this.label52.AutoSize = true;
             this.label52.Location = new System.Drawing.Point(12, 425);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(60, 16);
+            this.label52.Size = new System.Drawing.Size(74, 19);
             this.label52.TabIndex = 29;
             this.label52.Text = "Năm học";
             // 
@@ -637,7 +918,7 @@ namespace QuanLyHocSinh.Forms
             this.label53.AutoSize = true;
             this.label53.Location = new System.Drawing.Point(13, 269);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(59, 16);
+            this.label53.Size = new System.Drawing.Size(75, 19);
             this.label53.TabIndex = 28;
             this.label53.Text = "Địa điểm";
             // 
@@ -646,7 +927,7 @@ namespace QuanLyHocSinh.Forms
             this.label54.AutoSize = true;
             this.label54.Location = new System.Drawing.Point(8, 203);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(62, 16);
+            this.label54.Size = new System.Drawing.Size(78, 19);
             this.label54.TabIndex = 27;
             this.label54.Text = "Thời gian";
             // 
@@ -655,7 +936,7 @@ namespace QuanLyHocSinh.Forms
             this.label55.AutoSize = true;
             this.label55.Location = new System.Drawing.Point(8, 160);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(123, 16);
+            this.label55.Size = new System.Drawing.Size(155, 19);
             this.label55.TabIndex = 26;
             this.label55.Text = "Danh sách học sinh";
             // 
@@ -664,7 +945,7 @@ namespace QuanLyHocSinh.Forms
             this.label56.AutoSize = true;
             this.label56.Location = new System.Drawing.Point(9, 120);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(119, 16);
+            this.label56.Size = new System.Drawing.Size(151, 19);
             this.label56.TabIndex = 24;
             this.label56.Text = "Giáo viên phụ trách";
             // 
@@ -673,7 +954,7 @@ namespace QuanLyHocSinh.Forms
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(10, 80);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(87, 16);
+            this.label57.Size = new System.Drawing.Size(109, 19);
             this.label57.TabIndex = 23;
             this.label57.Text = "Mã hoạt động";
             // 
@@ -691,11 +972,11 @@ namespace QuanLyHocSinh.Forms
             this.tabPage_NhapDiemCK.Controls.Add(this.dgv_DSHS);
             this.tabPage_NhapDiemCK.Controls.Add(this.label17);
             this.tabPage_NhapDiemCK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage_NhapDiemCK.Location = new System.Drawing.Point(4, 28);
+            this.tabPage_NhapDiemCK.Location = new System.Drawing.Point(4, 30);
             this.tabPage_NhapDiemCK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_NhapDiemCK.Name = "tabPage_NhapDiemCK";
             this.tabPage_NhapDiemCK.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage_NhapDiemCK.Size = new System.Drawing.Size(1899, 800);
+            this.tabPage_NhapDiemCK.Size = new System.Drawing.Size(1899, 798);
             this.tabPage_NhapDiemCK.TabIndex = 0;
             this.tabPage_NhapDiemCK.Text = "Nhập điểm cuối kì";
             // 
@@ -731,7 +1012,7 @@ namespace QuanLyHocSinh.Forms
             this.lbl_NhapDiem.ForeColor = System.Drawing.Color.Blue;
             this.lbl_NhapDiem.Location = new System.Drawing.Point(142, 208);
             this.lbl_NhapDiem.Name = "lbl_NhapDiem";
-            this.lbl_NhapDiem.Size = new System.Drawing.Size(199, 16);
+            this.lbl_NhapDiem.Size = new System.Drawing.Size(252, 19);
             this.lbl_NhapDiem.TabIndex = 74;
             this.lbl_NhapDiem.Text = "Chọn một học sinh để nhập điểm";
             // 
@@ -772,7 +1053,7 @@ namespace QuanLyHocSinh.Forms
             this.lbl_DSHS.Location = new System.Drawing.Point(852, 11);
             this.lbl_DSHS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_DSHS.Name = "lbl_DSHS";
-            this.lbl_DSHS.Size = new System.Drawing.Size(174, 22);
+            this.lbl_DSHS.Size = new System.Drawing.Size(226, 27);
             this.lbl_DSHS.TabIndex = 67;
             this.lbl_DSHS.Text = "Danh sách học sinh";
             // 
@@ -795,7 +1076,7 @@ namespace QuanLyHocSinh.Forms
             this.cbFileCK.Location = new System.Drawing.Point(112, 740);
             this.cbFileCK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbFileCK.Name = "cbFileCK";
-            this.cbFileCK.Size = new System.Drawing.Size(108, 24);
+            this.cbFileCK.Size = new System.Drawing.Size(108, 26);
             this.cbFileCK.TabIndex = 34;
             // 
             // dgv_DSHS
@@ -804,7 +1085,7 @@ namespace QuanLyHocSinh.Forms
             this.dgv_DSHS.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_DSHS.BackgroundColor = System.Drawing.Color.White;
             this.dgv_DSHS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_DSHS.Location = new System.Drawing.Point(502, 48);
+            this.dgv_DSHS.Location = new System.Drawing.Point(514, 43);
             this.dgv_DSHS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_DSHS.Name = "dgv_DSHS";
             this.dgv_DSHS.RowHeadersWidth = 62;
@@ -817,7 +1098,7 @@ namespace QuanLyHocSinh.Forms
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(51, 742);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(52, 16);
+            this.label17.Size = new System.Drawing.Size(66, 19);
             this.label17.TabIndex = 33;
             this.label17.Text = "Loại file";
             // 
@@ -828,6 +1109,7 @@ namespace QuanLyHocSinh.Forms
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 69);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -836,63 +1118,9 @@ namespace QuanLyHocSinh.Forms
             this.tabControl1.Size = new System.Drawing.Size(1907, 832);
             this.tabControl1.TabIndex = 0;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.càiĐặtToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1370, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // càiĐặtToolStripMenuItem
-            // 
-            this.càiĐặtToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.càiĐặtToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.càiĐặtToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItemLogOut,
-            this.ToolStripMenuItemExit});
-            this.càiĐặtToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
-            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.càiĐặtToolStripMenuItem.Text = "Cài đặt";
-            // 
-            // ToolStripMenuItemLogOut
-            // 
-            this.ToolStripMenuItemLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ToolStripMenuItemLogOut.ForeColor = System.Drawing.Color.White;
-            this.ToolStripMenuItemLogOut.Name = "ToolStripMenuItemLogOut";
-            this.ToolStripMenuItemLogOut.Size = new System.Drawing.Size(180, 22);
-            this.ToolStripMenuItemLogOut.Text = "Đăng xuất";
-            this.ToolStripMenuItemLogOut.Click += new System.EventHandler(this.ToolStripMenuItemLogOut_Click);
-            // 
-            // ToolStripMenuItemExit
-            // 
-            this.ToolStripMenuItemExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ToolStripMenuItemExit.ForeColor = System.Drawing.Color.White;
-            this.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
-            this.ToolStripMenuItemExit.Size = new System.Drawing.Size(180, 22);
-            this.ToolStripMenuItemExit.Text = "Thoát";
-            this.ToolStripMenuItemExit.Click += new System.EventHandler(this.ToolStripMenuItemExit_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(562, 38);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 29);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Menu Giáo Viên";
-            // 
             // fGiaovien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1370, 729);
@@ -908,6 +1136,12 @@ namespace QuanLyHocSinh.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Màn hình giáo viên";
             this.Load += new System.EventHandler(this.fGiaovien_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHsDaChon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSHS_HD)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTKB)).EndInit();
@@ -922,49 +1156,38 @@ namespace QuanLyHocSinh.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSHS)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage_NhapDiemCK;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Button btnTaoTKB;
-        private System.Windows.Forms.DataGridView dgvTKB;
-        private System.Windows.Forms.Button btnXuatCK;
-        private System.Windows.Forms.ComboBox cbFileCK;
-        private System.Windows.Forms.DataGridView dgv_DSHS;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem càiĐặtToolStripMenuItem;
-        private System.Windows.Forms.Label lbl_DSHS;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dgvHDNG;
-        private System.Windows.Forms.TextBox txbNam;
-        private System.Windows.Forms.TextBox txbDiadiem;
-        private System.Windows.Forms.TextBox txbThoigian;
-        private System.Windows.Forms.TextBox txbHS;
-        private System.Windows.Forms.TextBox txbGV;
-        private System.Windows.Forms.TextBox txbMaHD;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemLogOut;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemExit;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnExcel;
+        private System.Windows.Forms.DataGridView dgvHsDaChon;
+        private System.Windows.Forms.DataGridView dgvDSHS_HD;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnTaoTKB;
+        private System.Windows.Forms.DataGridView dgvTKB;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -988,17 +1211,42 @@ namespace QuanLyHocSinh.Forms
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemLogOut;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemExit;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgvHDNG;
+        private System.Windows.Forms.TextBox txbNam;
+        private System.Windows.Forms.TextBox txbDiadiem;
+        private System.Windows.Forms.TextBox txbThoigian;
+        private System.Windows.Forms.TextBox txbHS;
+        private System.Windows.Forms.TextBox txbGV;
+        private System.Windows.Forms.TextBox txbMaHD;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.TabPage tabPage_NhapDiemCK;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_XuatPDF;
         private System.Windows.Forms.Label lbl_NhapDiem;
         private System.Windows.Forms.Button btn_XuatEx;
         private System.Windows.Forms.Button btnThemCK;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_DSHS;
+        private System.Windows.Forms.Button btnXuatCK;
+        private System.Windows.Forms.ComboBox cbFileCK;
+        private System.Windows.Forms.DataGridView dgv_DSHS;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
